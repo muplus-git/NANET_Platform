@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/*
+ * File       : ui.common.css
+ * Author     : 송우림
+
+ * DIRECTORY:
+ * - COMMON
+ * - LAYOUT
+ * - ICONS
+ * - HEADER
+ * - FOOTER
+ */
+
+/**********
+    LAYOUT
+***********/
+/* #wrapper{min-width:1240rem;} */
+.inner{max-width:1200px;margin:0 auto;padding:0 20rem;}
+.animate{visibility: hidden;}
+#main_wrap{padding:150rem 0 100rem 0;}
+.main #main_wrap{padding-bottom:0;}
+html.lnb_open,body.lnb_open{overflow: hidden;touch-action: none;}
+
+/**********
+    ICONS
+***********/
+.icons{display:inline-flex;position:relative;vertical-align: -4px;}
+.icons:before{content:"";display:inline-block;width:18px;height:18px;background-position: 50%;background-size:100%;background-repeat: no-repeat;}
+
+/**********
+    COMMON
+***********/
+/* BUTTON */
+.btn{display:inline-block;border-radius: 5px;font-size:13rem;padding:11rem 13rem;font-weight:bold;}
+.btn+.btn{margin-left:7px;}
+
+/* FORM SEARCH */
+
+
+/* TITLE */
+
+
+/* TOTAL */
+
+
+/* CHK */
+
+
+/* DATEPICKER */
+
+/* ROW LIST */
+.row>.col{display:flex;flex-wrap: wrap;}
+.row>.col>li{box-sizing:border-box;}
+
+.row.gutter24>.col{margin:0 -12rem;}
+.row.gutter24>.col>li{padding:0 12rem;}
+
+.col-12{ width:100% }
+.col-11{ width:91.66666667% }
+.col-10{ width:83.33333333% }
+.col-9{ width:75% }
+.col-8{ width:66.66666667% }
+.col-7{ width:58.33333333% }
+.col-6{ width:50% }
+.col-5{ width:41.66666667% }
+.col-4{ width:33.33333333% }
+.col-3{ width:25% }
+.col-2{ width:16.66666667% }
+.col-1{ width:8.33333333% }
+
+/**********
+    HEADER
+***********/
+
+
+/**********
+    FOOTER
+***********/
+
+/**********
+    LNB
+***********/
+
+/**********
+    POPUP
+***********/

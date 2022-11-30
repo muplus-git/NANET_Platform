@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 100;
+    src: url(../NotoSans/notokr-thin.eot);
+    src: url(../NotoSans/notokr-thin.eot?#iefix) format('embedded-opentype'),
+    url(../NotoSans/notokr-thin.woff) format('woff'),
+    url(../NotoSans/notokr-thin.ttf) format('truetype'),
+    url(../NotoSans/notokr-thin.svg#notokr-thin) format('svg');
+}
+@font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../NotoSans/notokr-light.eot);
+    src: url(../NotoSans/notokr-light.eot?#iefix) format('embedded-opentype'),
+    url(../NotoSans/notokr-light.woff) format('woff'),
+    url(../NotoSans/notokr-light.ttf) format('truetype'),
+    url(../NotoSans/notokr-light.svg#notokr-light) format('svg');
+}
+@font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../NotoSans/notokr-regular.eot);
+    src: url(../NotoSans/notokr-regular.eot?#iefix) format('embedded-opentype'),
+    url(../NotoSans/notokr-regular.woff) format('woff'),
+    url(../NotoSans/notokr-regular.ttf) format('truetype'),
+    url(../NotoSans/notokr-regular.svg#notokr-regular) format('svg');
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../NotoSans/notokr-medium.eot);
+    src: url(../NotoSans/notokr-medium.eot?#iefix) format('embedded-opentype'),
+    url(../NotoSans/notokr-medium.woff) format('woff'),
+    url(../NotoSans/notokr-medium.ttf) format('truetype'),
+    url(../NotoSans/notokr-medium.svg#notokr-medium) format('svg');
+}
+@font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 900;
+    src: url(../NotoSans/notokr-bold.eot);
+    src: url(../NotoSans/notokr-bold.eot?#iefix) format('embedded-opentype'),
+    url(../NotoSans/notokr-bold.woff) format('woff'),
+    url(../NotoSans/notokr-bold.ttf) format('truetype'),
+    url(../NotoSans/notokr-bold.svg#notokr-bold) format('svg');
+}
