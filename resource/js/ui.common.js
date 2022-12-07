@@ -4,6 +4,11 @@ $(function(){
     animateFunc();
     familySite();
     mobilemenuFunc();
+    gnbMymenu();
+})
+
+$(window).load(function(){
+    introFunc();
 })
 
 function datePicker(){
@@ -96,6 +101,7 @@ function hasScrolled() {
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
         $('#header_wrap').removeClass('nav-down').addClass('nav-up');
+        $('.user_menu').removeClass('on');
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
@@ -134,4 +140,15 @@ function mobilemenuFunc(){
         $('.header_lnb').removeClass('on');
         $('body,html').removeClass('lnb_open');
     });
+}
+// 마이 메뉴
+function gnbMymenu(){
+    $('.user.login').on('click',function(){
+        $('.user_menu').toggleClass('on');
+    });
+}
+
+function introFunc(){
+    $('.main_visual_bg').addClass('on');
+    $('.visual_search').addClass('on');
 }

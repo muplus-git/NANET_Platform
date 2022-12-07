@@ -14,3 +14,71 @@
  /**********
     COMMON
 ***********/
+.main_sec{padding:100rem 0 120rem 0;position:relative;}
+.main_title{margin-bottom:80rem;text-align:center;}
+.main_title .title{color:#000;font-size:48rem;font-weight:800;}
+.main_title .title span{font-weight:normal;}
+
+.mask{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-image: url('../images/bg/bg_main_sec.png');background-color:#FFF9F6;background-repeat: no-repeat;background-position:50%;}
+.mask02{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-image: url('../images/bg/bg_main_sec02.png'), linear-gradient(180deg, #F85C3A 0%, #F17A37 100%);}
+.m_br{display:none;}
+
+/*************
+    SEC_CONT01
+**************/
+.main_sec_visual{height: 780rem;}
+.main_visual_area{position:relative;height:100%;overflow:hidden;}
+.main_visual_bg{position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-repeat:no-repeat;background-position:center;transition:transform 1000ms ease-in-out;transform: scale(1.1);background-image:url('../../resource/images/bg/bg_main_visual01.png')}
+.main_visual_bg.on{transform: scale(1);}
+.main_visual_inner{position:relative;display:flex;flex-direction:column;height:100%;;max-width:1200px;margin:0 auto;padding:0 20rem;justify-content: center;align-items: center;}
+.main_visual_inner .title{color:#000;font-size:52rem;text-align:center;line-height:1.3;font-weight:normal;}
+.main_visual_inner .title strong{font-weight:800;}
+.main_visual_inner .txt{margin-top:20rem;color:#666;font-size:20rem;line-height:1.5;}
+.main_visual_inner .txt br{display:none;}
+.main_visual_inner .visual_search{position:relative;width:70rem;background: #FFFFFF;border: 3px solid #F85C3A;box-shadow: 4px 8px 30px -4px rgba(173, 164, 159, 0.2);border-radius:100px;box-sizing: border-box;padding-right:75rem;margin-top:40rem;transition: all 1s 1s cubic-bezier(0.86, 0, 0.07, 1);}
+.main_visual_inner .visual_search.on{width:680rem;}
+.main_visual_inner .visual_search input[type="text"]{width:100%;border:0;height:66rem;background:none;padding:0 30rem;font-size:20rem;}
+.main_visual_inner .visual_search button{position:absolute;top:-3rem;right:-3rem;width:72rem;height:72rem;border-radius: 50%;background-color:#F85C3A;}
+.main_visual_inner .hashtag{margin-top:20rem;}
+.main_visual_inner .hashtag a{display:inline-block;color:#F85C3A;font-size:18rem;font-weight:bold;padding:0 8rem;}
+
+/*************
+    SEC_CONT02
+**************/
+.main_inner{display:flex;justify-content: space-between;}
+.main_inner.reverse{flex-direction:row-reverse;}
+.main_inner .intro{width:450rem;margin-top:20rem;}
+.main_inner .img{width:calc(100% - 450rem);padding-left:50rem;}
+.main_inner .intro .title{margin-top:8rem;color:#000;font-size:40rem;font-weight:800;}
+.main_inner .intro .desc{margin-top:30rem;color:#444;font-size:16rem;line-height:1.5;}
+.main_inner .intro .desc+.desc{margin-top:12rem;}
+.main_inner .intro .btn{margin-top:30rem;padding:11rem 39rem;font-size:16rem;}
+
+/*************
+    SEC_CONT03
+**************/
+.main_inner.reverse .img{padding-right:50rem;padding-left:0;margin-left:-30rem;width:calc(100% - 490rem);}
+
+/*************
+    SEC_CONT03
+**************/
+.main_intro_tab{display:flex;}
+.main_intro_tab .intro_list{width:calc(100% - 560rem)}
+.main_intro_tab .intro_list>li+li{border-top:1px solid #DFDFDF;margin-top:30rem;padding-top:30rem;}
+.main_intro_tab .intro_list>li>a{display:block;padding:0 70rem;position:relative;}
+.main_intro_tab .intro_list>li>a:before{content:"";position:absolute;top:5rem;left:15rem;width:32rem;height:32rem;background-color:#444444;border-radius: 50%;border:9rem solid #eee;box-sizing: border-box;}
+.main_intro_tab .intro_list>li.on .title{color:#F85C3A;text-decoration:underline;}
+.main_intro_tab .intro_list>li.on .desc{color:#444;}
+.main_intro_tab .intro_list>li.on a:before{background-color:#fff;border:9rem solid #F85C3A;}
+.main_intro_tab .intro_list>li>a .img{display:none;margin-top:15rem;}
+.main_intro_tab .intro_list .title{color:#999999;font-size:28rem;font-weight:800;}
+.main_intro_tab .intro_list .desc{margin-top:10rem;color:#B4B4B4;font-size:18rem;line-height:1.5;}
+.main_intro_tab .intro_img{width:560rem;height:440rem;}
+
+/*************
+    SEC_CONT03
+**************/
+.main_sec_banner{display:flex;align-items: center;justify-content: space-between;}
+.main_sec_banner .banner_intro p{color:#fff;font-size:28rem;}
+.main_sec_banner .banner_intro h2{color:#fff;font-size:46rem;margin-top:10rem;}
+.main_sec_banner .banner_link a{font-size:24rem;font-weight:bold;padding:15rem 52rem;}
