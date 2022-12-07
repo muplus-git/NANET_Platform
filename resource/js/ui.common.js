@@ -32,7 +32,7 @@ function datePicker(){
 // 팝업오픈
 function popupFunc(e) {
     var layerPop = $("#" + e);
-    popClose = $(".layer_pop_bg, .pop_close");
+    popClose = $(".popup_bg, .pop_close");
 
     layerPop.addClass("active");
 

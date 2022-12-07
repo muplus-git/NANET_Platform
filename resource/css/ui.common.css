@@ -37,6 +37,7 @@ html.lnb_open,body.lnb_open{overflow: hidden;touch-action: none;}
 .icons.i_main_dl:before{background-image:url('../images/icons/ico_main_dl.png');width:72rem;height:72rem;}
 .icons.i_m_search:before{background-image:url('../images/icons/ico_m_search.png');width:24rem;height:24rem;}
 .icons.i_m_gnb:before{background-image:url('../images/icons/ico_m_gnb.png');width:24rem;height:24rem;}
+.icons.i_pop_close:before{background-image:url('../images/icons/ico_pop_close.png');width:20rem;height:20rem;}
 
 /**********
     COMMON
@@ -47,9 +48,12 @@ html.lnb_open,body.lnb_open{overflow: hidden;touch-action: none;}
 .btn.radius{border-radius: 30px;}
 .btn.c-type01{border:1px solid #F85C3A;color:#F85C3A;background-color:#fff;}
 .btn.c-type02{border:1px solid #FFFFFF;color:#403F3D;background-color:#FFFFFF;}
+.btn.c-type03{border:1px solid #F85C3A;color:#fff;background-color:#F85C3A;}
+.btn.c-type04{border:1px solid #DFDFDF;color:#666666;background-color:#FFFFFF;}
 
 /* FORM SEARCH */
-
+.form_chk_list{display:flex;}
+.form_chk_list>li+li{margin-left:30rem;}
 
 /* TITLE */
 
@@ -58,9 +62,27 @@ html.lnb_open,body.lnb_open{overflow: hidden;touch-action: none;}
 
 
 /* CHK */
+.chk{display:inline-block;}
+.chk input[type="checkbox"]{display:none;}
+.chk input[type="checkbox"]:checked+label:before{background:url('../images/icons/ico_chk_on.png') no-repeat 50%;background-size:100%;}
+.chk label{position:relative;color: #444;font-size:16rem;cursor:pointer;padding-left:25rem;}
+.chk label:before{content:"";position:absolute;top:2rem;left:0;width:16rem;height:16rem;background:url('../images/icons/ico_chk_off.png') no-repeat 50%;background-size:100%;}
 
+.rdo_area{display:inline-flex;margin-left:15rem;border:1px solid #DFDFDF;border-radius:5px;overflow:hidden;}
+.rdo+.rdo label{border-left:1px solid #DFDFDF;}
+.rdo input[type="radio"]{display:none;}
+.rdo input[type="radio"]:checked+label{color:#fff;background-color:#403F3D;}
+.rdo label{display:inline-block;color: #444;font-size:14rem;background-color:#fff;padding:12rem 0;cursor:pointer;width:55rem;box-sizing: border-box;text-align: center;}
 
 /* DATEPICKER */
+.datepicker_box{display:inline-block;}
+.datepicker_area{display:inline-block;position:relative;background-color:#fff;border-radius: 5rem;padding-right:30rem;border:1px solid #DFDFDF;}
+.datepicker_area input[type="text"]{width:100%;border:0;}
+.datepicker_area+.datepicker_area{margin-left:13px}
+.datepicker_area+.datepicker_area:before{content:"~";position:absolute;top:10rem;left:-12rem;}
+.datepicker_area .ui-datepicker-trigger{position:absolute;top:50%;right:10px;width:20rem;height: 20rem;transform: translateY(-50%);}
+.datepicker_area .ui-datepicker-trigger img{vertical-align:initial;}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next{top:10rem}
 
 /* ROW LIST */
 .row>.col{display:flex;flex-wrap: wrap;}
@@ -146,3 +168,16 @@ html.lnb_open,body.lnb_open{overflow: hidden;touch-action: none;}
 /**********
     POPUP
 ***********/
+.popup_wrap {opacity:0;visibility:hidden;}
+.popup_wrap.active{opacity:1;visibility:visible;}
+.popup_bg{position:fixed;left:0;top:0;right:0;bottom:0;z-index:160;background-color:rgba(0,0,0,0.6);}
+.popup_area{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:170;box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);border-radius:15px;overflow:hidden;}
+.pop_header{position:relative;padding:15rem 25rem;background-color:#403F3D;}
+.pop_header h2{color: #FFFFFF;font-size:18rem;font-weight:800;}
+.pop_header button{position:absolute;top:0;bottom:0;right:30rem;padding:0 10rem;}
+.pop_cont{padding:30rem 25rem 30rem 25rem;background-color:#FFF;}
+.pop_btn_area{text-align:right;position:relative;padding:20rem 25rem;background-color:#F6F4F3;}
+.pop_btn_area button{width:95rem;padding:10rem 0; flex:1;}
+.pop_detail_search table{width:100%;}
+.pop_detail_search table tbody th{color:#444;font-size:14rem;font-weight:800;text-align: left;padding:8rem 0;}
+.pop_detail_search table tbody td{padding:8rem 0;}

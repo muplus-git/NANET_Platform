@@ -16,8 +16,109 @@
  </head>
 
  <body class="main">
-
+    
     <div id="wrapper">
+        <div id="popUp01" class="popup_wrap">
+            <div class="popup_bg"></div>
+            <div class="popup_area" style="width:800rem;">
+                <div class="pop_header">
+                    <h2>상세검색</h2>
+                    <button class="pop_close"><i class="icons i_pop_close"></i></button>
+                </div>
+                <div class="pop_cont">
+                    <div class="pop_detail_search">
+                        <table>
+                            <colgroup>
+                                <col style="width:100rem">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>포함단어</th>
+                                    <td>
+                                        <input type="text" class="wp100">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>기관명</th>
+                                    <td>
+                                        <select class="wp100">
+                                            <option>전체</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>파일유형</th>
+                                    <td>
+                                        <ul class="form_chk_list">
+                                            <li>
+                                                <span class="chk">
+                                                    <input type="checkbox" id="chk01">
+                                                    <label for="chk01">문서</label>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="chk">
+                                                    <input type="checkbox" id="chk02">
+                                                    <label for="chk02">이미지</label>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="chk">
+                                                    <input type="checkbox" id="chk03">
+                                                    <label for="chk03">영상</label>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="chk">
+                                                    <input type="checkbox" id="chk04">
+                                                    <label for="chk04">오디오</label>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>등록일자</th>
+                                    <td>
+                                        <div class="datepicker_box">
+                                            <div class="datepicker_area" style="width:128rem"><input type="text" class="datepicker form_inpt"></div>
+                                            <div class="datepicker_area" style="width:128rem"><input type="text" class="datepicker form_inpt"></div>
+                                        </div>
+                                        <div class="rdo_area">
+                                            <span class="rdo">
+                                                <input id="rdo01" type="radio" name="rod01" checked="">
+                                                <label for="rdo01">1개월</label>
+                                            </span>
+                                            <span class="rdo">
+                                                <input id="rdo02" type="radio" name="rod01">
+                                                <label for="rdo02">3개월</label>
+                                            </span>
+                                            <span class="rdo">
+                                                <input id="rdo03" type="radio" name="rod01">
+                                                <label for="rdo03">6개월</label>
+                                            </span>
+                                            <span class="rdo">
+                                                <input id="rdo04" type="radio" name="rod01">
+                                                <label for="rdo04">1년</label>
+                                            </span>
+                                            <span class="rdo">
+                                                <input id="rdo05" type="radio" name="rod01">
+                                                <label for="rdo05">전체</label>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="pop_btn_area">
+                    <button class="btn c-type04">초기화</button>
+                    <button class="btn c-type03">확인</button>
+                </div>
+            </div>
+        </div>
 
         <header id="header_wrap">
             <div class="inner">
@@ -32,7 +133,7 @@
                         <input type="text" placeholder="검색어를 입력하세요.">
                         <div class="option">
                             <span class="search"><button><i class="icons i_gnb_search"></i></button></span>
-                            <span class="filter"><button><i class="icons i_gnb_filter"></i></button></span>
+                            <span class="filter"><button onclick="popupFunc('popUp01')"><i class="icons i_gnb_filter"></i></button></span>
                         </div>
                     </div>
                     <div class="header_user">

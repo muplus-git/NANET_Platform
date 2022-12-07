@@ -106,6 +106,10 @@
     #footer_wrap .footer_logo{position: static;}
     #footer_wrap .footer_info{padding-left:0;padding-top:15rem;margin-top:15rem;}
 
+    .popup_area{width:auto !important;left:20rem;right:20rem;transform: translate(0,-50%);}
+    .pop_detail_search table tbody th,
+    .pop_detail_search table tbody td{display:block;}
+
     .main_sec{padding:80rem 0 90rem 0;}
     .main_sec.cont05{padding:80rem 0 80rem 0;}
     .main_sec_visual{height:600rem;}
@@ -148,6 +152,18 @@
     #footer_wrap .footer_tel>li+li{margin-top:5rem;margin-left:0;}
     #footer_wrap .footer_address{margin-right:0;margin-top:5rem;}
     #footer_wrap .footer_address .copy{margin-top:5rem;}
+    .pop_cont{padding:20rem 20rem;}
+    .pop_detail_search table tbody th{padding:8rem 0 5rem 0;}
+    .pop_detail_search table tbody td{padding:0;}
+    .pop_detail_search .form_chk_list>li{flex:1;}
+    .pop_detail_search .form_chk_list>li+li{margin-left:15rem;}
+    .pop_detail_search .form_chk_list .chk label{font-size:13rem;}
+    .pop_detail_search .rdo_area{display:flex;margin-left:0;}
+    .pop_detail_search .datepicker_box{display:flex;}
+    .pop_detail_search .datepicker_area{flex:1;width:auto !important;}
+    .pop_detail_search .rdo_area{margin-top:8rem;}
+    .pop_detail_search .rdo_area .rdo{flex:1;}
+    .pop_detail_search .rdo_area .rdo label{width:100%;}
 
     .main_sec.cont02{padding:60rem 0;}
     .main_sec.cont03{padding:40rem 0;}
