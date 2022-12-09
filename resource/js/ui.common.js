@@ -5,6 +5,7 @@ $(function(){
     familySite();
     mobilemenuFunc();
     gnbMymenu();
+    asideMenu();
 })
 
 $(window).load(function(){
@@ -151,4 +152,15 @@ function gnbMymenu(){
 function introFunc(){
     $('.main_visual_bg').addClass('on');
     $('.visual_search').addClass('on');
+}
+
+function asideMenu(){
+    $('.menu_list li.active').addClass('on').children('ul').show();
+    $(".menu_list li.has-sub>a").click(function(){
+
+        var element = $(this).parent('li');
+        element.toggleClass("on");
+        element.children("ul").slideToggle(200);
+    });
+
 }

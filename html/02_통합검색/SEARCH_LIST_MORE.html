@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>프로젝트</title>
+  <!-- css -->
+  <link rel="stylesheet" href="../../resource/css/lib/swiper/swiper.min.css">
+  <link rel="stylesheet" href="../../resource/css/lib/animate/animate.css">
+  <link rel="stylesheet" href="../../resource/css/lib/jqueryUI/jquery-ui.css">
+  <link rel="stylesheet" href="../../resource/css/ui.reset.css">
+  <link rel="stylesheet" href="../../resource/css/ui.common.css">
+  <link rel="stylesheet" href="../../resource/css/ui.main.css">
+  <link rel="stylesheet" href="../../resource/css/ui.sub.css">
+  <link rel="stylesheet" href="../../resource/css/ui.responsive.css">
+ </head>
+
+ <body>
+    
+    <div id="wrapper">
+
+        <header id="header_wrap">
+            <div class="inner">
+                <h1 class="logo"><a href="#none">국회도서관</a></h1>
+                <ul class="header_gnb">
+                    <li><a href="#none">공유자료</a></li>
+                    <li><a href="#none">참여기관</a></li>
+                    <li><a href="#none">이용안내</a></li>
+                </ul>
+                <div class="header_etc">
+                    <div class="header_search_box">
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <div class="option">
+                            <span class="search"><button><i class="icons i_gnb_search"></i></button></span>
+                            <span class="filter"><button onclick="popupFunc('popUp01')"><i class="icons i_gnb_filter"></i></button></span>
+                        </div>
+                    </div>
+                    <div class="header_user">
+                        <a href="#none" class="user login">
+                            <i class="icons i_user"></i>
+                            <span class="name"><strong>홍길동</strong> 님</span>
+                        </a>
+                        <ul class="user_menu">
+                            <li><a href="#none" class="mypage">마이페이지 <i class="icons i_mypage_arrow"></i></a></li>
+                            <li><a href="#none" class="logout">로그아웃 <i class="icons i_logout"></i></a></li>
+                        </ul>
+                    </div>
+                    <button class="btn_upload"><i class="icons i_upload"></i></button>
+                </div>
+                <div class="header_mobile">
+                    <button><i class="icons i_upload"></i></button>
+                    <button><i class="icons i_m_search"></i></button>
+                    <button><i class="icons i_m_gnb"></i></button>
+                </div>
+            </div>
+        </header>
+
+        <div id="main_wrap">
+            <div class="location_area">
+                <div class="inner">
+                    <ul class="location_list">
+                        <li><a href="#none" class="home"><i class="icons i_loaction_home"></i></a></li>
+                        <li>
+                            <a href="#none">통합검색</a>
+                            <ul style="display:none;">
+                                <li><a href="#none">통합검색</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="total_search_top_area animate" data-animate="fadeInUp" data-delay=".1s">
+                <div class="inner">
+                    <div class="total_search_box">
+                        <div class="total_search_inpt">
+                            <input type="text" value="농촌">
+                            <button><i class="icons i_gnb_search"></i></button>
+                        </div>
+                        <button class="detail"><i class="icons i_search_filter"></i> 상세검색</button>
+                    </div>
+                    <div class="total_search_tags">
+                        <a href="#none">#최근</a>
+                        <a href="#none">#많이찾은</a>
+                        <a href="#none">#검색어보기</a>
+                        <a href="#none">#지식공유플랫폼</a>
+                        <a href="#none">#저작물공유서비스</a>
+                    </div>
+                    <div class="total_search_result">
+                        <p><span>'농촌'</span>에 대한 검색결과는 총 <span>1,212,770</span> 건 입니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner animate" data-animate="fadeInUp" data-delay=".1s">
+                <div class="total_search_wrap">
+                    <div class="total_search_menu">
+                        <h2 class="menu_title">검색결과</h2>
+                        <ul class="menu_list">
+                            <li><a href="#none">전체</a></li>
+                            <li class="has-sub active on">
+                                <a href="#none">자유유형</a>
+                                <ul>
+                                    <li><a href="#none">- 단행본(12)</a></li>
+                                    <li><a href="#none">- 학술기사(314)</a></li>
+                                    <li><a href="#none">- 비도서(566)</a></li>
+                                    <li><a href="#none">- 연속간행물(21)</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                <a href="#none">발행처</a>
+                                <ul>
+                                    <li><a href="#none">- 한국과학기술정보연구원(12)</a></li>
+                                    <li><a href="#none">- 한국연구재단(314)</a></li>
+                                    <li><a href="#none">- 한국교육학술정보원(566)</a></li>
+                                    <li><a href="#none">- KOFST(21)</a></li>
+                                    <li><a href="#none">- 국립중앙도서관(421)</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                <a href="#none">발행년도</a>
+                                <ul>
+                                    <li><a href="#none">- 2021~2025(60)</a></li>
+                                    <li><a href="#none">- 2016~2020(121)</a></li>
+                                    <li><a href="#none">- 2011~2015(118)</a></li>
+                                    <li><a href="#none">- 2006~2010(79)</a></li>
+                                    <li><a href="#none">- 2001~2005(24)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="total_search_area">
+                        <div class="total_search_top">
+                            <select>
+                                <option>최신순</option>
+                            </select>
+                            <div class="notice_option">
+                                <button class="on"><i class="icons i_notice_list"></i></button>
+                                <button><i class="icons i_notice_album"></i></button>
+                            </div>
+                        </div>
+    
+                        <div class="total_search_title">
+                            <h3>단행본</h3> <span>(12)</span>
+                            <a href="#none">더보기</a>
+                        </div>
+                        <ul class="total_search_list">
+                            <li>
+                                <div class="search_cont">
+                                    <a href="#none" class="title">(농촌 결혼이민여성과 자녀들의) 사회적 배제 및 포용의 실태·사례·진단 / 연구기획집필 : 양순미</a>
+                                    <ul class="info">
+                                        <li><span>제작자</span> <em>농촌징흥청, 국립농업과학원</em></li>
+                                        <li><span>발행처</span> <em>국립농업과학원</em></li>
+                                        <li><span>발행일</span> <em>2021</em></li>
+                                        <li>
+                                            <div class="etc">
+                                                <span class="view"><i class="icons i_view"></i> 1234</span>
+                                                <button class="bookmark"><i class="icons i_bookmark"></i></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search_cont">
+                                    <a href="#none" class="title">(농촌 결혼이민여성과 자녀들의) 사회적 배제 및 포용의 실태·사례·진단 / 연구기획집필 : 양순미</a>
+                                    <ul class="info">
+                                        <li><span>제작자</span> <em>농촌징흥청, 국립농업과학원</em></li>
+                                        <li><span>발행처</span> <em>국립농업과학원</em></li>
+                                        <li><span>발행일</span> <em>2021</em></li>
+                                        <li>
+                                            <div class="etc">
+                                                <span class="view"><i class="icons i_view"></i> 1234</span>
+                                                <button class="bookmark"><i class="icons i_bookmark"></i></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search_cont">
+                                    <a href="#none" class="title">(농촌 결혼이민여성과 자녀들의) 사회적 배제 및 포용의 실태·사례·진단 / 연구기획집필 : 양순미</a>
+                                    <ul class="info">
+                                        <li><span>제작자</span> <em>농촌징흥청, 국립농업과학원</em></li>
+                                        <li><span>발행처</span> <em>국립농업과학원</em></li>
+                                        <li><span>발행일</span> <em>2021</em></li>
+                                        <li>
+                                            <div class="etc">
+                                                <span class="view"><i class="icons i_view"></i> 1234</span>
+                                                <button class="bookmark"><i class="icons i_bookmark"></i></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search_cont">
+                                    <a href="#none" class="title">(농촌 결혼이민여성과 자녀들의) 사회적 배제 및 포용의 실태·사례·진단 / 연구기획집필 : 양순미</a>
+                                    <ul class="info">
+                                        <li><span>제작자</span> <em>농촌징흥청, 국립농업과학원</em></li>
+                                        <li><span>발행처</span> <em>국립농업과학원</em></li>
+                                        <li><span>발행일</span> <em>2021</em></li>
+                                        <li>
+                                            <div class="etc">
+                                                <span class="view"><i class="icons i_view"></i> 1234</span>
+                                                <button class="bookmark"><i class="icons i_bookmark"></i></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search_cont">
+                                    <a href="#none" class="title">(농촌 결혼이민여성과 자녀들의) 사회적 배제 및 포용의 실태·사례·진단 / 연구기획집필 : 양순미</a>
+                                    <ul class="info">
+                                        <li><span>제작자</span> <em>농촌징흥청, 국립농업과학원</em></li>
+                                        <li><span>발행처</span> <em>국립농업과학원</em></li>
+                                        <li><span>발행일</span> <em>2021</em></li>
+                                        <li>
+                                            <div class="etc">
+                                                <span class="view"><i class="icons i_view"></i> 1234</span>
+                                                <button class="bookmark"><i class="icons i_bookmark"></i></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search_cont">
+                                    <a href="#none" class="title">(농촌 결혼이민여성과 자녀들의) 사회적 배제 및 포용의 실태·사례·진단 / 연구기획집필 : 양순미</a>
+                                    <ul class="info">
+                                        <li><span>제작자</span> <em>농촌징흥청, 국립농업과학원</em></li>
+                                        <li><span>발행처</span> <em>국립농업과학원</em></li>
+                                        <li><span>발행일</span> <em>2021</em></li>
+                                        <li>
+                                            <div class="etc">
+                                                <span class="view"><i class="icons i_view"></i> 1234</span>
+                                                <button class="bookmark"><i class="icons i_bookmark"></i></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search_cont">
+                                    <a href="#none" class="title">(농촌 결혼이민여성과 자녀들의) 사회적 배제 및 포용의 실태·사례·진단 / 연구기획집필 : 양순미</a>
+                                    <ul class="info">
+                                        <li><span>제작자</span> <em>농촌징흥청, 국립농업과학원</em></li>
+                                        <li><span>발행처</span> <em>국립농업과학원</em></li>
+                                        <li><span>발행일</span> <em>2021</em></li>
+                                        <li>
+                                            <div class="etc">
+                                                <span class="view"><i class="icons i_view"></i> 1234</span>
+                                                <button class="bookmark"><i class="icons i_bookmark"></i></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search_cont">
+                                    <a href="#none" class="title">(농촌 결혼이민여성과 자녀들의) 사회적 배제 및 포용의 실태·사례·진단 / 연구기획집필 : 양순미</a>
+                                    <ul class="info">
+                                        <li><span>제작자</span> <em>농촌징흥청, 국립농업과학원</em></li>
+                                        <li><span>발행처</span> <em>국립농업과학원</em></li>
+                                        <li><span>발행일</span> <em>2021</em></li>
+                                        <li>
+                                            <div class="etc">
+                                                <span class="view"><i class="icons i_view"></i> 1234</span>
+                                                <button class="bookmark"><i class="icons i_bookmark"></i></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search_cont">
+                                    <a href="#none" class="title">(농촌 결혼이민여성과 자녀들의) 사회적 배제 및 포용의 실태·사례·진단 / 연구기획집필 : 양순미</a>
+                                    <ul class="info">
+                                        <li><span>제작자</span> <em>농촌징흥청, 국립농업과학원</em></li>
+                                        <li><span>발행처</span> <em>국립농업과학원</em></li>
+                                        <li><span>발행일</span> <em>2021</em></li>
+                                        <li>
+                                            <div class="etc">
+                                                <span class="view"><i class="icons i_view"></i> 1234</span>
+                                                <button class="bookmark"><i class="icons i_bookmark"></i></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search_cont">
+                                    <a href="#none" class="title">(농촌 결혼이민여성과 자녀들의) 사회적 배제 및 포용의 실태·사례·진단 / 연구기획집필 : 양순미</a>
+                                    <ul class="info">
+                                        <li><span>제작자</span> <em>농촌징흥청, 국립농업과학원</em></li>
+                                        <li><span>발행처</span> <em>국립농업과학원</em></li>
+                                        <li><span>발행일</span> <em>2021</em></li>
+                                        <li>
+                                            <div class="etc">
+                                                <span class="view"><i class="icons i_view"></i> 1234</span>
+                                                <button class="bookmark"><i class="icons i_bookmark"></i></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="paging_wrap">
+                            <div class="paging_area">
+                                <a href="#none" class="first"><i class="icons i_paging_first"></i></a>
+                                <a href="#none" class="prev"><i class="icons i_paging_prev"></i></a>
+                                <a href="#none" class="paging">1</a>
+                                <a href="#none" class="paging active">2</a>
+                                <a href="#none" class="paging">3</a>
+                                <a href="#none" class="paging">4</a>
+                                <a href="#none" class="paging">5</a>
+                                <a href="#none" class="next"><i class="icons i_paging_next"></i></a>
+                                <a href="#none" class="last"><i class="icons i_paging_last"></i></a>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="total_search_word">
+                        <h2 class="menu_title">인기검색어</h2>
+                        <div class="date">
+                            <i class="icons i_calendar"></i>
+                            <span>2022-11-01 ~ 2022-11-30</span>
+                        </div>
+                        <ul class="total_search_rank">
+                            <li>
+                                <span class="numb one">1</span>
+                                <a href="#none">러시아전쟁</a>
+                            </li>
+                            <li>
+                                <span class="numb">2</span>
+                                <a href="#none">코로나</a>
+                            </li>
+                            <li>
+                                <span class="numb">3</span>
+                                <a href="#none">유가</a>
+                            </li>
+                            <li>
+                                <span class="numb">4</span>
+                                <a href="#none">인플레이션</a>
+                            </li>
+                            <li>
+                                <span class="numb">5</span>
+                                <a href="#none">경제</a>
+                            </li>
+                        </ul>
+    
+                        <h2 class="menu_title">나의 최근 검색어</h2>
+                        <ul class="total_search_myword">
+                            <li>
+                                <a href="#none">경제안정화</a>
+                                <div class="box">
+                                    <span>2022-11-22</span>
+                                    <button><i class="icons i_word_delete"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#none">러시아</a>
+                                <div class="box">
+                                    <span>2022-11-22</span>
+                                    <button><i class="icons i_word_delete"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#none">코로나</a>
+                                <div class="box">
+                                    <span>2022-11-22</span>
+                                    <button><i class="icons i_word_delete"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#none">중국</a>
+                                <div class="box">
+                                    <span>2022-11-22</span>
+                                    <button><i class="icons i_word_delete"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#none">인플레이션</a>
+                                <div class="box">
+                                    <span>2022-11-22</span>
+                                    <button><i class="icons i_word_delete"></i></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer_wrap">
+            <div class="inner">
+                <ul class="footer_top">
+                    <li><a href="#none">개인정보처리방침</a></li>
+                    <li><a href="#none">이메일수신거부</a></li>
+                    <li><a href="#none">문의하기</a></li>
+                </ul>
+                <div class="footer_info">
+                    <span class="footer_logo"><a href="#none">국회도서관</a></span>
+                    <div class="footer_inner">
+                        <div class="footer_address">
+                            <address class="address">서울특별시 중구 퇴계로27길 49 (저동2가, 센트럴에쓰 3층)</address>
+                            <p class="copy">COPYRIGHT ⓒ 지식공유 플랫폼. ALLRIGHT RESERVED.</p> 
+                        </div>
+                        <ul class="footer_tel">
+                            <li><span>대표번호</span> 02 3456 7890</li>
+                            <li><span>이메일</span> email@email.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- javascript -->
+    <script src="../../resource/js/lib/jquery/jquery-1.12.3.js"></script>
+    <script src="../../resource/js/lib/jquery/jquery.scrolla.js"></script>
+    <script src="../../resource/js/lib/jquery/jquery-ui.js"></script>
+    <script src="../../resource/js/lib/swiper/swiper.min.js"></script>
+    <script src="../../resource/js/lib/tweenmax/gsap.min.js"></script>
+    <script src="../../resource/js/ui.common.js"></script>
+    <script>
+        tabMenu('#tabList01','#tabCont01')
+    </script>
+ </body>
+</html>

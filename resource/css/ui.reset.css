@@ -24,7 +24,7 @@ textarea.disabled{background-color:#f1f1f1;}
 
 /* 추가 */
 body{-webkit-text-size-adjust:none;}
-input[type="text"],input[type="password"],select{height:44rem;padding:0 12rem;box-sizing:border-box;background-color:#fff;border-radius:5px;/* vertical-align:middle; */border:1px solid #dfdfdf;outline: none;font-size:14rem;color:#222;}
+input[type="text"],input[type="password"],select{height:40rem;padding:0 12rem;box-sizing:border-box;background-color:#fff;border-radius:5px;/* vertical-align:middle; */border:1px solid #dfdfdf;outline: none;font-size:14rem;color:#222;}
 input[type="radio"],input[type="checkbox"]{border:none;}
 input:disabled{background-color: #f0f1f1;}
 input[type="text"],input[type="password"]{-webkit-appearance: none;}

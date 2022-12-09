@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>프로젝트</title>
+  <!-- css -->
+  <link rel="stylesheet" href="../../resource/css/lib/swiper/swiper.min.css">
+  <link rel="stylesheet" href="../../resource/css/lib/animate/animate.css">
+  <link rel="stylesheet" href="../../resource/css/lib/jqueryUI/jquery-ui.css">
+  <link rel="stylesheet" href="../../resource/css/ui.reset.css">
+  <link rel="stylesheet" href="../../resource/css/ui.common.css">
+  <link rel="stylesheet" href="../../resource/css/ui.main.css">
+  <link rel="stylesheet" href="../../resource/css/ui.sub.css">
+  <link rel="stylesheet" href="../../resource/css/ui.responsive.css">
+ </head>
+
+ <body>
+    
+    <div id="wrapper">
+        <div id="popUp01" class="popup_wrap">
+            <div class="popup_bg"></div>
+            <div class="popup_area" style="width:320rem;">
+                <div class="pop_cont">
+                    <div class="layerpop_msg">
+                        로그인이 필요한 기능입니다. <br>
+                        로그인 하시겠습니까?
+                    </div>
+                </div>
+                <div class="layerpop_btn_area">
+                    <button class="lbtn c-type01">초기화</button>
+                    <button class="lbtn c-type02">확인</button>
+                </div>
+            </div>
+        </div>
+
+        <header id="header_wrap">
+            <div class="inner">
+                <h1 class="logo"><a href="#none">국회도서관</a></h1>
+                <ul class="header_gnb">
+                    <li><a href="#none">공유자료</a></li>
+                    <li><a href="#none">참여기관</a></li>
+                    <li><a href="#none">이용안내</a></li>
+                </ul>
+                <div class="header_etc">
+                    <div class="header_search_box">
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <div class="option">
+                            <span class="search"><button><i class="icons i_gnb_search"></i></button></span>
+                            <span class="filter"><button onclick="popupFunc('popUp01')"><i class="icons i_gnb_filter"></i></button></span>
+                        </div>
+                    </div>
+                    <div class="header_user">
+                        <a href="#none" class="user login">
+                            <i class="icons i_user"></i>
+                            <span class="name"><strong>홍길동</strong> 님</span>
+                        </a>
+                        <ul class="user_menu">
+                            <li><a href="#none" class="mypage">마이페이지 <i class="icons i_mypage_arrow"></i></a></li>
+                            <li><a href="#none" class="logout">로그아웃 <i class="icons i_logout"></i></a></li>
+                        </ul>
+                    </div>
+                    <button class="btn_upload"><i class="icons i_upload"></i></button>
+                </div>
+                <div class="header_mobile">
+                    <button><i class="icons i_upload"></i></button>
+                    <button><i class="icons i_m_search"></i></button>
+                    <button><i class="icons i_m_gnb"></i></button>
+                </div>
+            </div>
+        </header>
+
+        <div id="main_wrap">
+            <div class="location_area">
+                <div class="inner">
+                    <ul class="location_list">
+                        <li><a href="#none" class="home"><i class="icons i_loaction_home"></i></a></li>
+                        <li>
+                            <a href="#none">통합검색</a>
+                            <ul style="display:none;">
+                                <li><a href="#none">통합검색</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="inner animate" data-animate="fadeInUp" data-delay=".1s">
+                <div class="cont_header_area">
+                    <div class="flex_row between">
+                        <div>
+                            <span class="data_type">단행본</span>
+                        </div>
+                        <div>
+                            <div class="etc">
+                                <span class="view"><i class="icons i_view"></i> 1234</span>
+                                <button class="bookmark" onClick="popupFunc('popUp01')"><i class="icons i_bookmark"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="title">(농촌 결혼이민여성과 자녀들의) 사회적 배제 및 포용의 실태, 사례, 진단</h3>
+                </div>
+
+                <div class="cont_title_area first">
+                    <h4 class="sub_title">자료정보</h4>
+                </div>
+                <div class="cont_info_tbl">
+                    <table>
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>제작자</th>
+                                <td>농촌징흥청, 국립농업과학원</td>
+                                <th>isbn</th>
+                                <td>1651651651656</td>
+                            </tr>
+                            <tr>
+                                <th>발행처</th>
+                                <td>국립농업과학원</td>
+                                <th>공개범위</th>
+                                <td>(연속간행물:자료유형) 저작자표시-비영리-변경금지</td>
+                            </tr>
+                            <tr>
+                                <th>발행일</th>
+                                <td>2021</td>
+                                <th>원문링크</th>
+                                <td><a href="#none" class="link">바로가기 <i class="icons i_link"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="cont_title_area">
+                    <h4 class="sub_title">공유자료 <strong>(4)</strong></h4>
+                </div>
+                <ul class="cont_down_list">
+                    <li>
+                        <i class="icons i_download"></i>
+                        <a href="#none">공유자료오디오04.mp3</a>
+                        <span>(10M)</span>
+                    </li>
+                </ul>
+                <div class="cont_preview_list">
+                    <div class="row gutter24">
+                        <ul class="col">
+                            <li class="col-3">
+                                <div class="data_cont">
+                                    <a href="#none" class="img">
+                                        <img src="../../resource/images/img/img_preview_recoding.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cont_title_area">
+                    <h4 class="sub_title">요약정보</h4>
+                </div>
+                <div class="cont_desc_info">
+                    한국 사회는 다문화 사회로 변화하고 있다. 특히 국제결혼의 지속적인 증가로 그 가정 자녀의 교육 기회는 새롭게 주목하여야 할 대상이다. 한국 사회에서 적지 않은 비중을 차지할 것으로 추정되는 국제결혼 가정의 자녀의 교육 기회는 매우 열악한 것으로 확인되었다. 그리고 그들에 대한 사회의 시선은 부정적이었고, 정부의 지원도 매우 미비함을 알 수 있었다. 국제결혼이 점차 증가하는 상황에서 이러한 격차는 성장 과정에 누적될 뿐만 아니라 새로운 사회문제로 대두될 수 있을 것이다. 따라서 다문화 교육이 시행되어야 하는 시점이다. 다문화 교육은 교육 기회의 보상적 배분을 통한 격차 해소와 더불어 다문화 이해 교육의 시행을 통한 평화적 공존 의식의 형성을 지향할 필요가 있다.
+                </div>
+
+                <div class="cont_title_area">
+                    <h4 class="sub_title">목차</h4>
+                </div>
+                <div class="cont_index_area">
+                    <div class="cont_index_box">
+                        [표지] <br>
+                        목차 <br>
+                        Ⅰ. 사회적 배제 및 포용의 개념과 해외 정책사례 5<br>
+                        1. 사회적 배제와 포용의 특성 및 개념 6<br>
+                        사회적 배제와 사회적 포용 6<br>
+                        사회적 배제 발생의 다층구조 7<br>
+                        2. 해외의 사회적 배제 및 포용 정책 9
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer_wrap">
+            <div class="inner">
+                <ul class="footer_top">
+                    <li><a href="#none">개인정보처리방침</a></li>
+                    <li><a href="#none">이메일수신거부</a></li>
+                    <li><a href="#none">문의하기</a></li>
+                </ul>
+                <div class="footer_info">
+                    <span class="footer_logo"><a href="#none">국회도서관</a></span>
+                    <div class="footer_inner">
+                        <div class="footer_address">
+                            <address class="address">서울특별시 중구 퇴계로27길 49 (저동2가, 센트럴에쓰 3층)</address>
+                            <p class="copy">COPYRIGHT ⓒ 지식공유 플랫폼. ALLRIGHT RESERVED.</p> 
+                        </div>
+                        <ul class="footer_tel">
+                            <li><span>대표번호</span> 02 3456 7890</li>
+                            <li><span>이메일</span> email@email.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- javascript -->
+    <script src="../../resource/js/lib/jquery/jquery-1.12.3.js"></script>
+    <script src="../../resource/js/lib/jquery/jquery.scrolla.js"></script>
+    <script src="../../resource/js/lib/jquery/jquery-ui.js"></script>
+    <script src="../../resource/js/lib/swiper/swiper.min.js"></script>
+    <script src="../../resource/js/lib/tweenmax/gsap.min.js"></script>
+    <script src="../../resource/js/ui.common.js"></script>
+    <script>
+        tabMenu('#tabList01','#tabCont01')
+    </script>
+ </body>
+</html>

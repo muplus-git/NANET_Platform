@@ -38,7 +38,21 @@ html.lnb_open,body.lnb_open{overflow: hidden;touch-action: none;}
 .icons.i_m_search:before{background-image:url('../images/icons/ico_m_search.png');width:24rem;height:24rem;}
 .icons.i_m_gnb:before{background-image:url('../images/icons/ico_m_gnb.png');width:24rem;height:24rem;}
 .icons.i_pop_close:before{background-image:url('../images/icons/ico_pop_close.png');width:20rem;height:20rem;}
-
+.icons.i_loaction_home:before{background-image:url('../images/icons/ico_location_home.png');width:16rem;height:16rem;}
+.icons.i_notice_list:before{background-image:url('../images/icons/ico_notice_list.png');width:24rem;height:24rem;}
+.icons.i_notice_album:before{background-image:url('../images/icons/ico_notice_album.png');width:24rem;height:24rem;}
+.icons.i_view:before{background-image:url('../images/icons/ico_view.png');width:16rem;height:16rem;}
+.icons.i_bookmark:before{background-image:url('../images/icons/ico_bookmark.png');width:16rem;height:16rem;}
+.icons.i_word_delete:before{background-image:url('../images/icons/ico_word_delete.png');width:16rem;height:16rem;}
+.icons.i_search_filter:before{background-image:url('../images/icons/ico_search_filter.png');width:24rem;height:24rem;}
+.icons.i_calendar:before{background-image:url('../images/icons/ico_calender.png');width:16rem;height:16rem;}
+.icons.i_paging_first:before{background-image: url('../images/icons/ico_paging_first.png');width:16rem;height: 16rem;}
+.icons.i_paging_prev:before{background-image: url('../images/icons/ico_paging_prev.png');width:16rem;height: 16rem;}
+.icons.i_paging_next:before{background-image: url('../images/icons/ico_paging_next.png');width:16rem;height: 16rem;}
+.icons.i_paging_last:before{background-image: url('../images/icons/ico_paging_last.png');width:16rem;height: 16rem;}
+.icons.i_download:before{background-image: url('../images/icons/ico_down.png');width:16rem;height: 16rem;}
+.icons.i_preview_link:before{background-image: url('../images/icons/ico_preview_link.png');width:16rem;height: 16rem;}
+.icons.i_link:before{background-image: url('../images/icons/ico_link.png');width:16rem;height: 16rem;}
 /**********
     COMMON
 ***********/
@@ -58,8 +72,16 @@ html.lnb_open,body.lnb_open{overflow: hidden;touch-action: none;}
 /* TITLE */
 
 
-/* TOTAL */
-
+/* LOCATION */
+.location_area{border-bottom:1px solid #DFDFDF;border-top:1px solid #DFDFDF}
+.location_list{display:inline-flex;border-right:1px solid #dfdfdf;border-left:1px solid #dfdfdf;}
+.location_list>li{min-width:200rem;position:relative;}
+.location_list>li+li{border-left:1px solid #dfdfdf;}
+.location_list>li:first-child{min-width:45rem;}
+.location_list>li:first-child:after{display:none;}
+.location_list .home{display:flex;width:45rem;height:45rem;box-sizing: border-box;align-items: center;justify-content: center;}
+.location_list>li>a{display:block;height:45rem;color:#666;font-size:13rem;padding:13rem 20rem;box-sizing: border-box;}
+.location_list>li:after{content:"";position:absolute;top:13rem;right:20rem;width:9rem;height:9rem;border-top:1px solid #444;border-right:1px solid #444;transform: rotate(135deg);z-index:-1;}
 
 /* CHK */
 .chk{display:inline-block;}
@@ -68,6 +90,7 @@ html.lnb_open,body.lnb_open{overflow: hidden;touch-action: none;}
 .chk label{position:relative;color: #444;font-size:16rem;cursor:pointer;padding-left:25rem;}
 .chk label:before{content:"";position:absolute;top:2rem;left:0;width:16rem;height:16rem;background:url('../images/icons/ico_chk_off.png') no-repeat 50%;background-size:100%;}
 
+/* RDO */
 .rdo_area{display:inline-flex;margin-left:15rem;border:1px solid #DFDFDF;border-radius:5px;overflow:hidden;}
 .rdo+.rdo label{border-left:1px solid #DFDFDF;}
 .rdo input[type="radio"]{display:none;}
@@ -84,12 +107,31 @@ html.lnb_open,body.lnb_open{overflow: hidden;touch-action: none;}
 .datepicker_area .ui-datepicker-trigger img{vertical-align:initial;}
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next{top:10rem}
 
+/* PAGING */
+.paging_wrap{margin-top:40rem;}
+.paging_wrap .paging_area{display:flex;align-items: center;align-items: center;justify-content: center;}
+.paging_wrap .paging_area .icons{vertical-align: -2px;}
+.paging_wrap .paging{color: #999999;font-size:13rem;border:1px solid #fff;}
+.paging_wrap a{display:inline-flex;border-radius: 5px;box-sizing: border-box;width:28rem;height:28rem;transition: all .1s;margin:0 2px;justify-content: center;align-items: center;}
+.paging_wrap .paging:hover,
+.paging_wrap .paging.active{color:#fff;background-color:#ADA49F;border-color:#ADA49F;}
+.paging_wrap .first,
+.paging_wrap .prev,
+.paging_wrap .next,
+.paging_wrap .last{border:1px solid #DADADA;vertical-align: -1px;}
+
+/* FLEXROW */
+.flex_row{display:flex;align-items: center;}
+.flex_row.between{justify-content:space-between;}
+
 /* ROW LIST */
 .row>.col{display:flex;flex-wrap: wrap;}
 .row>.col>li{box-sizing:border-box;}
 
 .row.gutter24>.col{margin:0 -12rem;}
+.row.gutter16>.col{margin:-8rem -8rem;}
 .row.gutter24>.col>li{padding:0 12rem;}
+.row.gutter16>.col>li{padding:8rem 8rem;}
 
 .col-12{ width:100% }
 .col-11{ width:91.66666667% }
@@ -143,7 +185,7 @@ html.lnb_open,body.lnb_open{overflow: hidden;touch-action: none;}
 /**********
     FOOTER
 ***********/
-#footer_wrap{padding:40rem 0;}
+#footer_wrap{padding:40rem 0;border-top:1px solid #EEEEEE;}
 #footer_wrap .footer_top{display:flex;}
 #footer_wrap .footer_top>li{position:relative;}
 #footer_wrap .footer_top>li+li{padding-left:12rem;margin-left:12rem;}
@@ -181,3 +223,8 @@ html.lnb_open,body.lnb_open{overflow: hidden;touch-action: none;}
 .pop_detail_search table{width:100%;}
 .pop_detail_search table tbody th{color:#444;font-size:14rem;font-weight:800;text-align: left;padding:8rem 0;}
 .pop_detail_search table tbody td{padding:8rem 0;}
+.layerpop_msg{text-align:center;color:#000;font-size:16rem;line-height:1.5;font-weight:bold;padding:15rem 0;}
+.layerpop_btn_area{display:flex;flex:1;}
+.layerpop_btn_area .lbtn{color:#fff;flex:1;font-size:14rem;padding:14rem 0;}
+.layerpop_btn_area .lbtn.c-type01{background-color:#ADA49F;}
+.layerpop_btn_area .lbtn.c-type02{background-color:#FF7654;}
