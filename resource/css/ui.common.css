@@ -111,6 +111,8 @@ html.lnb_open,body.lnb_open{overflow: hidden;touch-action: none;}
 
 /* PAGING */
 .paging_wrap{margin-top:40rem;position:relative;}
+.paging_wrap .paging_total{position:absolute;top:4rem;left:0;color:#444;font-size:14rem;}
+.paging_wrap .paging_total strong{font-weight:800;color:#F85C3A;}
 .paging_wrap .paging_area{display:flex;align-items: center;align-items: center;justify-content: center;}
 .paging_wrap .paging_area .icons{vertical-align: -2px;}
 .paging_wrap .paging{color: #999999;font-size:13rem;border:1px solid #fff;}
