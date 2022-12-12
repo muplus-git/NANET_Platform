@@ -158,3 +158,13 @@
 .total_search_list.label.card .data_type{position:absolute;top:15rem;right:15rem;left:auto;transform: translateY(0);z-index:10;}
 .total_search_list.label.card .search_img{height:200rem;border-radius:10px;}
 .total_search_list.label.card .etc{display:flex;align-items:center;justify-content:space-between;padding:12rem 0;}
+/* 발간물 상세 */
+.detail_cont_wrap{display:flex;margin-top:15rem;padding-bottom:40rem;border-bottom:1px solid #dfdfdf;}
+.detail_cont_wrap .detail_img{width:200rem;}
+.detail_cont_wrap .detail_info{width:calc(100% - 230rem);margin-left:30rem;}
+.detail_cont_wrap .detail_info .title{margin-top:8rem;color:#000;font-size:18rem;font-weight:800;}
+.detail_cont_wrap .detail_info .desc{margin-top:10rem;color:#444;font-size:14rem;line-height:1.5;}
+.detail_cont_wrap .detail_info .info{margin-top:40rem;}
+.detail_cont_wrap .detail_info .info>li+li{margin-top:10rem;}
+.detail_cont_wrap .detail_info .info span{display:inline-block;width:70rem;color:#666;font-size:14rem;}
+.detail_cont_wrap .detail_info .info strong{color:#444;font-size:14rem;}

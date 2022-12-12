@@ -53,6 +53,11 @@ html.lnb_open,body.lnb_open{overflow: hidden;touch-action: none;}
 .icons.i_download:before{background-image: url('../images/icons/ico_down.png');width:16rem;height: 16rem;}
 .icons.i_preview_link:before{background-image: url('../images/icons/ico_preview_link.png');width:16rem;height: 16rem;}
 .icons.i_link:before{background-image: url('../images/icons/ico_link.png');width:16rem;height: 16rem;}
+.icons.i_selec_arrow:before{background-image: url('../images/icons/ico_selec_arrow.png');width:20rem;height: 20rem;}
+.icons.i_pdf:before{background-image: url('../images/icons/ico_pdf.png');width:20rem;height: 20rem;}
+.icons.i_viewer:before{background-image: url('../images/icons/ico_viewer.png');width:20rem;height: 20rem;}
+.icons.i_d_link:before{background-image: url('../images/icons/ico_d_link.png');width:20rem;height: 20rem;}
+.icons.i_f_link:before{background-image: url('../images/icons/ico_f_link.png');width:20rem;height: 20rem;}
 /**********
     COMMON
 ***********/
@@ -90,7 +95,7 @@ html.lnb_open,body.lnb_open{overflow: hidden;touch-action: none;}
 .chk input[type="checkbox"]{display:none;}
 .chk input[type="checkbox"]:checked+label:before{background:url('../images/icons/ico_chk_on.png') no-repeat 50%;background-size:100%;}
 .chk label{position:relative;color: #444;font-size:16rem;cursor:pointer;padding-left:25rem;}
-.chk label:before{content:"";position:absolute;top:2rem;left:0;width:16rem;height:16rem;background:url('../images/icons/ico_chk_off.png') no-repeat 50%;background-size:100%;}
+.chk label:before{content:"";position:absolute;top:50%;left:0;width:16rem;height:16rem;background:url('../images/icons/ico_chk_off.png') no-repeat 50%;background-size:100%;transform: translateY(-50%);}
 
 /* RDO */
 .rdo_area{display:inline-flex;margin-left:15rem;border:1px solid #DFDFDF;border-radius:5px;overflow:hidden;}
@@ -139,6 +144,33 @@ html.lnb_open,body.lnb_open{overflow: hidden;touch-action: none;}
 .data_type.c-type07{border: 1px solid #6F8090;color:#6F8090;}
 .data_type.c-type08{border: 1px solid #604242;color:#604242;}
 .data_type.c-type09{border: 1px solid #3C9792;color:#3C9792;}
+
+/* MULTISELECT */
+.multiselec_wrap{display:flex;}
+.multiselec_wrap .form_label{margin-top:5rem;}
+.multiselec_area{display:inline-block;}
+.multiselec_area+.multiselec_area{margin-left:12rem;}
+.multiselec_box{position:relative;display:inline-block;width:320rem;background: #FFFFFF;border: 1px solid #DFDFDF;border-radius: 5px;padding:10rem 15rem;box-sizing:border-box;}
+.multiselec_box .i_selec_arrow{position:absolute;top:0;right:20rem;cursor:pointer;padding:11rem 0;}
+.multiselec_box>.chk>label{font-size:14rem;color:#000;font-weight:800;}
+.multiselec_box .multiselec_list{display:none;position:absolute;top:42rem;left:-2px;right:-2px;background-color: #FFFFFF;border: 1px solid #DFDFDF;box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);border-radius: 5px;padding:15rem 16rem;z-index:5;}
+.multiselec_box .multiselec_list.on{display:block;}
+.multiselec_box .multiselec_list>li+li{margin-top:10rem;}
+.multiselec_box .multiselec_list .chk label{font-size:13rem;}
+.multiselec_item span{display:inline-block;margin-top:5rem;color: #F85C3A;font-size:13rem;}
+
+/* FORM_SEARCH */
+.form_search_wrap{background: #F6F6F6;border-radius: 10px;padding:25rem 25rem;margin-bottom:25rem;}
+.form_label{display:inline-block;color:#444;font-size:14rem;margin-right:20rem;}
+
+/* TABLE */
+.tbl_style01{width:100%;border-top:2px solid #403F3D;margin-top:15rem;table-layout:fixed;}
+.tbl_style01 thead th{height:50rem;color:#444;font-size:14rem;font-weight:800;background-color:#F6F6F6;}
+.tbl_style01 tbody td{height:60rem;color:#666;font-size:14rem;text-align:center;border-bottom:1px solid #DFDFDF;}
+.tbl_style01 tbody td.subject{overflow:hidden;text-align:left;}
+.tbl_style01 tbody td.subject a{display:inline-block;max-width:100%;color:#000;font-size:16rem;font-weight:800;text-overflow: ellipsis;white-space: nowrap;overflow:hidden;}
+.tbl_style01 tbody td.subject a:hover{text-decoration:underline;}
+.tbl_style01 tbody td .link a{padding:0 5rem;}
 
 /* ROW LIST */
 .row>.col{display:flex;flex-wrap: wrap;}

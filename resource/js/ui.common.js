@@ -7,6 +7,7 @@ $(function(){
     gnbMymenu();
     asideMenu();
     noticeTypeBtn();
+    multiSelec();
 })
 
 $(window).load(function(){
@@ -182,5 +183,10 @@ function noticeTypeBtn(){
 
     btnAlbum.on('click',function(){
         searchList.addClass('card');
+    });
+}
+function multiSelec(){
+    $('.multiselec_box .i_selec_arrow').on('click',function(){
+        $(this).next('ul').toggleClass('on');
     });
 }
