@@ -6,6 +6,7 @@ $(function(){
     mobilemenuFunc();
     gnbMymenu();
     asideMenu();
+    noticeTypeBtn();
 })
 
 $(window).load(function(){
@@ -163,4 +164,23 @@ function asideMenu(){
         element.children("ul").slideToggle(200);
     });
 
+}
+
+function noticeTypeBtn(){
+    var btn = $('.notice_option button'),
+        btnList = $('.notice_option .list'),
+        btnAlbum = $('.notice_option .album'),
+        searchList = $('.total_search_list');
+
+    btn.on('click',function(){
+        btn.removeClass('on');
+        $(this).addClass('on');
+    });
+    btnList.on('click',function(){
+        searchList.removeClass('card');
+    });
+
+    btnAlbum.on('click',function(){
+        searchList.addClass('card');
+    });
 }
