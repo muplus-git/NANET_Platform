@@ -72,11 +72,28 @@
     #header_wrap .header_etc{display:none;}
     #main_wrap{padding:60rem 0 100rem 0;}
 
+    .location_area .inner{padding:0;}
+    .location_list{display:flex;}
+    .location_list>li+li{flex: 1;}
+
     .main_sec_visual{height:700rem;}
     .main_inner.reverse .img{margin-left:-20rem;}
     .main_intro_tab .intro_list{width:100%;}
     .main_intro_tab .intro_img{display:none;}
     .main_intro_tab .intro_list>li.on>a .img{display:block;width:420rem;height:330rem;margin:25rem auto 0;}
+
+     /**********
+    통합검색
+    ***********/
+    .total_search_wrap{padding:0;margin-top:0;}
+    .total_search_menu{position: relative;width:100%;padding:17rem 0 27rem 0;display:flex;justify-content: space-between;align-items: center;}
+    .total_search_menu:before{content:"";position:absolute;bottom:0;left:-20rem;right:-20rem;height:9rem;background-color:#F6F6F6;border-top:1px solid #EEEEEE;}
+    .total_search_menu .menu_list{display:none;}
+    .total_search_word{display:none;}
+    .total_search_top{position:relative;padding:13rem 0;}
+    .total_search_top:before{content:"";position:absolute;bottom:-10rem;left:-20rem;right:-20rem;height:9rem;background-color:#F6F6F6;border-top:1px solid #EEEEEE;}
+    .total_search_title~.total_search_title:before{content:"";position:absolute;top:-34rem;left:-20rem;right:-20rem;height:9rem;background-color:#F6F6F6;border-top:1px solid #EEEEEE;}
+    .total_search_menu .search_menu_btn{display:block;}
 
 
 }/* 1023px */
@@ -101,6 +118,8 @@
     .col-md-2{ width:16.66666667% }
     .col-md-1{ width:8.33333333% }
 
+    #main_wrap{padding:60rem 0 60rem 0;}
+
     #footer_wrap{padding:20rem 0;}
     #footer_wrap .footer_inner{margin-top:15rem;justify-content: space-between;}
     #footer_wrap .footer_logo{position: static;}
@@ -122,6 +141,18 @@
     .main_sec_banner{display:block;text-align: center;}
     .main_sec_banner .banner_link{margin-top:50rem;}
     .mask02{background-size:cover;}
+
+    /**********
+    통합검색
+    ***********/
+    /* 통합검색 상세 */
+    .cont_header_area{margin:20rem 0 15rem 0;}
+    .cont_preview_list .row.gutter24>.col{margin:-8rem -8rem;}
+    .cont_preview_list .row.gutter24>.col>li{padding:8rem 8rem;}
+    .cont_info_tbl{padding:20rem 15rem;}
+    .cont_info_tbl table th,
+    .cont_info_tbl table td{display:block;width:100%;}
+    .total_search_list.card>li{width:50%;}
 
 
 }/* 860px */
@@ -196,5 +227,34 @@
     .main_sec_banner .banner_intro h2{font-size:32rem;margin-top:20rem;}
     .m_br{display:block;}
     .main_sec_banner .banner_link a{font-size:18rem;}
+
+    /**********
+    통합검색
+    ***********/
+    .total_search_top_area{padding:35rem 0;}
+    .total_search_tags{margin:-4rem -4rem;}
+    .total_search_tags a{padding:4rem;}
+    .total_search_result{margin-top:20rem;}
+    .total_search_inpt{width:calc(100% - 62rem);padding:0 45rem 0 15rem;}
+    .total_search_inpt button{padding:0 10rem;}
+    .total_search_box .detail{font-size:0;padding:15rem 15rem;margin-left:8rem;}
+    .total_search_box .detail i{margin-right:0;}
+    .total_search_list .search_box{display:block;}
+    .total_search_list .info{display:block;}
+    .total_search_list .info>li+li{margin-left:0;margin-top:8rem;}
+    .total_search_list .search_box .etc{margin-left:0;text-align:right;}
+    /* 통합검색 상세 */
+    .cont_down_list{padding:15rem 15rem;}
+    .cont_down_list>li{display:block;position:relative;overflow:hidden;padding:0 40rem 0 25rem;}
+    .cont_down_list>li>i{position:absolute;top:3rem;left:0;}
+    .cont_down_list span{position:absolute;top:0;right:0;}
+    .cont_down_list a{max-width:100%;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;margin-left:0;}
+    .cont_preview_list .row.gutter24>.col{margin:-4rem -4rem;}
+    .cont_preview_list .row.gutter24>.col>li{padding:4rem 4rem;}
+    .cont_preview_list .data_cont .img{position:relative;width:100%;height:200rem;overflow:hidden;}
+    .cont_preview_list .data_cont .img img{position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);object-fit:cover;width:100%;height: 100%;}
+    .cont_preview_list .data_cont .img.mov:before{z-index:5;}
+    .total_search_list.card>li{width:100%;}
+
 
 }/* 540px */

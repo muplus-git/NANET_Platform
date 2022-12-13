@@ -8,6 +8,7 @@ $(function(){
     asideMenu();
     noticeTypeBtn();
     multiSelec();
+    searchLnbMenu();
 })
 
 $(window).load(function(){
@@ -188,5 +189,18 @@ function noticeTypeBtn(){
 function multiSelec(){
     $('.multiselec_box .i_selec_arrow').on('click',function(){
         $(this).next('ul').toggleClass('on');
+    });
+}
+
+function searchLnbMenu(){
+    $('.search_menu_btn').on('click',function(){
+        $('.lnb_dim').toggleClass('on');
+        $('.search_menu_lnb').toggleClass('on');
+        $('body,html').toggleClass('lnb_open');
+    });
+    $('.search_menu_lnb .lnb_close,.lnb_dim').on('click',function(){
+        $('.lnb_dim').removeClass('on');
+        $('.search_menu_lnb').removeClass('on');
+        $('body,html').removeClass('lnb_open');
     });
 }

@@ -58,11 +58,13 @@ html.lnb_open,body.lnb_open{overflow: hidden;touch-action: none;}
 .icons.i_viewer:before{background-image: url('../images/icons/ico_viewer.png');width:20rem;height: 20rem;}
 .icons.i_d_link:before{background-image: url('../images/icons/ico_d_link.png');width:20rem;height: 20rem;}
 .icons.i_f_link:before{background-image: url('../images/icons/ico_f_link.png');width:20rem;height: 20rem;}
+.icons.i_search_menu:before{background-image: url('../images/icons/ico_search_menu.png');width:24rem;height: 24rem;}
+.icons.i_lnb_close:before{background-image: url('../images/icons/ico_i_lnb_close.png');width:20rem;height: 20rem;}
 /**********
     COMMON
 ***********/
 /* BUTTON */
-.btn{display:inline-block;border-radius: 5px;font-size:13rem;padding:11rem 13rem;font-weight:bold;}
+.btn{display:inline-block;border-radius: 5px;font-size:14rem;padding:10rem 13rem;font-weight:bold;min-width:80rem;}
 .btn+.btn{margin-left:7px;}
 .btn.radius{border-radius: 30px;}
 .btn.c-type01{border:1px solid #F85C3A;color:#F85C3A;background-color:#fff;}
