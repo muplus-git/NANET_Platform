@@ -74,6 +74,7 @@
 
     .location_area .inner{padding:0;}
     .location_list{display:flex;}
+    .location_list>li{min-width:auto;}
     .location_list>li+li{flex: 1;}
 
     .main_sec_visual{height:700rem;}
@@ -94,6 +95,13 @@
     .total_search_top:before{content:"";position:absolute;bottom:-10rem;left:-20rem;right:-20rem;height:9rem;background-color:#F6F6F6;border-top:1px solid #EEEEEE;}
     .total_search_title~.total_search_title:before{content:"";position:absolute;top:-34rem;left:-20rem;right:-20rem;height:9rem;background-color:#F6F6F6;border-top:1px solid #EEEEEE;}
     .total_search_menu .search_menu_btn{display:block;}
+
+    /**********
+    공유자료
+    ***********/
+    .total_search_list.label.card>li{width:33.333%;}
+    .total_search_list.label.card .title{padding:10rem 0 0 0;}
+    .total_search_list.label.card .info{padding:0 0 20rem 0;}
 
 
 }/* 1023px */
@@ -153,6 +161,19 @@
     .cont_info_tbl table th,
     .cont_info_tbl table td{display:block;width:100%;}
     .total_search_list.card>li{width:50%;}
+    
+    /**********
+    공유자료
+    ***********/
+    .total_search_list.label .search_inner{padding-left:0;}
+    .total_search_list.label .data_type{position:static;transform:translateY(0)}
+    .total_search_list.label .title{display:block;margin-top:10rem;}
+    .total_search_list.label.card>li{width:50%;}
+    .multiselec_wrap{display:block;}
+    .multiselec_wrap .form_label{display:block;margin:0;margin-bottom:10rem;}
+    .multiselec_area{display:block;}
+    .multiselec_area+.multiselec_area{margin:0;margin-top:10rem;}
+    .multiselec_box{width:100%;}
 
 
 }/* 860px */
@@ -164,6 +185,8 @@
 
 
     html { font-size: 0.26666666666666665vw;}
+    .title_area{padding:20rem 0 15rem 0;}
+    .paging_wrap .paging_total{display:none;}
 
     .col-sd-12{ width:100% }
     .col-sd-11{ width:91.66666667% }
@@ -256,5 +279,31 @@
     .cont_preview_list .data_cont .img.mov:before{z-index:5;}
     .total_search_list.card>li{width:100%;}
 
+    /**********
+    공유자료
+    ***********/
+    .list_cont_top{display:block;}
+    .search_box_wrap{width:249rem;}
+    .notice_option{position:absolute;top:0;right:0;}
+    .list_top_option{margin-top:10rem;}
+    .total_search_list.label.card>li{width:100%;}
+    .form_search_wrap{padding:15rem;margin-bottom:20rem;}
+
+    /* 발간물 상세 */
+    .detail_cont_wrap{position:relative;display:block;border-bottom:0;}
+    .detail_cont_wrap:after{content:"";position:absolute;bottom:0;left:-20rem;right:-20rem;height:9rem;background-color:#F6F6F6;border-top:1px solid #EEEEEE;}
+    /* .detail_cont_wrap .detail_img{margin:0 auto;} */
+    .detail_cont_wrap .detail_info{width:100%;margin-left:0;margin-top:20rem;}
+    .detail_cont_wrap .detail_info .desc{line-height:1.7;}
+    .detail_cont_wrap .detail_info .info{margin-top:30rem;}
+    .detail_cont_wrap .detail_info .info>li{display:flex;}
+    .tbl_style01{table-layout: auto; border-collapse: collapse;}
+    .tbl_style01 thead{display:none;}
+    .tbl_style01 col{width:100% !important;}
+    .tbl_style01 tbody tr+tr{border-top:1px solid #DFDFDF;}
+    .tbl_style01 tbody td{display:block;width:100%;padding:8rem 0;}
+    .tbl_style01 tbody td{text-align:left;border-bottom:0;}
+    .tbl_style01 tbody td.subject a{white-space:normal;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;height: 27rem;}
+    .tbl_style01 tbody td .link{padding-bottom:15rem;margin:0 -5rem}
 
 }/* 540px */
