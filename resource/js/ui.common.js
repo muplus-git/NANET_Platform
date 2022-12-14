@@ -9,6 +9,7 @@ $(function(){
     noticeTypeBtn();
     multiSelec();
     searchLnbMenu();
+    bookBoxClose();
 })
 
 $(window).load(function(){
@@ -69,7 +70,8 @@ function tabMenu(e, cont) {
             tabCont.hide();
             var activeTabs = $(this).parent('li').attr('rel');
             $('#' + activeTabs).stop().fadeIn();
-            $(".nano").nanoScroller();
+            // $(".nano").nanoScroller();
+            // new Swiper('.swiper-container');
         });
     }
 
@@ -202,5 +204,11 @@ function searchLnbMenu(){
         $('.lnb_dim').removeClass('on');
         $('.search_menu_lnb').removeClass('on');
         $('body,html').removeClass('lnb_open');
+    });
+}
+
+function bookBoxClose(){
+    $('.book_detail .close').on('click',function(){
+        $(this).parents('.book_detail').hide();
     });
 }

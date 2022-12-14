@@ -1,0 +1,1611 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>프로젝트</title>
+  <!-- css -->
+  <link rel="stylesheet" href="../../resource/css/lib/swiper/swiper.min.css">
+  <link rel="stylesheet" href="../../resource/css/lib/animate/animate.css">
+  <link rel="stylesheet" href="../../resource/css/lib/jqueryUI/jquery-ui.css">
+  <link rel="stylesheet" href="../../resource/css/ui.reset.css">
+  <link rel="stylesheet" href="../../resource/css/ui.common.css">
+  <link rel="stylesheet" href="../../resource/css/ui.main.css">
+  <link rel="stylesheet" href="../../resource/css/ui.sub.css">
+  <link rel="stylesheet" href="../../resource/css/jwb.css">
+  <link rel="stylesheet" href="../../resource/css/ui.responsive.css">
+ </head>
+
+ <body>
+    
+    <div id="wrapper">
+
+        <header id="header_wrap">
+            <div class="inner">
+                <h1 class="logo"><a href="#none">국회도서관</a></h1>
+                <ul class="header_gnb">
+                    <li><a href="#none">공유자료</a></li>
+                    <li><a href="#none">참여기관</a></li>
+                    <li><a href="#none">이용안내</a></li>
+                </ul>
+                <div class="header_etc">
+                    <div class="header_search_box">
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <div class="option">
+                            <span class="search"><button><i class="icons i_gnb_search"></i></button></span>
+                            <span class="filter"><button onclick="popupFunc('popUp01')"><i class="icons i_gnb_filter"></i></button></span>
+                        </div>
+                    </div>
+                    <div class="header_user">
+                        <a href="#none" class="user login">
+                            <i class="icons i_user"></i>
+                            <span class="name"><strong>홍길동</strong> 님</span>
+                        </a>
+                        <ul class="user_menu">
+                            <li><a href="#none" class="mypage">마이페이지 <i class="icons i_mypage_arrow"></i></a></li>
+                            <li><a href="#none" class="logout">로그아웃 <i class="icons i_logout"></i></a></li>
+                        </ul>
+                    </div>
+                    <button class="btn_upload"><i class="icons i_upload"></i></button>
+                </div>
+                <div class="header_mobile">
+                    <button><i class="icons i_upload"></i></button>
+                    <button><i class="icons i_m_search"></i></button>
+                    <button><i class="icons i_m_gnb"></i></button>
+                </div>
+            </div>
+        </header>
+
+        <div id="main_wrap">
+            <div class="location_area">
+                <div class="inner">
+                    <ul class="location_list">
+                        <li><a href="#none" class="home"><i class="icons i_loaction_home"></i></a></li>
+                        <li>
+                            <a href="#none">통합검색</a>
+                            <ul style="display:none;">
+                                <li><a href="#none">통합검색</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">최신자료</a>
+                            <ul style="display:none;">
+                                <li><a href="#none">통합검색</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="inner animate" data-animate="fadeInUp" data-delay=".1s">
+                <div class="title_area">
+                    <h2 class="title">도서안내</h2>
+                </div>
+                <ul id="tabList01" class="tabs_design">
+                    <li rel="tab01-01" class="on"><a href="#none">국회도서관 추천도서</a></li>
+                    <li rel="tab01-02"><a href="#none">공공도서관 인기도서</a></li>
+                </ul>
+                <div id="tabCont01" class="book_info_wrap">
+                    <div id="tab01-01" class="active">
+                        <h3 class="title">금주의 신간</h3>
+                        <div class="book_list">
+                            <div id="swiper01" class="swiper-container">
+                                <ul id="tabList02" class="swiper-wrapper">
+                                    <li rel="tab02-01" class="swiper-slide">
+                                        <a href="#none" class="book_info">
+                                            <div class="img">
+                                                <img src="../../resource/images/img/img_book01.png" alt="">
+                                            </div>
+                                            <h4 class="title">불편한 편의점 : 김호연 장편소설</h4>
+                                        </a>
+                                    </li>
+                                    <li rel="tab02-02" class="swiper-slide">
+                                        <a href="#none" class="book_info">
+                                            <div class="img">
+                                                <img src="../../resource/images/img/img_book02.png" alt="">
+                                            </div>
+                                            <h4 class="title">'한 번 더'의 힘</h4>
+                                        </a>
+                                    </li>
+                                    <li rel="tab02-03" class="swiper-slide">
+                                        <a href="#none" class="book_info">
+                                            <div class="img">
+                                                <img src="../../resource/images/img/img_book03.png" alt="">
+                                            </div>
+                                            <h4 class="title">트렌드 코리아 2023</h4>
+                                        </a>
+                                    </li>
+                                    <li rel="tab02-04" class="swiper-slide">
+                                        <a href="#none" class="book_info">
+                                            <div class="img">
+                                                <img src="../../resource/images/img/img_book04.png" alt="">
+                                            </div>
+                                            <h4 class="title">복잡한 세상을 이기는 수학의 힘</h4>
+                                        </a>
+                                    </li>
+                                    <li rel="tab02-05" class="swiper-slide">
+                                        <a href="#none" class="book_info">
+                                            <div class="img">
+                                                <img src="../../resource/images/img/img_book05.png" alt="">
+                                            </div>
+                                            <h4 class="title">아버지의 해방일지</h4>
+                                        </a>
+                                    </li>
+                                    <li rel="tab02-05" class="swiper-slide">
+                                        <a href="#none" class="book_info">
+                                            <div class="img">
+                                                <img src="../../resource/images/img/img_book05.png" alt="">
+                                            </div>
+                                            <h4 class="title">아버지의 해방일지</h4>
+                                        </a>
+                                    </li>
+                                    <li rel="tab02-06" class="swiper-slide">
+                                        <a href="#none" class="book_info">
+                                            <div class="img">
+                                                <img src="../../resource/images/img/img_book05.png" alt="">
+                                            </div>
+                                            <h4 class="title">아버지의 해방일지</h4>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button id="swiper01_prev" class="slide_prev"><i class="icons i_slide_prev"></i></button>
+                            <button id="swiper01_next" class="slide_next"><i class="icons i_slide_next"></i></button>
+                        </div>
+                        <div id="tabCont02" class="book_detail_area">
+                            <div id="tab02-01" class="book_detail">
+                                <div class="detail_info">
+                                    <div class="img"><img src="../../resource/images/img/img_book_detail01.png" alt=""></div>
+                                    <div class="info_box">
+                                        <h4 class="title">불편한 편의점 : 김호연 장편 소설</h4>
+                                        <ul class="info">
+                                            <li>
+                                                <span>저자정보</span>
+                                                <em>김호연</em>
+                                            </li>
+                                            <li>
+                                                <span>출판사</span>
+                                                <em>나무옆의자</em>
+                                            </li>
+                                            <li>
+                                                <span>출판연월</span>
+                                                <em>2021</em>
+                                            </li>
+                                            <li>
+                                                <span>책소개</span>
+                                                <em>
+                                                    망원동 브라더스 의 작가 김호연의 '동네이야기' 시즌 2. 청파동 골목 모퉁이에 자리 잡은 작은 편의점을 무대로 힘겨운 시대를 살아가는 우리 이웃들의 삶의 속내와 희로애락을 따뜻하고 유머러스하게 담아냈다.
+                                                </em>
+                                            </li>
+                                        </ul>
+                                        <ul class="info_tbl">
+                                            <li>
+                                                <dl>
+                                                    <dt>ISBN</dt>
+                                                    <dd>9791161571188</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Vol</dt>
+                                                    <dd>-</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>주제분야</dt>
+                                                    <dd>813.7<br>[문학>한국문학>소설]</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>총 대출건수</dt>
+                                                    <dd>56,474</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <div class="keyword">
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="close"><i class="icons i_detail_close"></i></button>
+                            </div>
+                            <div id="tab02-02" class="book_detail">
+                                <div class="detail_info">
+                                    <div class="img"><img src="../../resource/images/img/img_book_detail01.png" alt=""></div>
+                                    <div class="info_box">
+                                        <h4 class="title">불편한 편의점 : 김호연 장편 소설</h4>
+                                        <ul class="info">
+                                            <li>
+                                                <span>저자정보</span>
+                                                <em>김호연</em>
+                                            </li>
+                                            <li>
+                                                <span>출판사</span>
+                                                <em>나무옆의자</em>
+                                            </li>
+                                            <li>
+                                                <span>출판연월</span>
+                                                <em>2021</em>
+                                            </li>
+                                            <li>
+                                                <span>책소개</span>
+                                                <em>
+                                                    망원동 브라더스 의 작가 김호연의 '동네이야기' 시즌 2. 청파동 골목 모퉁이에 자리 잡은 작은 편의점을 무대로 힘겨운 시대를 살아가는 우리 이웃들의 삶의 속내와 희로애락을 따뜻하고 유머러스하게 담아냈다.
+                                                </em>
+                                            </li>
+                                        </ul>
+                                        <ul class="info_tbl">
+                                            <li>
+                                                <dl>
+                                                    <dt>ISBN</dt>
+                                                    <dd>9791161571188</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Vol</dt>
+                                                    <dd>-</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>주제분야</dt>
+                                                    <dd>813.7 [문학>한국문학>소설]</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>총 대출건수</dt>
+                                                    <dd>56,474</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <div class="keyword">
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="close"><i class="icons i_detail_close"></i></button>
+                            </div>
+                            <div id="tab02-03" class="book_detail">
+                                <div class="detail_info">
+                                    <div class="img"><img src="../../resource/images/img/img_book_detail01.png" alt=""></div>
+                                    <div class="info_box">
+                                        <h4 class="title">불편한 편의점 : 김호연 장편 소설</h4>
+                                        <ul class="info">
+                                            <li>
+                                                <span>저자정보</span>
+                                                <em>김호연</em>
+                                            </li>
+                                            <li>
+                                                <span>출판사</span>
+                                                <em>나무옆의자</em>
+                                            </li>
+                                            <li>
+                                                <span>출판연월</span>
+                                                <em>2021</em>
+                                            </li>
+                                            <li>
+                                                <span>책소개</span>
+                                                <em>
+                                                    망원동 브라더스 의 작가 김호연의 '동네이야기' 시즌 2. 청파동 골목 모퉁이에 자리 잡은 작은 편의점을 무대로 힘겨운 시대를 살아가는 우리 이웃들의 삶의 속내와 희로애락을 따뜻하고 유머러스하게 담아냈다.
+                                                </em>
+                                            </li>
+                                        </ul>
+                                        <ul class="info_tbl">
+                                            <li>
+                                                <dl>
+                                                    <dt>ISBN</dt>
+                                                    <dd>9791161571188</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Vol</dt>
+                                                    <dd>-</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>주제분야</dt>
+                                                    <dd>813.7 [문학>한국문학>소설]</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>총 대출건수</dt>
+                                                    <dd>56,474</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <div class="keyword">
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="close"><i class="icons i_detail_close"></i></button>
+                            </div>
+                            <div id="tab02-04" class="book_detail">
+                                <div class="detail_info">
+                                    <div class="img"><img src="../../resource/images/img/img_book_detail01.png" alt=""></div>
+                                    <div class="info_box">
+                                        <h4 class="title">불편한 편의점 : 김호연 장편 소설</h4>
+                                        <ul class="info">
+                                            <li>
+                                                <span>저자정보</span>
+                                                <em>김호연</em>
+                                            </li>
+                                            <li>
+                                                <span>출판사</span>
+                                                <em>나무옆의자</em>
+                                            </li>
+                                            <li>
+                                                <span>출판연월</span>
+                                                <em>2021</em>
+                                            </li>
+                                            <li>
+                                                <span>책소개</span>
+                                                <em>
+                                                    망원동 브라더스 의 작가 김호연의 '동네이야기' 시즌 2. 청파동 골목 모퉁이에 자리 잡은 작은 편의점을 무대로 힘겨운 시대를 살아가는 우리 이웃들의 삶의 속내와 희로애락을 따뜻하고 유머러스하게 담아냈다.
+                                                </em>
+                                            </li>
+                                        </ul>
+                                        <ul class="info_tbl">
+                                            <li>
+                                                <dl>
+                                                    <dt>ISBN</dt>
+                                                    <dd>9791161571188</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Vol</dt>
+                                                    <dd>-</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>주제분야</dt>
+                                                    <dd>813.7 [문학>한국문학>소설]</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>총 대출건수</dt>
+                                                    <dd>56,474</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <div class="keyword">
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="close"><i class="icons i_detail_close"></i></button>
+                            </div>
+                            <div id="tab02-05" class="book_detail">
+                                <div class="detail_info">
+                                    <div class="img"><img src="../../resource/images/img/img_book_detail01.png" alt=""></div>
+                                    <div class="info_box">
+                                        <h4 class="title">불편한 편의점 : 김호연 장편 소설</h4>
+                                        <ul class="info">
+                                            <li>
+                                                <span>저자정보</span>
+                                                <em>김호연</em>
+                                            </li>
+                                            <li>
+                                                <span>출판사</span>
+                                                <em>나무옆의자</em>
+                                            </li>
+                                            <li>
+                                                <span>출판연월</span>
+                                                <em>2021</em>
+                                            </li>
+                                            <li>
+                                                <span>책소개</span>
+                                                <em>
+                                                    망원동 브라더스 의 작가 김호연의 '동네이야기' 시즌 2. 청파동 골목 모퉁이에 자리 잡은 작은 편의점을 무대로 힘겨운 시대를 살아가는 우리 이웃들의 삶의 속내와 희로애락을 따뜻하고 유머러스하게 담아냈다.
+                                                </em>
+                                            </li>
+                                        </ul>
+                                        <ul class="info_tbl">
+                                            <li>
+                                                <dl>
+                                                    <dt>ISBN</dt>
+                                                    <dd>9791161571188</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Vol</dt>
+                                                    <dd>-</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>주제분야</dt>
+                                                    <dd>813.7 [문학>한국문학>소설]</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>총 대출건수</dt>
+                                                    <dd>56,474</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <div class="keyword">
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="close"><i class="icons i_detail_close"></i></button>
+                            </div>
+                            <div id="tab02-06" class="book_detail">
+                                <div class="detail_info">
+                                    <div class="img"><img src="../../resource/images/img/img_book_detail01.png" alt=""></div>
+                                    <div class="info_box">
+                                        <h4 class="title">불편한 편의점 : 김호연 장편 소설</h4>
+                                        <ul class="info">
+                                            <li>
+                                                <span>저자정보</span>
+                                                <em>김호연</em>
+                                            </li>
+                                            <li>
+                                                <span>출판사</span>
+                                                <em>나무옆의자</em>
+                                            </li>
+                                            <li>
+                                                <span>출판연월</span>
+                                                <em>2021</em>
+                                            </li>
+                                            <li>
+                                                <span>책소개</span>
+                                                <em>
+                                                    망원동 브라더스 의 작가 김호연의 '동네이야기' 시즌 2. 청파동 골목 모퉁이에 자리 잡은 작은 편의점을 무대로 힘겨운 시대를 살아가는 우리 이웃들의 삶의 속내와 희로애락을 따뜻하고 유머러스하게 담아냈다.
+                                                </em>
+                                            </li>
+                                        </ul>
+                                        <ul class="info_tbl">
+                                            <li>
+                                                <dl>
+                                                    <dt>ISBN</dt>
+                                                    <dd>9791161571188</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Vol</dt>
+                                                    <dd>-</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>주제분야</dt>
+                                                    <dd>813.7 [문학>한국문학>소설]</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>총 대출건수</dt>
+                                                    <dd>56,474</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <div class="keyword">
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="close"><i class="icons i_detail_close"></i></button>
+                            </div>
+                        </div>
+
+                        <h3 class="title">금주의 서평</h3>
+                        <div class="book_list">
+                            <div id="swiper02" class="swiper-container">
+                                <ul id="tabList03" class="swiper-wrapper">
+                                    <li rel="tab03-01" class="swiper-slide">
+                                        <a href="#none" class="book_info">
+                                            <div class="img">
+                                                <img src="../../resource/images/img/img_book01.png" alt="">
+                                            </div>
+                                            <h4 class="title">불편한 편의점 : 김호연 장편소설</h4>
+                                        </a>
+                                    </li>
+                                    <li rel="tab03-02" class="swiper-slide">
+                                        <a href="#none" class="book_info">
+                                            <div class="img">
+                                                <img src="../../resource/images/img/img_book02.png" alt="">
+                                            </div>
+                                            <h4 class="title">'한 번 더'의 힘</h4>
+                                        </a>
+                                    </li>
+                                    <li rel="tab03-03" class="swiper-slide">
+                                        <a href="#none" class="book_info">
+                                            <div class="img">
+                                                <img src="../../resource/images/img/img_book03.png" alt="">
+                                            </div>
+                                            <h4 class="title">트렌드 코리아 2023</h4>
+                                        </a>
+                                    </li>
+                                    <li rel="tab03-04" class="swiper-slide">
+                                        <a href="#none" class="book_info">
+                                            <div class="img">
+                                                <img src="../../resource/images/img/img_book04.png" alt="">
+                                            </div>
+                                            <h4 class="title">복잡한 세상을 이기는 수학의 힘</h4>
+                                        </a>
+                                    </li>
+                                    <li rel="tab03-05" class="swiper-slide">
+                                        <a href="#none" class="book_info">
+                                            <div class="img">
+                                                <img src="../../resource/images/img/img_book05.png" alt="">
+                                            </div>
+                                            <h4 class="title">아버지의 해방일지</h4>
+                                        </a>
+                                    </li>
+                                    <li rel="tab03-06" class="swiper-slide">
+                                        <a href="#none" class="book_info">
+                                            <div class="img">
+                                                <img src="../../resource/images/img/img_book05.png" alt="">
+                                            </div>
+                                            <h4 class="title">아버지의 해방일지</h4>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button id="swiper02_prev" class="slide_prev"><i class="icons i_slide_prev"></i></button>
+                            <button id="swiper02_next" class="slide_next"><i class="icons i_slide_next"></i></button>
+                        </div>
+                        <div id="tabCont03" class="book_detail_area">
+                            <div id="tab03-01" class="book_detail">
+                                <div class="detail_info">
+                                    <div class="img"><img src="../../resource/images/img/img_book_detail01.png" alt=""></div>
+                                    <div class="info_box">
+                                        <h4 class="title">불편한 편의점 : 김호연 장편 소설</h4>
+                                        <ul class="info">
+                                            <li>
+                                                <span>저자정보</span>
+                                                <em>김호연</em>
+                                            </li>
+                                            <li>
+                                                <span>출판사</span>
+                                                <em>나무옆의자</em>
+                                            </li>
+                                            <li>
+                                                <span>출판연월</span>
+                                                <em>2021</em>
+                                            </li>
+                                            <li>
+                                                <span>책소개</span>
+                                                <em>
+                                                    망원동 브라더스 의 작가 김호연의 '동네이야기' 시즌 2. 청파동 골목 모퉁이에 자리 잡은 작은 편의점을 무대로 힘겨운 시대를 살아가는 우리 이웃들의 삶의 속내와 희로애락을 따뜻하고 유머러스하게 담아냈다.
+                                                </em>
+                                            </li>
+                                        </ul>
+                                        <ul class="info_tbl">
+                                            <li>
+                                                <dl>
+                                                    <dt>ISBN</dt>
+                                                    <dd>9791161571188</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Vol</dt>
+                                                    <dd>-</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>주제분야</dt>
+                                                    <dd>813.7<br>[문학>한국문학>소설]</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>총 대출건수</dt>
+                                                    <dd>56,474</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <div class="keyword">
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="close"><i class="icons i_detail_close"></i></button>
+                            </div>
+                            <div id="tab03-02" class="book_detail">
+                                <div class="detail_info">
+                                    <div class="img"><img src="../../resource/images/img/img_book_detail01.png" alt=""></div>
+                                    <div class="info_box">
+                                        <h4 class="title">불편한 편의점 : 김호연 장편 소설</h4>
+                                        <ul class="info">
+                                            <li>
+                                                <span>저자정보</span>
+                                                <em>김호연</em>
+                                            </li>
+                                            <li>
+                                                <span>출판사</span>
+                                                <em>나무옆의자</em>
+                                            </li>
+                                            <li>
+                                                <span>출판연월</span>
+                                                <em>2021</em>
+                                            </li>
+                                            <li>
+                                                <span>책소개</span>
+                                                <em>
+                                                    망원동 브라더스 의 작가 김호연의 '동네이야기' 시즌 2. 청파동 골목 모퉁이에 자리 잡은 작은 편의점을 무대로 힘겨운 시대를 살아가는 우리 이웃들의 삶의 속내와 희로애락을 따뜻하고 유머러스하게 담아냈다.
+                                                </em>
+                                            </li>
+                                        </ul>
+                                        <ul class="info_tbl">
+                                            <li>
+                                                <dl>
+                                                    <dt>ISBN</dt>
+                                                    <dd>9791161571188</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Vol</dt>
+                                                    <dd>-</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>주제분야</dt>
+                                                    <dd>813.7 [문학>한국문학>소설]</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>총 대출건수</dt>
+                                                    <dd>56,474</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <div class="keyword">
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="close"><i class="icons i_detail_close"></i></button>
+                            </div>
+                            <div id="tab03-03" class="book_detail">
+                                <div class="detail_info">
+                                    <div class="img"><img src="../../resource/images/img/img_book_detail01.png" alt=""></div>
+                                    <div class="info_box">
+                                        <h4 class="title">불편한 편의점 : 김호연 장편 소설</h4>
+                                        <ul class="info">
+                                            <li>
+                                                <span>저자정보</span>
+                                                <em>김호연</em>
+                                            </li>
+                                            <li>
+                                                <span>출판사</span>
+                                                <em>나무옆의자</em>
+                                            </li>
+                                            <li>
+                                                <span>출판연월</span>
+                                                <em>2021</em>
+                                            </li>
+                                            <li>
+                                                <span>책소개</span>
+                                                <em>
+                                                    망원동 브라더스 의 작가 김호연의 '동네이야기' 시즌 2. 청파동 골목 모퉁이에 자리 잡은 작은 편의점을 무대로 힘겨운 시대를 살아가는 우리 이웃들의 삶의 속내와 희로애락을 따뜻하고 유머러스하게 담아냈다.
+                                                </em>
+                                            </li>
+                                        </ul>
+                                        <ul class="info_tbl">
+                                            <li>
+                                                <dl>
+                                                    <dt>ISBN</dt>
+                                                    <dd>9791161571188</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Vol</dt>
+                                                    <dd>-</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>주제분야</dt>
+                                                    <dd>813.7 [문학>한국문학>소설]</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>총 대출건수</dt>
+                                                    <dd>56,474</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <div class="keyword">
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="close"><i class="icons i_detail_close"></i></button>
+                            </div>
+                            <div id="tab03-04" class="book_detail">
+                                <div class="detail_info">
+                                    <div class="img"><img src="../../resource/images/img/img_book_detail01.png" alt=""></div>
+                                    <div class="info_box">
+                                        <h4 class="title">불편한 편의점 : 김호연 장편 소설</h4>
+                                        <ul class="info">
+                                            <li>
+                                                <span>저자정보</span>
+                                                <em>김호연</em>
+                                            </li>
+                                            <li>
+                                                <span>출판사</span>
+                                                <em>나무옆의자</em>
+                                            </li>
+                                            <li>
+                                                <span>출판연월</span>
+                                                <em>2021</em>
+                                            </li>
+                                            <li>
+                                                <span>책소개</span>
+                                                <em>
+                                                    망원동 브라더스 의 작가 김호연의 '동네이야기' 시즌 2. 청파동 골목 모퉁이에 자리 잡은 작은 편의점을 무대로 힘겨운 시대를 살아가는 우리 이웃들의 삶의 속내와 희로애락을 따뜻하고 유머러스하게 담아냈다.
+                                                </em>
+                                            </li>
+                                        </ul>
+                                        <ul class="info_tbl">
+                                            <li>
+                                                <dl>
+                                                    <dt>ISBN</dt>
+                                                    <dd>9791161571188</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Vol</dt>
+                                                    <dd>-</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>주제분야</dt>
+                                                    <dd>813.7 [문학>한국문학>소설]</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>총 대출건수</dt>
+                                                    <dd>56,474</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <div class="keyword">
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="close"><i class="icons i_detail_close"></i></button>
+                            </div>
+                            <div id="tab03-05" class="book_detail">
+                                <div class="detail_info">
+                                    <div class="img"><img src="../../resource/images/img/img_book_detail01.png" alt=""></div>
+                                    <div class="info_box">
+                                        <h4 class="title">불편한 편의점 : 김호연 장편 소설</h4>
+                                        <ul class="info">
+                                            <li>
+                                                <span>저자정보</span>
+                                                <em>김호연</em>
+                                            </li>
+                                            <li>
+                                                <span>출판사</span>
+                                                <em>나무옆의자</em>
+                                            </li>
+                                            <li>
+                                                <span>출판연월</span>
+                                                <em>2021</em>
+                                            </li>
+                                            <li>
+                                                <span>책소개</span>
+                                                <em>
+                                                    망원동 브라더스 의 작가 김호연의 '동네이야기' 시즌 2. 청파동 골목 모퉁이에 자리 잡은 작은 편의점을 무대로 힘겨운 시대를 살아가는 우리 이웃들의 삶의 속내와 희로애락을 따뜻하고 유머러스하게 담아냈다.
+                                                </em>
+                                            </li>
+                                        </ul>
+                                        <ul class="info_tbl">
+                                            <li>
+                                                <dl>
+                                                    <dt>ISBN</dt>
+                                                    <dd>9791161571188</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Vol</dt>
+                                                    <dd>-</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>주제분야</dt>
+                                                    <dd>813.7 [문학>한국문학>소설]</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>총 대출건수</dt>
+                                                    <dd>56,474</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <div class="keyword">
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="close"><i class="icons i_detail_close"></i></button>
+                            </div>
+                            <div id="tab03-06" class="book_detail">
+                                <div class="detail_info">
+                                    <div class="img"><img src="../../resource/images/img/img_book_detail01.png" alt=""></div>
+                                    <div class="info_box">
+                                        <h4 class="title">불편한 편의점 : 김호연 장편 소설</h4>
+                                        <ul class="info">
+                                            <li>
+                                                <span>저자정보</span>
+                                                <em>김호연</em>
+                                            </li>
+                                            <li>
+                                                <span>출판사</span>
+                                                <em>나무옆의자</em>
+                                            </li>
+                                            <li>
+                                                <span>출판연월</span>
+                                                <em>2021</em>
+                                            </li>
+                                            <li>
+                                                <span>책소개</span>
+                                                <em>
+                                                    망원동 브라더스 의 작가 김호연의 '동네이야기' 시즌 2. 청파동 골목 모퉁이에 자리 잡은 작은 편의점을 무대로 힘겨운 시대를 살아가는 우리 이웃들의 삶의 속내와 희로애락을 따뜻하고 유머러스하게 담아냈다.
+                                                </em>
+                                            </li>
+                                        </ul>
+                                        <ul class="info_tbl">
+                                            <li>
+                                                <dl>
+                                                    <dt>ISBN</dt>
+                                                    <dd>9791161571188</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Vol</dt>
+                                                    <dd>-</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>주제분야</dt>
+                                                    <dd>813.7 [문학>한국문학>소설]</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>총 대출건수</dt>
+                                                    <dd>56,474</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <div class="keyword">
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="close"><i class="icons i_detail_close"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab01-02">
+                        <h3 class="title">인기도서</h3>
+                        <div class="book_list">
+                            <div id="swiper03" class="swiper-container">
+                                <ul id="tabList04" class="swiper-wrapper">
+                                    <li rel="tab04-01" class="swiper-slide">
+                                        <a href="#none" class="book_info">
+                                            <div class="img">
+                                                <img src="../../resource/images/img/img_book01.png" alt="">
+                                            </div>
+                                            <h4 class="title">불편한 편의점 : 김호연 장편소설</h4>
+                                        </a>
+                                    </li>
+                                    <li rel="tab04-02" class="swiper-slide">
+                                        <a href="#none" class="book_info">
+                                            <div class="img">
+                                                <img src="../../resource/images/img/img_book02.png" alt="">
+                                            </div>
+                                            <h4 class="title">'한 번 더'의 힘</h4>
+                                        </a>
+                                    </li>
+                                    <li rel="tab04-03" class="swiper-slide">
+                                        <a href="#none" class="book_info">
+                                            <div class="img">
+                                                <img src="../../resource/images/img/img_book03.png" alt="">
+                                            </div>
+                                            <h4 class="title">트렌드 코리아 2023</h4>
+                                        </a>
+                                    </li>
+                                    <li rel="tab04-04" class="swiper-slide">
+                                        <a href="#none" class="book_info">
+                                            <div class="img">
+                                                <img src="../../resource/images/img/img_book04.png" alt="">
+                                            </div>
+                                            <h4 class="title">복잡한 세상을 이기는 수학의 힘</h4>
+                                        </a>
+                                    </li>
+                                    <li rel="tab04-05" class="swiper-slide">
+                                        <a href="#none" class="book_info">
+                                            <div class="img">
+                                                <img src="../../resource/images/img/img_book05.png" alt="">
+                                            </div>
+                                            <h4 class="title">아버지의 해방일지</h4>
+                                        </a>
+                                    </li>
+                                    <li rel="tab04-06" class="swiper-slide">
+                                        <a href="#none" class="book_info">
+                                            <div class="img">
+                                                <img src="../../resource/images/img/img_book05.png" alt="">
+                                            </div>
+                                            <h4 class="title">아버지의 해방일지</h4>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button id="swiper03_prev" class="slide_prev"><i class="icons i_slide_prev"></i></button>
+                            <button id="swiper03_next" class="slide_next"><i class="icons i_slide_next"></i></button>
+                        </div>
+                        <div id="tabCont04" class="book_detail_area">
+                            <div id="tab04-01" class="book_detail">
+                                <div class="detail_info">
+                                    <div class="img"><img src="../../resource/images/img/img_book_detail01.png" alt=""></div>
+                                    <div class="info_box">
+                                        <h4 class="title">불편한 편의점 : 김호연 장편 소설</h4>
+                                        <ul class="info">
+                                            <li>
+                                                <span>저자정보</span>
+                                                <em>김호연</em>
+                                            </li>
+                                            <li>
+                                                <span>출판사</span>
+                                                <em>나무옆의자</em>
+                                            </li>
+                                            <li>
+                                                <span>출판연월</span>
+                                                <em>2021</em>
+                                            </li>
+                                            <li>
+                                                <span>책소개</span>
+                                                <em>
+                                                    망원동 브라더스 의 작가 김호연의 '동네이야기' 시즌 2. 청파동 골목 모퉁이에 자리 잡은 작은 편의점을 무대로 힘겨운 시대를 살아가는 우리 이웃들의 삶의 속내와 희로애락을 따뜻하고 유머러스하게 담아냈다.
+                                                </em>
+                                            </li>
+                                        </ul>
+                                        <ul class="info_tbl">
+                                            <li>
+                                                <dl>
+                                                    <dt>ISBN</dt>
+                                                    <dd>9791161571188</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Vol</dt>
+                                                    <dd>-</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>주제분야</dt>
+                                                    <dd>813.7<br>[문학>한국문학>소설]</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>총 대출건수</dt>
+                                                    <dd>56,474</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <div class="keyword">
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail_book">
+                                    <h4 class="sub_title">함께 대출 된 도서</h4>
+                                    <p class="msg"><strong>[불편한편의점:김호연 장편소설]</strong> 와/과 함께 최근 36개월 동안 대출된 도서입니다.</p>
+                                    <div class="book_list">
+                                        <div id="swiper04" class="swiper-container">
+                                            <ul class="swiper-wrapper">
+                                                <li class="swiper-slide">
+                                                    <a href="#none" class="book_info">
+                                                        <div class="img">
+                                                            <img src="../../resource/images/img/img_book_detail_list01.png" alt="">
+                                                        </div>
+                                                        <h4 class="title">멘탈의 거장들</h4>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none" class="book_info">
+                                                        <div class="img">
+                                                            <img src="../../resource/images/img/img_book_detail_list02.png" alt="">
+                                                        </div>
+                                                        <h4 class="title">어떤 생각들은 나의 세계가 된다</h4>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none" class="book_info">
+                                                        <div class="img">
+                                                            <img src="../../resource/images/img/img_book_detail_list03.png" alt="">
+                                                        </div>
+                                                        <h4 class="title">미쉐린 가이드 서울(2023)</h4>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none" class="book_info">
+                                                        <div class="img">
+                                                            <img src="../../resource/images/img/img_book_detail_list04.png" alt="">
+                                                        </div>
+                                                        <h4 class="title">메타버스로 구현하는 나만의 세상</h4>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none" class="book_info">
+                                                        <div class="img">
+                                                            <img src="../../resource/images/img/img_book_detail_list05.png" alt="">
+                                                        </div>
+                                                        <h4 class="title">반항의 기술</h4>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none" class="book_info">
+                                                        <div class="img">
+                                                            <img src="../../resource/images/img/img_book_detail_list05.png" alt="">
+                                                        </div>
+                                                        <h4 class="title">반항의 기술</h4>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button id="swiper04_prev" class="slide_prev"><i class="icons i_slide_prev"></i></button>
+                                        <button id="swiper04_next" class="slide_next"><i class="icons i_slide_next"></i></button>
+                                    </div>
+                                </div>
+                                <button class="close"><i class="icons i_detail_close"></i></button>
+                            </div>
+                            <div id="tab04-02" class="book_detail">
+                                <div class="detail_info">
+                                    <div class="img"><img src="../../resource/images/img/img_book_detail01.png" alt=""></div>
+                                    <div class="info_box">
+                                        <h4 class="title">불편한 편의점 : 김호연 장편 소설</h4>
+                                        <ul class="info">
+                                            <li>
+                                                <span>저자정보</span>
+                                                <em>김호연</em>
+                                            </li>
+                                            <li>
+                                                <span>출판사</span>
+                                                <em>나무옆의자</em>
+                                            </li>
+                                            <li>
+                                                <span>출판연월</span>
+                                                <em>2021</em>
+                                            </li>
+                                            <li>
+                                                <span>책소개</span>
+                                                <em>
+                                                    망원동 브라더스 의 작가 김호연의 '동네이야기' 시즌 2. 청파동 골목 모퉁이에 자리 잡은 작은 편의점을 무대로 힘겨운 시대를 살아가는 우리 이웃들의 삶의 속내와 희로애락을 따뜻하고 유머러스하게 담아냈다.
+                                                </em>
+                                            </li>
+                                        </ul>
+                                        <ul class="info_tbl">
+                                            <li>
+                                                <dl>
+                                                    <dt>ISBN</dt>
+                                                    <dd>9791161571188</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Vol</dt>
+                                                    <dd>-</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>주제분야</dt>
+                                                    <dd>813.7 [문학>한국문학>소설]</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>총 대출건수</dt>
+                                                    <dd>56,474</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <div class="keyword">
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="close"><i class="icons i_detail_close"></i></button>
+                            </div>
+                            <div id="tab04-03" class="book_detail">
+                                <div class="detail_info">
+                                    <div class="img"><img src="../../resource/images/img/img_book_detail01.png" alt=""></div>
+                                    <div class="info_box">
+                                        <h4 class="title">불편한 편의점 : 김호연 장편 소설</h4>
+                                        <ul class="info">
+                                            <li>
+                                                <span>저자정보</span>
+                                                <em>김호연</em>
+                                            </li>
+                                            <li>
+                                                <span>출판사</span>
+                                                <em>나무옆의자</em>
+                                            </li>
+                                            <li>
+                                                <span>출판연월</span>
+                                                <em>2021</em>
+                                            </li>
+                                            <li>
+                                                <span>책소개</span>
+                                                <em>
+                                                    망원동 브라더스 의 작가 김호연의 '동네이야기' 시즌 2. 청파동 골목 모퉁이에 자리 잡은 작은 편의점을 무대로 힘겨운 시대를 살아가는 우리 이웃들의 삶의 속내와 희로애락을 따뜻하고 유머러스하게 담아냈다.
+                                                </em>
+                                            </li>
+                                        </ul>
+                                        <ul class="info_tbl">
+                                            <li>
+                                                <dl>
+                                                    <dt>ISBN</dt>
+                                                    <dd>9791161571188</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Vol</dt>
+                                                    <dd>-</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>주제분야</dt>
+                                                    <dd>813.7 [문학>한국문학>소설]</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>총 대출건수</dt>
+                                                    <dd>56,474</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <div class="keyword">
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="close"><i class="icons i_detail_close"></i></button>
+                            </div>
+                            <div id="tab04-04" class="book_detail">
+                                <div class="detail_info">
+                                    <div class="img"><img src="../../resource/images/img/img_book_detail01.png" alt=""></div>
+                                    <div class="info_box">
+                                        <h4 class="title">불편한 편의점 : 김호연 장편 소설</h4>
+                                        <ul class="info">
+                                            <li>
+                                                <span>저자정보</span>
+                                                <em>김호연</em>
+                                            </li>
+                                            <li>
+                                                <span>출판사</span>
+                                                <em>나무옆의자</em>
+                                            </li>
+                                            <li>
+                                                <span>출판연월</span>
+                                                <em>2021</em>
+                                            </li>
+                                            <li>
+                                                <span>책소개</span>
+                                                <em>
+                                                    망원동 브라더스 의 작가 김호연의 '동네이야기' 시즌 2. 청파동 골목 모퉁이에 자리 잡은 작은 편의점을 무대로 힘겨운 시대를 살아가는 우리 이웃들의 삶의 속내와 희로애락을 따뜻하고 유머러스하게 담아냈다.
+                                                </em>
+                                            </li>
+                                        </ul>
+                                        <ul class="info_tbl">
+                                            <li>
+                                                <dl>
+                                                    <dt>ISBN</dt>
+                                                    <dd>9791161571188</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Vol</dt>
+                                                    <dd>-</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>주제분야</dt>
+                                                    <dd>813.7 [문학>한국문학>소설]</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>총 대출건수</dt>
+                                                    <dd>56,474</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <div class="keyword">
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="close"><i class="icons i_detail_close"></i></button>
+                            </div>
+                            <div id="tab04-05" class="book_detail">
+                                <div class="detail_info">
+                                    <div class="img"><img src="../../resource/images/img/img_book_detail01.png" alt=""></div>
+                                    <div class="info_box">
+                                        <h4 class="title">불편한 편의점 : 김호연 장편 소설</h4>
+                                        <ul class="info">
+                                            <li>
+                                                <span>저자정보</span>
+                                                <em>김호연</em>
+                                            </li>
+                                            <li>
+                                                <span>출판사</span>
+                                                <em>나무옆의자</em>
+                                            </li>
+                                            <li>
+                                                <span>출판연월</span>
+                                                <em>2021</em>
+                                            </li>
+                                            <li>
+                                                <span>책소개</span>
+                                                <em>
+                                                    망원동 브라더스 의 작가 김호연의 '동네이야기' 시즌 2. 청파동 골목 모퉁이에 자리 잡은 작은 편의점을 무대로 힘겨운 시대를 살아가는 우리 이웃들의 삶의 속내와 희로애락을 따뜻하고 유머러스하게 담아냈다.
+                                                </em>
+                                            </li>
+                                        </ul>
+                                        <ul class="info_tbl">
+                                            <li>
+                                                <dl>
+                                                    <dt>ISBN</dt>
+                                                    <dd>9791161571188</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Vol</dt>
+                                                    <dd>-</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>주제분야</dt>
+                                                    <dd>813.7 [문학>한국문학>소설]</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>총 대출건수</dt>
+                                                    <dd>56,474</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <div class="keyword">
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="close"><i class="icons i_detail_close"></i></button>
+                            </div>
+                            <div id="tab04-06" class="book_detail">
+                                <div class="detail_info">
+                                    <div class="img"><img src="../../resource/images/img/img_book_detail01.png" alt=""></div>
+                                    <div class="info_box">
+                                        <h4 class="title">불편한 편의점 : 김호연 장편 소설</h4>
+                                        <ul class="info">
+                                            <li>
+                                                <span>저자정보</span>
+                                                <em>김호연</em>
+                                            </li>
+                                            <li>
+                                                <span>출판사</span>
+                                                <em>나무옆의자</em>
+                                            </li>
+                                            <li>
+                                                <span>출판연월</span>
+                                                <em>2021</em>
+                                            </li>
+                                            <li>
+                                                <span>책소개</span>
+                                                <em>
+                                                    망원동 브라더스 의 작가 김호연의 '동네이야기' 시즌 2. 청파동 골목 모퉁이에 자리 잡은 작은 편의점을 무대로 힘겨운 시대를 살아가는 우리 이웃들의 삶의 속내와 희로애락을 따뜻하고 유머러스하게 담아냈다.
+                                                </em>
+                                            </li>
+                                        </ul>
+                                        <ul class="info_tbl">
+                                            <li>
+                                                <dl>
+                                                    <dt>ISBN</dt>
+                                                    <dd>9791161571188</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Vol</dt>
+                                                    <dd>-</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>주제분야</dt>
+                                                    <dd>813.7 [문학>한국문학>소설]</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>총 대출건수</dt>
+                                                    <dd>56,474</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <div class="keyword">
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                            <span class="word">#키워드</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="close"><i class="icons i_detail_close"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer_wrap">
+            <div class="inner">
+                <ul class="footer_top">
+                    <li><a href="#none">개인정보처리방침</a></li>
+                    <li><a href="#none">이메일수신거부</a></li>
+                    <li><a href="#none">문의하기</a></li>
+                </ul>
+                <div class="footer_info">
+                    <span class="footer_logo"><a href="#none">국회도서관</a></span>
+                    <div class="footer_inner">
+                        <div class="footer_address">
+                            <address class="address">서울특별시 중구 퇴계로27길 49 (저동2가, 센트럴에쓰 3층)</address>
+                            <p class="copy">COPYRIGHT ⓒ 지식공유 플랫폼. ALLRIGHT RESERVED.</p> 
+                        </div>
+                        <ul class="footer_tel">
+                            <li><span>대표번호</span> 02 3456 7890</li>
+                            <li><span>이메일</span> email@email.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- javascript -->
+    <script src="../../resource/js/lib/jquery/jquery-1.12.3.js"></script>
+    <script src="../../resource/js/lib/jquery/jquery.scrolla.js"></script>
+    <script src="../../resource/js/lib/jquery/jquery-ui.js"></script>
+    <script src="../../resource/js/lib/swiper/swiper.min.js"></script>
+    <script src="../../resource/js/lib/tweenmax/gsap.min.js"></script>
+    <script src="../../resource/js/ui.common.js"></script>
+    <script>
+        tabMenu('#tabList01','#tabCont01')
+        tabMenu('#tabList02','#tabCont02')
+        tabMenu('#tabList03','#tabCont03')
+        tabMenu('#tabList04','#tabCont04')
+
+        var swiper = new Swiper("#swiper01", {
+            slidesPerView: 5,
+            spaceBetween: 45,
+            pagination: {
+            // el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+                nextEl: "#swiper01_next",
+                prevEl: "#swiper01_prev",
+            },
+            breakpoints: {
+                375: {
+                    slidesPerView: 1,
+                    //centeredSlides: true,
+                    slidesPerView:'auto'
+                },
+                580: {
+                    slidesPerView: 1,
+                    //centeredSlides: true,
+                    slidesPerView:'auto',
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 25,
+                },
+                860: {
+                  slidesPerView: 4,
+                  spaceBetween: 25,
+                },
+                1025: {
+                  slidesPerView: 5,
+                  spaceBetween: 45,
+                },
+            },
+        });
+        var swiper = new Swiper("#swiper02", {
+            slidesPerView: 5,
+            spaceBetween: 45,
+            pagination: {
+            // el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+                nextEl: "#swiper02_next",
+                prevEl: "#swiper02_prev",
+            },
+            breakpoints: {
+                375: {
+                    slidesPerView: 1,
+                    //centeredSlides: true,
+                    slidesPerView:'auto'
+                },
+                580: {
+                    slidesPerView: 1,
+                    //centeredSlides: true,
+                    slidesPerView:'auto',
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 25,
+                },
+                860: {
+                  slidesPerView: 4,
+                  spaceBetween: 25,
+                },
+                1025: {
+                  slidesPerView: 5,
+                  spaceBetween: 45,
+                },
+            },
+        });
+        var swiper = new Swiper("#swiper03", {
+            slidesPerView: 5,
+            spaceBetween: 45,
+            pagination: {
+            // el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+                nextEl: "#swiper03_next",
+                prevEl: "#swiper03_prev",
+            },
+            breakpoints: {
+                375: {
+                    slidesPerView: 1,
+                    //centeredSlides: true,
+                    slidesPerView:'auto'
+                },
+                580: {
+                    slidesPerView: 1,
+                    //centeredSlides: true,
+                    slidesPerView:'auto',
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 25,
+                },
+                860: {
+                  slidesPerView: 4,
+                  spaceBetween: 25,
+                },
+                1025: {
+                  slidesPerView: 5,
+                  spaceBetween: 45,
+                },
+            },
+            observer: true,
+            observeParents: true,
+        });
+        var swiper = new Swiper("#swiper04", {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            pagination: {
+            // el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+                nextEl: "#swiper04_next",
+                prevEl: "#swiper04_prev",
+            },
+            breakpoints: {
+                375: {
+                    slidesPerView: 1,
+                    //centeredSlides: true,
+                    slidesPerView:'auto'
+                },
+                580: {
+                    slidesPerView: 1,
+                    //centeredSlides: true,
+                    slidesPerView:'auto',
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 25,
+                },
+                860: {
+                  slidesPerView: 4,
+                  spaceBetween: 25,
+                },
+                1025: {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+                },
+            },
+            observer: true,
+            observeParents: true,
+        });
+    </script>
+ </body>
+</html>

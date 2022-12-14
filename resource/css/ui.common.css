@@ -63,6 +63,9 @@ select.disabled, select[disabled] {background-color:#F6F6F6; border-color:#dfdfd
 .icons.i_f_link:before{background-image: url('../images/icons/ico_f_link.png');width:20rem;height: 20rem;}
 .icons.i_search_menu:before{background-image: url('../images/icons/ico_search_menu.png');width:24rem;height: 24rem;}
 .icons.i_lnb_close:before{background-image: url('../images/icons/ico_i_lnb_close.png');width:20rem;height: 20rem;}
+.icons.i_slide_prev:before{background-image: url('../images/icons/ico_slide_prev.png');width:40rem;height: 40rem;}
+.icons.i_slide_next:before{background-image: url('../images/icons/ico_slide_next.png');width:40rem;height: 40rem;}
+.icons.i_detail_close:before{background-image: url('../images/icons/ico_detail_close.png');width:20rem;height: 20rem;}
 /**********
     COMMON
 ***********/
