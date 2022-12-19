@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>프로젝트</title>
+  <!-- css -->
+  <link rel="stylesheet" href="../../resource/css/lib/swiper/swiper.min.css">
+  <link rel="stylesheet" href="../../resource/css/lib/animate/animate.css">
+  <link rel="stylesheet" href="../../resource/css/lib/jqueryUI/jquery-ui.css">
+  <link rel="stylesheet" href="../../resource/css/ui.reset.css">
+  <link rel="stylesheet" href="../../resource/css/ui.common.css">
+  <link rel="stylesheet" href="../../resource/css/ui.main.css">
+  <link rel="stylesheet" href="../../resource/css/ui.sub.css">
+  <link rel="stylesheet" href="../../resource/css/ui.responsive.css">
+ </head>
+
+ <body>
+    
+    <div id="wrapper">
+
+        <header id="header_wrap">
+            <div class="inner">
+                <h1 class="logo"><a href="#none">국회도서관</a></h1>
+                <ul class="header_gnb">
+                    <li><a href="#none">공유자료</a></li>
+                    <li><a href="#none">참여기관</a></li>
+                    <li><a href="#none">이용안내</a></li>
+                </ul>
+                <div class="header_etc">
+                    <div class="header_search_box">
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <div class="option">
+                            <span class="search"><button><i class="icons i_gnb_search"></i></button></span>
+                            <span class="filter"><button onclick="popupFunc('popUp01')"><i class="icons i_gnb_filter"></i></button></span>
+                        </div>
+                    </div>
+                    <div class="header_user">
+                        <a href="#none" class="user login">
+                            <i class="icons i_user"></i>
+                            <span class="name"><strong>홍길동</strong> 님</span>
+                        </a>
+                        <ul class="user_menu">
+                            <li><a href="#none" class="mypage">마이페이지 <i class="icons i_mypage_arrow"></i></a></li>
+                            <li><a href="#none" class="logout">로그아웃 <i class="icons i_logout"></i></a></li>
+                        </ul>
+                    </div>
+                    <button class="btn_upload"><i class="icons i_upload"></i></button>
+                </div>
+                <div class="header_mobile">
+                    <button><i class="icons i_upload"></i></button>
+                    <button><i class="icons i_m_search"></i></button>
+                    <button><i class="icons i_m_gnb"></i></button>
+                </div>
+            </div>
+        </header>
+
+        <div id="main_wrap">
+            <div class="location_area">
+                <div class="inner">
+                    <ul class="location_list">
+                        <li><a href="#none" class="home"><i class="icons i_loaction_home"></i></a></li>
+                        <li>
+                            <a href="#none">통합검색</a>
+                            <ul style="display:none;">
+                                <li><a href="#none">통합검색</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">최신자료</a>
+                            <ul style="display:none;">
+                                <li><a href="#none">통합검색</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mypage_top_area animate" data-animate="fadeInUp" data-delay="0.4s">
+                <div class="inner">
+                    <h2>사용자 정보</h2>
+                    <div class="mypage_top_box">
+                        <div class="mypage_top_user">
+                            <div class="img"><img src="../../resource/images/img/img_user.png" alt=""></div>
+                            <div class="user">
+                                <span class="name"><strong>홍길동</strong> <a href="#none">(기관명) <i class="icons i_my_menu"></i></a></span>
+                                <div class="info">
+                                    <span>방문회수</span> <strong>999회</strong>
+                                </div>
+                                <div class="info">
+                                    <span>최근 방문일</span> <strong>2022-11-09 12:35:44</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <ul id="tabList01" class="mypage_top_cont">
+                            <li class="on" rel="tab01-01">
+                                <a href="#none">
+                                    <span>업로드</span>
+                                    <strong>255</strong>
+                                    <i class="icons i_my_upload"></i>
+                                </a>
+                            </li>
+                            <li rel="tab01-02">
+                                <a href="#none">
+                                    <span>다운로드</span>
+                                    <strong>255</strong>
+                                    <i class="icons i_my_download"></i>
+                                </a>
+                            </li>
+                            <li rel="tab01-03">
+                                <a href="#none">
+                                    <span>통계</span>
+                                    <strong>255</strong>
+                                    <i class="icons i_my_stats"></i>
+                                </a>
+                            </li>
+                            <li rel="tab01-04">
+                                <a href="#none">
+                                    <span>문의</span>
+                                    <strong>255</strong>
+                                    <i class="icons i_my_qna"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tabCont01" class="mypage_cont_area animate" data-animate="fadeInUp" data-delay="0.4s">
+                <div id="tab01-01" class="active">
+                    <div class="inner">
+                        <h3>업로드 이력</h3>
+                        <div class="form_search_wrap">
+                            <table>
+                                <colgroup>
+                                    <col style="width:75rem">
+                                    <col style="width:38%">
+                                    <col style="width:75rem">
+                                    <col>
+                                    <col style="width:200px">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th><span class="form_lable">자료유형</span></th>
+                                        <td>
+                                            <ul class="form_chk_list">
+                                                <li>
+                                                    <span class="chk">
+                                                        <input type="checkbox" id="chk01">
+                                                        <label for="chk01">문서</label>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="chk">
+                                                        <input type="checkbox" id="chk02">
+                                                        <label for="chk02">이미지</label>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="chk">
+                                                        <input type="checkbox" id="chk03">
+                                                        <label for="chk03">영상</label>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="chk">
+                                                        <input type="checkbox" id="chk04">
+                                                        <label for="chk04">오디오</label>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <th><span class="form_lable">공개범위</span></th>
+                                        <td colspan="2">
+                                            <ul class="form_chk_list">
+                                                <li>
+                                                    <span class="chk">
+                                                        <input type="checkbox" id="chk05">
+                                                        <label for="chk05">전체</label>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="chk">
+                                                        <input type="checkbox" id="chk06">
+                                                        <label for="chk06">부분</label>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="form_lable">검색어</span></th>
+                                        <td>
+                                            <div>
+                                                <select class="form_selec">
+                                                    <option>전체</option>
+                                                </select>
+                                                <input  class="form_inpt" type="text" placeholder="검색어를 입력하세요.">
+                                            </div>
+                                        </td>
+                                        <th><span class="form_lable">등록일</span></th>
+                                        <td>
+                                            <div class="form_search_box date">
+                                                <div class="datepicker_area"><input type="text" class="datepicker form_inpt"></div>
+                                                <div class="datepicker_area"><input type="text" class="datepicker form_inpt"></div>
+                                            </div>
+                                        </td>
+                                        <td style="text-align:right;">
+                                            <button class="btn c-type04"><i class="icons i_form_reset"></i> <span class="text">초기화</span></button>
+                                            <button class="btn c-type06"><i class="icons i_form_search"></i> 검색</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="list_cont_top">
+                            <span class="paging_total">Total <strong>999</strong></span>
+                            <div class="list_top_option">
+                                <div class="list_search">
+                                    <select>
+                                        <option>전체</option>
+                                        <option>제목</option>
+                                        <option>내용</option>
+                                    </select>
+                                    <div class="search_box_wrap">
+                                        <input type="text">
+                                        <button><i class="icons i_gnb_search"></i></button>
+                                    </div>
+                                </div>
+                                <div class="notice_option">
+                                    <button class="on list"><i class="icons i_notice_list"></i></button>
+                                    <button class="album"><i class="icons i_notice_album"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="total_search_list date">
+                            <li>
+                                 <div class="search_inner">
+                                    <div class="date_info">
+                                        <span>2022-07-10</span>
+                                        <em class="all">전체공개</em>
+                                    </div>
+                                    <a href="#none" class="title">(농촌 결혼이민여성과 자녀들의) 사회적 배제 및 포용의 실태·사례·진단 / 연구기획집필 : 양순미</a>
+                                    <div class="search_box">
+                                        <ul class="info">
+                                            <li><span>제작자</span> <em>농촌징흥청, 국립농업과학원</em></li>
+                                            <li><span>발행처</span> <em>국립농업과학원</em></li>
+                                            <li><span>발행일</span> <em>2021</em></li>
+                                        </ul>
+                                        <div class="etc">
+                                            <span class="view"><i class="icons i_view"></i> 1234</span>
+                                            <button class="bookmark"><i class="icons i_bookmark"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                 <div class="search_inner">
+                                    <div class="date_info">
+                                        <span>2022-07-10</span>
+                                        <em class="private">부분공개</em>
+                                    </div>
+                                    <a href="#none" class="title">(농촌 결혼이민여성과 자녀들의) 사회적 배제 및 포용의 실태·사례·진단 / 연구기획집필 : 양순미</a>
+                                    <div class="search_box">
+                                        <ul class="info">
+                                            <li><span>제작자</span> <em>농촌징흥청, 국립농업과학원</em></li>
+                                            <li><span>발행처</span> <em>국립농업과학원</em></li>
+                                            <li><span>발행일</span> <em>2021</em></li>
+                                        </ul>
+                                        <div class="etc">
+                                            <span class="view"><i class="icons i_view"></i> 1234</span>
+                                            <button class="bookmark"><i class="icons i_bookmark"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                 <div class="search_inner">
+                                    <div class="date_info">
+                                        <span>2022-07-10</span>
+                                        <em class="all">전체공개</em>
+                                    </div>
+                                    <a href="#none" class="title">(농촌 결혼이민여성과 자녀들의) 사회적 배제 및 포용의 실태·사례·진단 / 연구기획집필 : 양순미</a>
+                                    <div class="search_box">
+                                        <ul class="info">
+                                            <li><span>제작자</span> <em>농촌징흥청, 국립농업과학원</em></li>
+                                            <li><span>발행처</span> <em>국립농업과학원</em></li>
+                                            <li><span>발행일</span> <em>2021</em></li>
+                                        </ul>
+                                        <div class="etc">
+                                            <span class="view"><i class="icons i_view"></i> 1234</span>
+                                            <button class="bookmark"><i class="icons i_bookmark"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                 <div class="search_inner">
+                                    <div class="date_info">
+                                        <span>2022-07-10</span>
+                                        <em class="private">부분공개</em>
+                                    </div>
+                                    <a href="#none" class="title">(농촌 결혼이민여성과 자녀들의) 사회적 배제 및 포용의 실태·사례·진단 / 연구기획집필 : 양순미</a>
+                                    <div class="search_box">
+                                        <ul class="info">
+                                            <li><span>제작자</span> <em>농촌징흥청, 국립농업과학원</em></li>
+                                            <li><span>발행처</span> <em>국립농업과학원</em></li>
+                                            <li><span>발행일</span> <em>2021</em></li>
+                                        </ul>
+                                        <div class="etc">
+                                            <span class="view"><i class="icons i_view"></i> 1234</span>
+                                            <button class="bookmark"><i class="icons i_bookmark"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                 <div class="search_inner">
+                                    <div class="date_info">
+                                        <span>2022-07-10</span>
+                                        <em class="private">부분공개</em>
+                                    </div>
+                                    <a href="#none" class="title">(농촌 결혼이민여성과 자녀들의) 사회적 배제 및 포용의 실태·사례·진단 / 연구기획집필 : 양순미</a>
+                                    <div class="search_box">
+                                        <ul class="info">
+                                            <li><span>제작자</span> <em>농촌징흥청, 국립농업과학원</em></li>
+                                            <li><span>발행처</span> <em>국립농업과학원</em></li>
+                                            <li><span>발행일</span> <em>2021</em></li>
+                                        </ul>
+                                        <div class="etc">
+                                            <span class="view"><i class="icons i_view"></i> 1234</span>
+                                            <button class="bookmark"><i class="icons i_bookmark"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="paging_wrap">
+                            <div class="paging_area">
+                                <a href="#none" class="first"><i class="icons i_paging_first"></i></a>
+                                <a href="#none" class="prev"><i class="icons i_paging_prev"></i></a>
+                                <a href="#none" class="paging">1</a>
+                                <a href="#none" class="paging active">2</a>
+                                <a href="#none" class="paging">3</a>
+                                <a href="#none" class="paging">4</a>
+                                <a href="#none" class="paging">5</a>
+                                <a href="#none" class="next"><i class="icons i_paging_next"></i></a>
+                                <a href="#none" class="last"><i class="icons i_paging_last"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab01-02">
+                    <div class="inner">
+                        <h3>다운로드 이력</h3>
+                        <div class="form_search_wrap">
+                            <table>
+                                <colgroup>
+                                    <col style="width:75rem">
+                                    <col style="width:38%">
+                                    <col style="width:75rem">
+                                    <col>
+                                    <col style="width:200px">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th><span class="form_lable">자료유형</span></th>
+                                        <td colspan="4">
+                                            <ul class="form_chk_list">
+                                                <li>
+                                                    <span class="chk">
+                                                        <input type="checkbox" id="chk01">
+                                                        <label for="chk01">문서</label>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="chk">
+                                                        <input type="checkbox" id="chk02">
+                                                        <label for="chk02">이미지</label>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="chk">
+                                                        <input type="checkbox" id="chk03">
+                                                        <label for="chk03">영상</label>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="chk">
+                                                        <input type="checkbox" id="chk04">
+                                                        <label for="chk04">오디오</label>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="form_lable">검색어</span></th>
+                                        <td>
+                                            <div>
+                                                <select class="form_selec">
+                                                    <option>전체</option>
+                                                </select>
+                                                <input  class="form_inpt" type="text" placeholder="검색어를 입력하세요.">
+                                            </div>
+                                        </td>
+                                        <th><span class="form_lable">등록일</span></th>
+                                        <td>
+                                            <div class="form_search_box date">
+                                                <div class="datepicker_area"><input type="text" class="datepicker form_inpt"></div>
+                                                <div class="datepicker_area"><input type="text" class="datepicker form_inpt"></div>
+                                            </div>
+                                        </td>
+                                        <td style="text-align:right;">
+                                            <button class="btn c-type04"><i class="icons i_form_reset"></i> <span class="text">초기화</span></button>
+                                            <button class="btn c-type06"><i class="icons i_form_search"></i> 검색</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="list_cont_top">
+                            <span class="paging_total">Total <strong>999</strong></span>
+                            <div class="list_top_option">
+                                <div class="list_search">
+                                    <select>
+                                        <option>최신순</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mypage_scrap_area">
+                            <div class="row gutter24">
+                                <ul class="col">
+                                    <li class="col-3 col-lg-4 col-md-6 col-sd-12">
+                                        <div class="scrap_cont">
+                                            <div class="file">
+                                                <span><i class="icons i_scrap_pdf"></i></span>
+                                            </div>
+                                            <a href="#none" class="title">인공지능시대의 교육과정 개정 방안.pdf</a>
+                                            <span class="date">2022-11-03</span>
+                                            <button class="close" onclick="popupFunc('popUp02')"><i class="icons i_scrap_close"></i></button>
+                                        </div>
+                                    </li>
+                                    <li class="col-3 col-lg-4 col-md-6 col-sd-12">
+                                        <div class="scrap_cont">
+                                            <div class="file">
+                                                <span><i class="icons i_scrap_pdf"></i></span>
+                                            </div>
+                                            <a href="#none" class="title">인공지능시대의 교육과정 개정 방안.pdf</a>
+                                            <span class="date">2022-11-03</span>
+                                            <button class="close"><i class="icons i_scrap_close"></i></button>
+                                        </div>
+                                    </li>
+                                    <li class="col-3 col-lg-4 col-md-6 col-sd-12">
+                                        <div class="scrap_cont">
+                                            <div class="file">
+                                                <span><i class="icons i_scrap_pdf"></i></span>
+                                            </div>
+                                            <a href="#none" class="title">인공지능시대의 교육과정 개정 방안.pdf</a>
+                                            <span class="date">2022-11-03</span>
+                                            <button class="close"><i class="icons i_scrap_close"></i></button>
+                                        </div>
+                                    </li>
+                                    <li class="col-3 col-lg-4 col-md-6 col-sd-12">
+                                        <div class="scrap_cont">
+                                            <div class="file">
+                                                <span><i class="icons i_scrap_pdf"></i></span>
+                                            </div>
+                                            <a href="#none" class="title">인공지능시대의 교육과정 개정 방안.pdf</a>
+                                            <span class="date">2022-11-03</span>
+                                            <button class="close"><i class="icons i_scrap_close"></i></button>
+                                        </div>
+                                    </li>
+                                    <li class="col-3 col-lg-4 col-md-6 col-sd-12">
+                                        <div class="scrap_cont">
+                                            <div class="file">
+                                                <span><i class="icons i_scrap_pdf"></i></span>
+                                            </div>
+                                            <a href="#none" class="title">인공지능시대의 교육과정 개정 방안.pdf</a>
+                                            <span class="date">2022-11-03</span>
+                                            <button class="close"><i class="icons i_scrap_close"></i></button>
+                                        </div>
+                                    </li>
+                                    <li class="col-3 col-lg-4 col-md-6 col-sd-12">
+                                        <div class="scrap_cont">
+                                            <div class="file">
+                                                <span><i class="icons i_scrap_pdf"></i></span>
+                                            </div>
+                                            <a href="#none" class="title">인공지능시대의 교육과정 개정 방안.pdf</a>
+                                            <span class="date">2022-11-03</span>
+                                            <button class="close"><i class="icons i_scrap_close"></i></button>
+                                        </div>
+                                    </li>
+                                    <li class="col-3 col-lg-4 col-md-6 col-sd-12">
+                                        <div class="scrap_cont">
+                                            <div class="file">
+                                                <span><i class="icons i_scrap_pdf"></i></span>
+                                            </div>
+                                            <a href="#none" class="title">인공지능시대의 교육과정 개정 방안.pdf</a>
+                                            <span class="date">2022-11-03</span>
+                                            <button class="close"><i class="icons i_scrap_close"></i></button>
+                                        </div>
+                                    </li>
+                                    <li class="col-3 col-lg-4 col-md-6 col-sd-12">
+                                        <div class="scrap_cont">
+                                            <div class="file">
+                                                <span><i class="icons i_scrap_pdf"></i></span>
+                                            </div>
+                                            <a href="#none" class="title">인공지능시대의 교육과정 개정 방안.pdf</a>
+                                            <span class="date">2022-11-03</span>
+                                            <button class="close"><i class="icons i_scrap_close"></i></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="paging_wrap">
+                            <div class="paging_area">
+                                <a href="#none" class="first"><i class="icons i_paging_first"></i></a>
+                                <a href="#none" class="prev"><i class="icons i_paging_prev"></i></a>
+                                <a href="#none" class="paging">1</a>
+                                <a href="#none" class="paging active">2</a>
+                                <a href="#none" class="paging">3</a>
+                                <a href="#none" class="paging">4</a>
+                                <a href="#none" class="paging">5</a>
+                                <a href="#none" class="next"><i class="icons i_paging_next"></i></a>
+                                <a href="#none" class="last"><i class="icons i_paging_last"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab01-03">
+                    <div class="inner">
+                        <h3>통계 이력</h3>
+                        <div class="form_search_wrap">
+                            <table>
+                                <colgroup>
+                                    <col style="width:75rem">
+                                    <col>
+                                    <col style="width:120rem">
+                                    <col>
+                                    <col style="width:200px">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th><span class="form_lable">분류</span></th>
+                                        <td>
+                                            <div class="rdo_area type02">
+                                                <span class="rdo">
+                                                    <input id="rdo01" type="radio" name="rod01" checked="">
+                                                    <label for="rdo01">년도별</label>
+                                                </span>
+                                                <span class="rdo">
+                                                    <input id="rdo02" type="radio" name="rod01">
+                                                    <label for="rdo02">월별</label>
+                                                </span>
+                                                <span class="rdo">
+                                                    <input id="rdo03" type="radio" name="rod01">
+                                                    <label for="rdo03">자료유형별</label>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <th><span class="form_lable">대상년도 선택</span></th>
+                                        <td>
+                                            <select class="form_selec">
+                                                <option>2014</option>
+                                            </select>
+                                            ~
+                                            <select class="form_selec">
+                                                <option>2022</option>
+                                            </select>
+                                        </td>
+                                        <td style="text-align:right;">
+                                            <button class="btn c-type04"><i class="icons i_form_reset"></i> <span class="text">초기화</span></button>
+                                            <button class="btn c-type06"><i class="icons i_form_search"></i> 검색</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <table class="tbl_style01">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>년도</th>
+                                    <th>등록</th>
+                                    <th>
+                                        승인
+                                        <div class="sorting_area">
+                                            <button class="sorting"></button> 
+                                            <button class="sorting down"></button> 
+                                        </div>
+                                    </th>
+                                    <th>조회</th>
+                                    <th>다운로드</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="5">
+                                        <div class="data_none">
+                                            <p>데이터가 없습니다.</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="tab01-04">
+                    <div class="inner">
+                        <h3>문의 이력</h3>
+                        <div class="form_search_wrap">
+                            <table>
+                                <colgroup>
+                                    <col style="width:50rem">
+                                    <col>
+                                    <col style="width:75rem">
+                                    <col>
+                                    <col style="width:200px">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th><span class="form_lable">상태</span></th>
+                                        <td>
+                                            <select class="form_selec">
+                                                <option>전체</option>
+                                            </select>
+                                        </td>
+                                        <th><span class="form_lable">문의날짜</span></th>
+                                        <td>
+                                            <div class="form_search_box date">
+                                                <div class="datepicker_area"><input type="text" class="datepicker form_inpt"></div>
+                                                <div class="datepicker_area"><input type="text" class="datepicker form_inpt"></div>
+                                            </div>
+                                            <div class="rdo_area">
+                                                <span class="rdo">
+                                                    <input id="rdo04" type="radio" name="rod02" checked="">
+                                                    <label for="rdo04">1개월</label>
+                                                </span>
+                                                <span class="rdo">
+                                                    <input id="rdo05" type="radio" name="rod02">
+                                                    <label for="rdo05">3개월</label>
+                                                </span>
+                                                <span class="rdo">
+                                                    <input id="rdo06" type="radio" name="rod02">
+                                                    <label for="rdo06">6개월</label>
+                                                </span>
+                                                <span class="rdo">
+                                                    <input id="rdo07" type="radio" name="rod02">
+                                                    <label for="rdo07">1년</label>
+                                                </span>
+                                                <span class="rdo">
+                                                    <input id="rdo08" type="radio" name="rod02">
+                                                    <label for="rdo08">전체</label>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td style="text-align:right;">
+                                            <button class="btn c-type04"><i class="icons i_form_reset"></i> <span class="text">초기화</span></button>
+                                            <button class="btn c-type06"><i class="icons i_form_search"></i> 검색</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="list_cont_top">
+                            <span class="paging_total">Total <strong>999</strong></span>
+                            <div class="list_top_option">
+                                <div class="list_search">
+                                    <select>
+                                        <option>전체</option>
+                                        <option>제목</option>
+                                        <option>내용</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="tbl_style01 bnone">
+                            <colgroup>
+                                <col style="width:150rem">
+                                <col>
+                                <col style="width:120rem">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td><em class="b_status">문의중</em></td>
+                                    <td class="subject">
+                                        <a href="#none" class="lock">일괄등록하는 방법을 알고 싶습니다.</a>
+                                    </td>
+                                    <td>2022-07-11</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <em class="b_status ty2">답변완료</em>
+                                        <span class="answer_date">2022-07-10</span>
+                                    </td>
+                                    <td class="subject">
+                                        <a href="#none" class="lock">일괄등록하는 방법을 알고 싶습니다.</a>
+                                        <p class="answer_list">안녕하세요. 관리자 입니다. </p>
+                                    </td>
+                                    <td>2022-07-11</td>
+                                </tr>
+                                <tr>
+                                    <td><em class="b_status">문의중</em></td>
+                                    <td class="subject">
+                                        <a href="#none">일괄등록하는 방법을 알고 싶습니다.</a>
+                                    </td>
+                                    <td>2022-07-11</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <em class="b_status ty2">답변완료</em>
+                                        <span class="answer_date">2022-07-10</span>
+                                    </td>
+                                    <td class="subject">
+                                        <a href="#none" class="lock">일괄등록하는 방법을 알고 싶습니다.</a>
+                                        <p class="answer_list">안녕하세요. 관리자 입니다. </p>
+                                    </td>
+                                    <td>2022-07-11</td>
+                                </tr>
+                                <tr>
+                                    <td><em class="b_status">문의중</em></td>
+                                    <td class="subject">
+                                        <a href="#none">일괄등록하는 방법을 알고 싶습니다.</a>
+                                    </td>
+                                    <td>2022-07-11</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <em class="b_status ty2">답변완료</em>
+                                        <span class="answer_date">2022-07-10</span>
+                                    </td>
+                                    <td class="subject">
+                                        <a href="#none" class="lock">일괄등록하는 방법을 알고 싶습니다.</a>
+                                        <p class="answer_list">안녕하세요. 관리자 입니다. </p>
+                                    </td>
+                                    <td>2022-07-11</td>
+                                </tr>
+                                <tr>
+                                    <td><em class="b_status">문의중</em></td>
+                                    <td class="subject">
+                                        <a href="#none">일괄등록하는 방법을 알고 싶습니다.</a>
+                                    </td>
+                                    <td>2022-07-11</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <em class="b_status ty2">답변완료</em>
+                                        <span class="answer_date">2022-07-10</span>
+                                    </td>
+                                    <td class="subject">
+                                        <a href="#none" class="lock">일괄등록하는 방법을 알고 싶습니다.</a>
+                                        <p class="answer_list">안녕하세요. 관리자 입니다. </p>
+                                    </td>
+                                    <td>2022-07-11</td>
+                                </tr>
+                                <tr>
+                                    <td><em class="b_status">문의중</em></td>
+                                    <td class="subject">
+                                        <a href="#none">일괄등록하는 방법을 알고 싶습니다.</a>
+                                    </td>
+                                    <td>2022-07-11</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <em class="b_status ty2">답변완료</em>
+                                        <span class="answer_date">2022-07-10</span>
+                                    </td>
+                                    <td class="subject">
+                                        <a href="#none" class="lock">일괄등록하는 방법을 알고 싶습니다.</a>
+                                        <p class="answer_list">안녕하세요. 관리자 입니다. </p>
+                                    </td>
+                                    <td>2022-07-11</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="paging_wrap">
+                            <div class="paging_area">
+                                <a href="#none" class="first"><i class="icons i_paging_first"></i></a>
+                                <a href="#none" class="prev"><i class="icons i_paging_prev"></i></a>
+                                <a href="#none" class="paging">1</a>
+                                <a href="#none" class="paging active">2</a>
+                                <a href="#none" class="paging">3</a>
+                                <a href="#none" class="paging">4</a>
+                                <a href="#none" class="paging">5</a>
+                                <a href="#none" class="next"><i class="icons i_paging_next"></i></a>
+                                <a href="#none" class="last"><i class="icons i_paging_last"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer_wrap">
+            <div class="inner">
+                <ul class="footer_top">
+                    <li><a href="#none">개인정보처리방침</a></li>
+                    <li><a href="#none">이메일수신거부</a></li>
+                    <li><a href="#none">문의하기</a></li>
+                </ul>
+                <div class="footer_info">
+                    <span class="footer_logo"><a href="#none">국회도서관</a></span>
+                    <div class="footer_inner">
+                        <div class="footer_address">
+                            <address class="address">서울특별시 중구 퇴계로27길 49 (저동2가, 센트럴에쓰 3층)</address>
+                            <p class="copy">COPYRIGHT ⓒ 지식공유 플랫폼. ALLRIGHT RESERVED.</p> 
+                        </div>
+                        <ul class="footer_tel">
+                            <li><span>대표번호</span> 02 3456 7890</li>
+                            <li><span>이메일</span> email@email.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- javascript -->
+    <script src="../../resource/js/lib/jquery/jquery-1.12.3.js"></script>
+    <script src="../../resource/js/lib/jquery/jquery.scrolla.js"></script>
+    <script src="../../resource/js/lib/jquery/jquery-ui.js"></script>
+    <script src="../../resource/js/lib/swiper/swiper.min.js"></script>
+    <script src="../../resource/js/lib/tweenmax/gsap.min.js"></script>
+    <script src="../../resource/js/ui.common.js"></script>
+    <script>
+        tabMenu('#tabList01','#tabCont01')
+    </script>
+ </body>
+</html>

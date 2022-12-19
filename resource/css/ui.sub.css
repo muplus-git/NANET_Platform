@@ -326,3 +326,75 @@
 .book_detail .detail_book .sub_title{color:#000;font-size:20rem;font-weight:800;}
 .book_detail .msg{margin-top:10rem;margin-bottom:25rem;background: #FFFFFF;border-radius: 10px;padding:15rem;color:#000;font-size:14rem;}
 .book_detail .msg strong{font-weight:800;}
+
+/*****************
+    마이페이지
+******************/
+.mypage_top_area{padding:40rem 0;background-color:#FBF7F6;}
+.mypage_top_area h2{color:#000;font-size:24rem;font-weight:800;}
+.mypage_top_box{display:flex;justify-content: space-between;align-items: center;margin-top:35rem;}
+.mypage_top_user{display:flex;}
+.mypage_top_user .img{width:100rem;height:100rem;}
+.mypage_top_user .user{margin-left:30rem;}
+.mypage_top_user .user .name{display:block;margin-bottom:15rem;color:#7A7B7C;font-size:20rem;}
+.mypage_top_user .user .name strong{color:#000;font-size:20rem;font-weight:800;}
+.mypage_top_user .user .name a{color:#7E7C7B;font-size:14rem;}
+.mypage_top_user .user .name a i{margin-left:5rem;vertical-align:-1px;}
+.mypage_top_user .info+.info{margin-top:8rem;}
+.mypage_top_user .info span{display:inline-block;width:80rem;color: #666666;font-size:14rem;}
+.mypage_top_user .info strong{color:#000;font-size:14rem;font-weight:bold;}
+.mypage_top_cont{display:flex;margin:0 -8rem;}
+.mypage_top_cont>li{width:196rem;box-sizing: border-box;padding:0 8rem;}
+.mypage_top_cont>li.on a,
+.mypage_top_cont>li:hover a{background-color:#F85C3A;}
+.mypage_top_cont>li.on span,
+.mypage_top_cont>li:hover span{color:#fff;}
+.mypage_top_cont>li.on strong,
+.mypage_top_cont>li:hover strong{color:#fff;}
+.mypage_top_cont>li.on .icons.i_my_upload:before,
+.mypage_top_cont>li:hover .icons.i_my_upload:before{background-image: url('../images/icons/ico_my_upload_on.png');}
+.mypage_top_cont>li.on .icons.i_my_download:before,
+.mypage_top_cont>li:hover .icons.i_my_download:before{background-image: url('../images/icons/ico_my_download_on.png');}
+.mypage_top_cont>li.on .icons.i_my_stats:before,
+.mypage_top_cont>li:hover .icons.i_my_stats:before{background-image: url('../images/icons/ico_my_stats_on.png');}
+.mypage_top_cont>li.on .icons.i_my_qna:before,
+.mypage_top_cont>li:hover .icons.i_my_qna:before{background-image: url('../images/icons/ico_my_qna_on.png');}
+.mypage_top_cont a{display:block;position:relative;background: #FFFFFF;border: 1px solid #DFDFDF;border-radius: 10px;padding:20rem 25rem;transition: all .1s;}
+.mypage_top_cont span{display:inline-block;color: #999;font-size:14rem;}
+.mypage_top_cont strong{display:block;color:#999;font-size:28rem;font-weight:800;margin-top:15rem;}
+.mypage_top_cont i{position:absolute;top:20rem;right:20rem;}
+.mypage_cont_area .mypage_top_title{display:flex;align-items: center;justify-content:space-between;padding:40rem 0 20rem;margin-bottom:20rem;border-bottom:2px solid #1C2B43;}
+.mypage_cont_area .mypage_top_title h3{padding:0;}
+.mypage_cont_area .mypage_top_title span{color:#666;;font-size:14rem;}
+.mypage_cont_area .mypage_top_title em{display:inline-block;margin-left:10rem;color: #128DDD;font-weight:800;}
+.mypage_cont_area h3{padding:40rem 0 20rem 0;color:#000;font-size:24rem;font-weight:800;}
+.total_search_list.date .search_inner{position:relative;padding-right:150rem;}
+.total_search_list.date .date_info{position:absolute;top:50%;right:0;transform: translateY(-50%);}
+.total_search_list.date .date_info span{color:#666;font-size:13rem;}
+.total_search_list.date .date_info em{display:inline-block;position:relative;font-size:13rem;padding-left:10rem;margin-left:6rem;font-weight:800;}
+.total_search_list.date .date_info em:before{content:"";position:absolute;top:3px;left:0;width:1px;height:14px;background-color:#dfdfdf;}
+.total_search_list.date .date_info .all{color:#F85C3A;}
+.total_search_list.date .date_info .private{color:#005CA2;}
+.total_search_list.date.card>li{width:25%;}
+.total_search_list.date.card .search_inner{padding-right:0;}
+.total_search_list.date.card .date_info{position: static;transform: translateY(0);padding:20rem 20rem 0 20rem;}
+.total_search_list.date.card .etc{display:flex;align-items: center;justify-content: space-between;margin:0 15rem;padding:12rem 0;}
+.total_search_list.date.card .title{padding:10rem 20rem 0rem 20rem;}
+.total_search_list.date.card .info{padding:0 20rem 15rem 20rem;}
+/* 다운로드 */
+.mypage_scrap_area{margin-top:25rem;}
+.mypage_scrap_area .row.gutter24>.col{margin-top:-12rem;margin-bottom:-12rem;}
+.mypage_scrap_area .row.gutter24>.col>li{padding-top:12rem;padding-bottom:12rem;}
+.mypage_scrap_area .scrap_cont{padding:30rem 30rem;border: 1px solid #DADADA;border-radius: 10px;box-sizing: border-box;position:relative;}
+.mypage_scrap_area .file{margin-bottom:10rem;}
+.mypage_scrap_area .title{display:-webkit-box;text-overflow: ellipsis;-webkit-line-clamp: 2;-webkit-box-orient:vertical;overflow:hidden;height:55rem;color:#000;font-size:18rem;font-weight:800;}
+.mypage_scrap_area .title:hover{text-decoration: underline;}
+.mypage_scrap_area .date{display:block;margin-top:10rem;color:#666;font-size:14rem;}
+.mypage_scrap_area .close{position:absolute;top:20rem;right:20rem;}
+.data_none{padding-top:110rem;background:url('../images/img/img_search_none.png') no-repeat top center;background-size:160rem auto;}
+.data_none p{color:#000;font-size:20rem;font-weight:800;text-align: center;}
+.mypage_info{width:680rem;margin:0 auto;padding-top:40rem;}
+.mypage_info h2{color:#000;font-size:24rem;font-weight:800;text-align:center;}
+.mypage_info .tbl_style01{margin-top:40rem;}
+.mypage_info .tbl_style01 tbody th{text-align:left;padding:20rem 15rem;border-bottom:1px solid #dfdfdf;font-size:14rem;}
+.mypage_info .tbl_style01 tbody td{color:#000;font-weight:800;text-align:left;padding:20rem 15rem;}
