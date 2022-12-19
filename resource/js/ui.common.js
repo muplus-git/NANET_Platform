@@ -10,6 +10,7 @@ $(function(){
     multiSelec();
     searchLnbMenu();
     bookBoxClose();
+    headerGnb();
 })
 
 $(window).load(function(){
@@ -212,3 +213,12 @@ function bookBoxClose(){
         $(this).parents('.book_detail').hide();
     });
 }
+
+function headerGnb(){
+    $("#header_wrap .header_gnb").hover(function(){
+        $("header").addClass("on");
+    }, function() {
+        $("header").removeClass("on");
+    });
+}
+
