@@ -171,6 +171,17 @@
 .total_search_list.label.card .data_type{position:absolute;top:15rem;right:15rem;left:auto;transform: translateY(0);z-index:10;}
 .total_search_list.label.card .search_img{height:200rem;border-radius:10px;}
 .total_search_list.label.card .etc{display:flex;align-items:center;justify-content:space-between;padding:12rem 0;}
+/* 발간물 리스트 */
+.public_cont_wrap .row .col{margin:-30rem -25rem;}
+.public_cont_wrap .row .col>li{padding:30rem 25rem;}
+.public_cont_wrap a{display:block;overflow:hidden;}
+/* .public_cont_wrap a:hover .img{transform:scale(.9);} */
+/* .public_cont_wrap .img{transition: all .2s;} */
+/* .public_cont_wrap figure{position:relative;overflow:hidden;width:200rem;height:260rem;}
+.public_cont_wrap figure img{position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);object-fit: cover;width: 100%;height:100%;} */
+.public_cont_wrap a:hover .title{text-decoration: underline;}
+.public_cont_wrap .title{margin-top:10rem;color:#000;font-size:18rem;font-weight:800;display:-webkit-box;text-overflow: ellipsis;-webkit-line-clamp: 2;-webkit-box-orient:vertical;overflow:hidden;height:55rem;word-break: normal;}
+
 /* 발간물 상세 */
 .detail_cont_wrap{display:flex;margin-top:15rem;padding-bottom:40rem;border-bottom:1px solid #dfdfdf;}
 .detail_cont_wrap .detail_img{width:200rem;}
@@ -398,3 +409,32 @@
 .mypage_info .tbl_style01{margin-top:40rem;}
 .mypage_info .tbl_style01 tbody th{text-align:left;padding:20rem 15rem;border-bottom:1px solid #dfdfdf;font-size:14rem;}
 .mypage_info .tbl_style01 tbody td{color:#000;font-weight:800;text-align:left;padding:20rem 15rem;}
+/* 업로드 */
+.subtitle_area.first{border-bottom:2px solid #403F3D;padding-bottom:15rem;}
+.subtitle_area .title{font-size:18rem;font-weight:800;}
+.subtitle_area .title strong{color:#F85C3A;}
+.form_list_area .row>.col{margin:-10rem -12rem;padding-top:20rem;}
+.form_list_area .row>.col>li{padding:10rem 12rem;}
+.form_list_area .form_top{margin-bottom:10rem;}
+.form_list_area .form_top .label{color:#666;font-size:13rem;} 
+.form_msg{margin-top:12rem;color:#666;font-size:14rem;line-height:1.5;}
+.form_attach_area input[type="file"]{display:none;}
+.form_attach_area label{display:flex;flex-direction: column;height: 100rem;background: #F6F6F6;border: 1px dashed #DFDFDF;border-radius: 4px;cursor:pointer;justify-content:center;align-items:center;}
+.form_attach_area label span{display:inline-block;margin-top:5rem;color:#444;font-size:14rem;}
+.form_attach_info{display:flex;align-items:center;justify-content:space-between;margin-top:10rem;}
+.form_attach_info span{color:#444;font-size:14rem;}
+.form_attach_info span strong{color:#F85C3A;font-weight:800;}
+.form_attach_file{margin-top:15rem;}
+.form_attach_file .form_attach{display:inline-block;position:relative;border: 1px solid #DFDFDF;border-radius: 4px;padding:8rem 40rem 8rem 15rem;min-width:380rem;box-sizing:border-box;}
+.form_attach_file .form_attach span{display:inline-block;margin-left:8rem;color:#444;font-size:14rem;}
+.form_attach_file .form_attach button{position:absolute;top:6rem;right:15rem;}
+.form_tab_cont{margin-top:40rem;padding-top:40rem;border-top:1px solid #DFDFDF;}
+.form_notice{margin-top:40rem;background: #FBF7F6;border-radius: 10px;padding:30rem;}
+.form_notice .notice>li{position:relative;color:#666;font-size:14rem;padding-left:10rem;}
+.form_notice .notice>li:before{content:"";position:absolute;top:8px;left:0;width:3rem;height:3rem;background-color:#666666;border-radius:50%;}
+.form_notice .notice>li+li{margin-top:8rem;}
+.form_notice .chk{display:block;margin-top:15rem;padding-top:15rem;border-top:1px solid #DFDFDF;}
+.form_notice .chk label{font-weight:800;}
+.form_year{position:relative;border: 1px solid #DFDFDF;border-radius: 5px;padding-right:25rem;}
+.form_year input[type="text"]{border:0;}
+.form_year span{position:absolute;top:10rem;right:15rem;color:#000;font-size:14rem;font-weight:800;}

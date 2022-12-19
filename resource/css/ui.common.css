@@ -75,6 +75,9 @@ select.disabled, select[disabled] {background-color:#F6F6F6; border-color:#dfdfd
 .icons.i_form_search:before{background-image: url('../images/icons/ico_form_search.png');width:20rem;height: 20rem;}
 .icons.i_scrap_pdf:before{background-image: url('../images/icons/ico_scrap_pdf.png');width:24rem;height: 24rem;}
 .icons.i_scrap_close:before{background-image: url('../images/icons/ico_scrap_close.png');width:16rem;height: 16rem;}
+.icons.i_form_file:before{background-image: url('../images/icons/ico_form_file.png');width:18rem;height: 18rem;}
+.icons.i_form_delete:before{background-image: url('../images/icons/ico_form_delete.png');width:16rem;height: 16rem;}
+.icons.i_file_upload:before{background-image: url('../images/icons/ico_file_upload.png');width:32rem;height: 32rem;}
 /**********
     COMMON
 ***********/
@@ -182,7 +185,7 @@ select.disabled, select[disabled] {background-color:#F6F6F6; border-color:#dfdfd
 
 /* MULTISELECT */
 .multiselec_wrap{display:flex;}
-.multiselec_wrap .form_label{margin-top:5rem;}
+.multiselec_wrap .form_label{color:#444;font-size:14rem;margin-right:40rem;margin-top:12rem;}
 .multiselec_area{display:inline-block;}
 .multiselec_area+.multiselec_area{margin-left:12rem;}
 .multiselec_box{position:relative;display:inline-block;width:320rem;background: #FFFFFF;border: 1px solid #DFDFDF;border-radius: 5px;padding:10rem 15rem;box-sizing:border-box;}
@@ -225,7 +228,11 @@ select.disabled, select[disabled] {background-color:#F6F6F6; border-color:#dfdfd
 .tabs_design { margin-bottom:37rem; } 
 .tabs_design li + li { margin-left:30rem; } 
 .tabs_design li a { font-weight: 500; font-size: 18rem; line-height: 26rem; color: #666666; padding-bottom:4rem; border-bottom:2rem solid #fff; } 
-.tabs_design li.on a { color:#F85C3A; border-color:#F85C3A; } 
+.tabs_design li.on a { color:#F85C3A; border-color:#F85C3A; }
+.tabs_design02{display:flex;margin:0 -3rem;}
+.tabs_design02>li{width:12.5%;box-sizing:border-box;padding:0 3rem;}
+.tabs_design02>li>a{display:block;border: 1px solid #DFDFDF;border-radius: 4px;color:#666;font-size:14rem;text-align: center;padding:10rem 0;}
+.tabs_design02>li.on>a{color:#fff; background-color:#F85C3A;border: 1px solid #F85C3A;}
 
 /* ROW LIST */
 .row>.col{display:flex;flex-wrap: wrap;}
@@ -248,6 +255,7 @@ select.disabled, select[disabled] {background-color:#F6F6F6; border-color:#dfdfd
 .col-3{ width:25% }
 .col-2{ width:16.66666667% }
 .col-1{ width:8.33333333% }
+.col-20{ width:20% }
 
 /**********
     HEADER

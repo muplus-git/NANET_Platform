@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>프로젝트</title>
+  <!-- css -->
+  <link rel="stylesheet" href="../../resource/css/lib/swiper/swiper.min.css">
+  <link rel="stylesheet" href="../../resource/css/lib/animate/animate.css">
+  <link rel="stylesheet" href="../../resource/css/lib/jqueryUI/jquery-ui.css">
+  <link rel="stylesheet" href="../../resource/css/ui.reset.css">
+  <link rel="stylesheet" href="../../resource/css/ui.common.css">
+  <link rel="stylesheet" href="../../resource/css/ui.main.css">
+  <link rel="stylesheet" href="../../resource/css/ui.sub.css">
+  <link rel="stylesheet" href="../../resource/css/ui.responsive.css">
+ </head>
+
+ <body>
+    
+    <div id="wrapper">
+        <div id="popUp01" class="popup_wrap">
+            <div class="popup_bg"></div>
+            <div class="popup_area" style="width:800rem;">
+                <div class="pop_header">
+                    <h2>상세검색</h2>
+                    <button class="pop_close"><i class="icons i_pop_close"></i></button>
+                </div>
+                <div class="pop_cont">
+                    <div class="pop_detail_search">
+                        <table>
+                            <colgroup>
+                                <col style="width:100rem">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>포함단어</th>
+                                    <td>
+                                        <input type="text" class="wp100">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>기관명</th>
+                                    <td>
+                                        <select class="wp100">
+                                            <option>전체</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>파일유형</th>
+                                    <td>
+                                        <ul class="form_chk_list">
+                                            <li>
+                                                <span class="chk">
+                                                    <input type="checkbox" id="chk01">
+                                                    <label for="chk01">문서</label>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="chk">
+                                                    <input type="checkbox" id="chk02">
+                                                    <label for="chk02">이미지</label>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="chk">
+                                                    <input type="checkbox" id="chk03">
+                                                    <label for="chk03">영상</label>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="chk">
+                                                    <input type="checkbox" id="chk04">
+                                                    <label for="chk04">오디오</label>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>등록일자</th>
+                                    <td>
+                                        <div class="datepicker_box">
+                                            <div class="datepicker_area" style="width:128rem"><input type="text" class="datepicker form_inpt"></div>
+                                            <div class="datepicker_area" style="width:128rem"><input type="text" class="datepicker form_inpt"></div>
+                                        </div>
+                                        <div class="rdo_area">
+                                            <span class="rdo">
+                                                <input id="rdo01" type="radio" name="rod01" checked="">
+                                                <label for="rdo01">1개월</label>
+                                            </span>
+                                            <span class="rdo">
+                                                <input id="rdo02" type="radio" name="rod01">
+                                                <label for="rdo02">3개월</label>
+                                            </span>
+                                            <span class="rdo">
+                                                <input id="rdo03" type="radio" name="rod01">
+                                                <label for="rdo03">6개월</label>
+                                            </span>
+                                            <span class="rdo">
+                                                <input id="rdo04" type="radio" name="rod01">
+                                                <label for="rdo04">1년</label>
+                                            </span>
+                                            <span class="rdo">
+                                                <input id="rdo05" type="radio" name="rod01">
+                                                <label for="rdo05">전체</label>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="pop_btn_area">
+                    <button class="btn c-type04">초기화</button>
+                    <button class="btn c-type03">확인</button>
+                </div>
+            </div>
+        </div>
+        
+        <header id="header_wrap">
+            <div class="inner">
+                <h1 class="logo"><a href="#none">국회도서관</a></h1>
+                <ul class="header_gnb">
+                    <li><a href="#none">공유자료</a></li>
+                    <li><a href="#none">참여기관</a></li>
+                    <li><a href="#none">이용안내</a></li>
+                </ul>
+                <div class="header_etc">
+                    <div class="header_search_box">
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <div class="option">
+                            <span class="search"><button><i class="icons i_gnb_search"></i></button></span>
+                            <span class="filter"><button onclick="popupFunc('popUp01')"><i class="icons i_gnb_filter"></i></button></span>
+                        </div>
+                    </div>
+                    <div class="header_user">
+                        <a href="#none" class="user login">
+                            <i class="icons i_user"></i>
+                            <span class="name"><strong>홍길동</strong> 님</span>
+                        </a>
+                        <ul class="user_menu">
+                            <li><a href="#none" class="mypage">마이페이지 <i class="icons i_mypage_arrow"></i></a></li>
+                            <li><a href="#none" class="logout">로그아웃 <i class="icons i_logout"></i></a></li>
+                        </ul>
+                    </div>
+                    <button class="btn_upload"><i class="icons i_upload"></i></button>
+                </div>
+                <div class="header_mobile">
+                    <button><i class="icons i_upload"></i></button>
+                    <button><i class="icons i_m_search"></i></button>
+                    <button><i class="icons i_m_gnb"></i></button>
+                </div>
+            </div>
+        </header>
+
+        <div id="main_wrap">
+            <div class="location_area">
+                <div class="inner">
+                    <ul class="location_list">
+                        <li><a href="#none" class="home"><i class="icons i_loaction_home"></i></a></li>
+                        <li>
+                            <a href="#none">통합검색</a>
+                            <ul style="display:none;">
+                                <li><a href="#none">통합검색</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">최신자료</a>
+                            <ul style="display:none;">
+                                <li><a href="#none">통합검색</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="inner animate" data-animate="fadeInUp" data-delay=".1s">
+                <div class="title_area">
+                    <h2 class="title">국회발간물</h2>
+                </div>
+
+                <div class="public_cont_wrap">
+                    <div class="row">
+                        <ul class="col">
+                            <li class="col-20 col-lg-3 col-md-4 col-sd-6">
+                                <a href="#none">
+                                    <div class="img"><figure><img src="../../resource/images/img/img_detail01.png" alt=""></figure></div>
+                                    <h3 class="title">국회경과보고서국회경과보고서국회경과보고서국회경과보고서국회경과보고서국회경과보고서</h3>
+                                </a>
+                            </li>
+                            <li class="col-20 col-lg-3 col-md-4 col-sd-6">
+                                <a href="#none">
+                                    <div class="img"><figure><img src="../../resource/images/img/img_detail01.png" alt=""></figure></div>
+                                    <h3 class="title">국회경과보고서</h3>
+                                </a>
+                            </li>
+                            <li class="col-20 col-lg-3 col-md-4 col-sd-6">
+                                <a href="#none">
+                                    <div class="img"><figure><img src="../../resource/images/img/img_detail01.png" alt=""></figure></div>
+                                    <h3 class="title">국회경과보고서</h3>
+                                </a>
+                            </li>
+                            <li class="col-20 col-lg-3 col-md-4 col-sd-6">
+                                <a href="#none">
+                                    <div class="img"><figure><img src="../../resource/images/img/img_detail01.png" alt=""></figure></div>
+                                    <h3 class="title">국회경과보고서</h3>
+                                </a>
+                            </li>
+                            <li class="col-20 col-lg-3 col-md-4 col-sd-6">
+                                <a href="#none">
+                                    <div class="img"><figure><img src="../../resource/images/img/img_detail01.png" alt=""></figure></div>
+                                    <h3 class="title">국회경과보고서</h3>
+                                </a>
+                            </li>
+                            <li class="col-20 col-lg-3 col-md-4 col-sd-6">
+                                <a href="#none">
+                                    <div class="img"><figure><img src="../../resource/images/img/img_detail01.png" alt=""></figure></div>
+                                    <h3 class="title">국회경과보고서</h3>
+                                </a>
+                            </li>
+                            <li class="col-20 col-lg-3 col-md-4 col-sd-6">
+                                <a href="#none">
+                                    <div class="img"><figure><img src="../../resource/images/img/img_detail01.png" alt=""></figure></div>
+                                    <h3 class="title">국회경과보고서</h3>
+                                </a>
+                            </li>
+                            <li class="col-20 col-lg-3 col-md-4 col-sd-6">
+                                <a href="#none">
+                                    <div class="img"><figure><img src="../../resource/images/img/img_detail01.png" alt=""></figure></div>
+                                    <h3 class="title">국회경과보고서</h3>
+                                </a>
+                            </li>
+                            <li class="col-20 col-lg-3 col-md-4 col-sd-6">
+                                <a href="#none">
+                                    <div class="img"><figure><img src="../../resource/images/img/img_detail01.png" alt=""></figure></div>
+                                    <h3 class="title">국회경과보고서</h3>
+                                </a>
+                            </li>
+                            <li class="col-20 col-lg-3 col-md-4 col-sd-6">
+                                <a href="#none">
+                                    <div class="img"><figure><img src="../../resource/images/img/img_detail01.png" alt=""></figure></div>
+                                    <h3 class="title">국회경과보고서</h3>
+                                </a>
+                            </li>
+                            <li class="col-20 col-lg-3 col-md-4 col-sd-6">
+                                <a href="#none">
+                                    <div class="img"><figure><img src="../../resource/images/img/img_detail01.png" alt=""></figure></div>
+                                    <h3 class="title">국회경과보고서</h3>
+                                </a>
+                            </li>
+                            <li class="col-20 col-lg-3 col-md-4 col-sd-6">
+                                <a href="#none">
+                                    <div class="img"><figure><img src="../../resource/images/img/img_detail01.png" alt=""></figure></div>
+                                    <h3 class="title">국회경과보고서</h3>
+                                </a>
+                            </li>
+                            <li class="col-20 col-lg-3 col-md-4 col-sd-6">
+                                <a href="#none">
+                                    <div class="img"><figure><img src="../../resource/images/img/img_detail01.png" alt=""></figure></div>
+                                    <h3 class="title">국회경과보고서</h3>
+                                </a>
+                            </li>
+                            <li class="col-20 col-lg-3 col-md-4 col-sd-6">
+                                <a href="#none">
+                                    <div class="img"><figure><img src="../../resource/images/img/img_detail01.png" alt=""></figure></div>
+                                    <h3 class="title">국회경과보고서</h3>
+                                </a>
+                            </li>
+                            <li class="col-20 col-lg-3 col-md-4 col-sd-6">
+                                <a href="#none">
+                                    <div class="img"><figure><img src="../../resource/images/img/img_detail01.png" alt=""></figure></div>
+                                    <h3 class="title">국회경과보고서</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer_wrap">
+            <div class="inner">
+                <ul class="footer_top">
+                    <li><a href="#none">개인정보처리방침</a></li>
+                    <li><a href="#none">이메일수신거부</a></li>
+                    <li><a href="#none">문의하기</a></li>
+                </ul>
+                <div class="footer_info">
+                    <span class="footer_logo"><a href="#none">국회도서관</a></span>
+                    <div class="footer_inner">
+                        <div class="footer_address">
+                            <address class="address">서울특별시 중구 퇴계로27길 49 (저동2가, 센트럴에쓰 3층)</address>
+                            <p class="copy">COPYRIGHT ⓒ 지식공유 플랫폼. ALLRIGHT RESERVED.</p> 
+                        </div>
+                        <ul class="footer_tel">
+                            <li><span>대표번호</span> 02 3456 7890</li>
+                            <li><span>이메일</span> email@email.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- javascript -->
+    <script src="../../resource/js/lib/jquery/jquery-1.12.3.js"></script>
+    <script src="../../resource/js/lib/jquery/jquery.scrolla.js"></script>
+    <script src="../../resource/js/lib/jquery/jquery-ui.js"></script>
+    <script src="../../resource/js/lib/swiper/swiper.min.js"></script>
+    <script src="../../resource/js/lib/tweenmax/gsap.min.js"></script>
+    <script src="../../resource/js/ui.common.js"></script>
+    <script>
+        tabMenu('#tabList01','#tabCont01')
+    </script>
+ </body>
+</html>
