@@ -417,6 +417,7 @@
 .form_list_area .row>.col>li{padding:10rem 12rem;}
 .form_list_area .form_top{margin-bottom:10rem;}
 .form_list_area .form_top .label{color:#666;font-size:13rem;} 
+.form_list_area .form_top .req{color: #FF0000;}
 .form_msg{margin-top:12rem;color:#666;font-size:14rem;line-height:1.5;}
 .form_attach_area input[type="file"]{display:none;}
 .form_attach_area label{display:flex;flex-direction: column;height: 100rem;background: #F6F6F6;border: 1px dashed #DFDFDF;border-radius: 4px;cursor:pointer;justify-content:center;align-items:center;}
@@ -438,3 +439,65 @@
 .form_year{position:relative;border: 1px solid #DFDFDF;border-radius: 5px;padding-right:25rem;}
 .form_year input[type="text"]{border:0;}
 .form_year span{position:absolute;top:10rem;right:15rem;color:#000;font-size:14rem;font-weight:800;}
+/*****************
+    로그인회원가입
+******************/
+/* 로그인 */
+.login_wrap{max-width:400rem;margin:0 auto;padding-top:80rem;}
+.login_wrap.signup{max-width:600rem;}
+.login_wrap h2{color:#000;font-size:28rem;font-weight:800;text-align:center;}
+.login_wrap .form_list_area .row>.col{padding-top:40rem;}
+.login_wrap input[type="text"]:focus,
+.login_wrap input[type="password"]:focus{border-color: #F85C3A;box-shadow: 0px 0px 20px rgba(248, 92, 58, 0.12);}
+.form_pw_box{position:relative;}
+.form_pw_box input[type="password"]{padding-right:45rem;}
+.form_pw_box .btn_pw{position:absolute;top:9rem;right:15rem;}
+.pw_msg{display:inline-block;margin-top:8rem;color: #FF0000;font-size:13rem;}
+.pw_msg .icons{vertical-align:-3px;}
+.btn_login button{width:100%;height: 55rem;font-size:16rem;transition: all .2s;}
+.btn_login .c-type03:hover{background-color:#FF7654;border-color: transparent;}
+.btn_login .c-type01:hover{background-color:#F85C3A;color:#fff;}
+.login_etc{display:flex;align-items: center;justify-content: space-between;margin-top:15rem;}
+.login_etc span{color:#444;font-size:14rem;font-weight:bold;}
+.login_etc a{color:#F85C3A;font-size:14rem;}
+.login_etc a:hover{text-decoration:underline;}
+.login_msg{position:relative;margin-top:40rem;text-align:center;margin-bottom:20rem;}
+.login_msg:after{content:"";position:absolute;top:50%;left:0;right:0;height: 1px;background-color:#DFDFDF;transform: translateY(-50%);z-index:-1;}
+.login_msg span{display:inline-block;padding:0 25rem;background-color:#fff;color:#444;font-size:14rem;}
+.login_wrap .tabs_design03{margin-top:40rem;}
+/* 회원가입 */
+.signup_step{display:flex;justify-content:center;margin-top:20rem;}
+.signup_step>li{position:relative;}
+.signup_step>li+li:before{content:"";position:absolute;top:50%;left:0;right:0;background-color:#DFDFDF;height: 1px;z-index:-1;}
+.signup_step>li+li{padding-left:20rem;}
+.signup_step>li>span{display:flex;width:24rem;height:24rem;border-radius:50%;color:#fff;font-size:13rem;font-weight:bold;background-color:#DFDFDF;align-items: center;justify-content: center;}
+.signup_step>li.on>span{background-color:#F85C3A;}
+.signup_msg{margin-top:20rem;color:#444;font-size:14rem;line-height:1.8;text-align: center;}
+.signup_link{display:flex;margin:40rem -20rem 0 -20rem;}
+.signup_link>li{width:50%;box-sizing: border-box;padding:0 20rem;}
+.signup_link>li>a{display:flex;border: 1px solid #DFDFDF;border-radius: 10px;height: 240rem;box-sizing: border-box;align-items: center;justify-content: center;flex-direction: column;position:relative;}
+.signup_link>li>a:hover{box-shadow: 0px 0px 24px rgba(248, 92, 58, 0.12);}
+.signup_link>li>a:hover:after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;border:2px solid #F85C3A;border-radius: 10px;}
+.signup_link h3{margin-top:20rem;color:#000;font-size:18rem;font-weight:800;}
+.signup_link p{margin-top:10rem;color:#444;font-size:13rem;}
+.form_address{display:flex;}
+.form_address input{width:calc(100% - 130rem);margin-right:10rem;}
+.form_address button{width:120rem}
+.signup_cont{margin-top:40rem;}
+.signup_cont textarea:focus{border-color: #F85C3A;box-shadow: 0px 0px 20px rgba(248, 92, 58, 0.12);}
+.signup_top{display:flex;align-items:center;justify-content: space-between;padding-bottom:20rem;border-bottom:2px solid #403F3D;}
+.signup_top h3{color:#000;font-size:18rem;font-weight:800;}
+.signup_top span{color:#000;font-size:13rem;}
+.signup_top span em{color: #FF0000;}
+.login_wrap .signup_cont .form_list_area .row>.col{padding-top:20rem;}
+.pw_notice{display:inline-block;margin-top:5rem;color:#444;font-size:13rem;}
+.form_email{display:flex;margin:0 -5rem;}
+.form_email>li{width:33.333%;padding:0 5rem;position:relative;}
+.form_email>li:first-child{padding-right:25rem;}
+.form_email>li:first-child:after{content:"@";position:absolute;top:9px;right:3px;color:#666;font-size:14rem;}
+.form_file{display:flex;border: 1px solid #DFDFDF;border-radius: 5px;padding:9rem 10rem;}
+.form_file .upload_file{display:none;}
+.form_file input[type="text"]{border:0;padding-left:0;}
+.form_file input[type="text"]:focus{box-shadow: none;}
+.form_file label{text-align:center;cursor: pointer;}
+.signup_cont .b_btn_wrap{padding-top:40rem;margin-top:20rem;border-top:1px solid #403F3D;}

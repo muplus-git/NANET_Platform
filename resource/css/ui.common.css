@@ -78,11 +78,13 @@ select.disabled, select[disabled] {background-color:#F6F6F6; border-color:#dfdfd
 .icons.i_form_file:before{background-image: url('../images/icons/ico_form_file.png');width:18rem;height: 18rem;}
 .icons.i_form_delete:before{background-image: url('../images/icons/ico_form_delete.png');width:16rem;height: 16rem;}
 .icons.i_file_upload:before{background-image: url('../images/icons/ico_file_upload.png');width:32rem;height: 32rem;}
+.icons.i_pw_visible:before{background-image: url('../images/icons/ico_pw_visible.png');width:20rem;height: 20rem;}
+.icons.i_pw_msg:before{background-image: url('../images/icons/ico_pw_msg.png');width:16rem;height: 16rem;}
 /**********
     COMMON
 ***********/
 /* BUTTON */
-.btn{display:inline-block;border-radius: 5px;font-size:14rem;padding:10rem 13rem;font-weight:bold;min-width:80rem;}
+.btn{display:inline-block;border-radius: 5px;font-size:14rem;padding:10rem 13rem 9rem 13rem;font-weight:bold;min-width:80rem;}
 .btn+.btn{margin-left:7px;}
 .btn.radius{border-radius: 30px;}
 .btn.c-type01{border:1px solid #F85C3A;color:#F85C3A;background-color:#fff;}
@@ -91,6 +93,7 @@ select.disabled, select[disabled] {background-color:#F6F6F6; border-color:#dfdfd
 .btn.c-type04{border:1px solid #DFDFDF;color:#666666;background-color:#FFFFFF;}
 .btn.c-type05{border:1px solid #686360;color:#fff;background-color:#686360;}
 .btn.c-type06{border:1px solid #403F3D; color:#fff; background-color:#403F3D; } 
+.btn.c-type07{border:1px solid #DFDFDF; color:#444; background-color:#F6F6F6; } 
 
 /* FORM SEARCH */
 .form_chk_list{display:flex;}
@@ -240,6 +243,12 @@ select.disabled, select[disabled] {background-color:#F6F6F6; border-color:#dfdfd
 .tabs_design02>li{width:12.5%;box-sizing:border-box;padding:0 3rem;}
 .tabs_design02>li>a{display:block;border: 1px solid #DFDFDF;border-radius: 4px;color:#666;font-size:14rem;text-align: center;padding:10rem 0;}
 .tabs_design02>li.on>a{color:#fff; background-color:#F85C3A;border: 1px solid #F85C3A;}
+.tabs_design03{display:flex;position:relative;}
+.tabs_design03:after{content:"";position:absolute;bottom:-3px;right:0;left:0;height:4px;background-color:#DFDFDF;}
+.tabs_design03>li{flex: 1;}
+.tabs_design03>li>a{display:block;position:relative;color:#999;font-size:16rem;font-weight:bold;text-align:center;padding-bottom:12rem;}
+.tabs_design03>li.on>a{color:#F85C3A;}
+.tabs_design03>li.on>a:after{content:"";position:absolute;bottom:-3px;right:0;left:0;height:4px;background-color:#F85C3A;z-index:5;}
 
 /* ROW LIST */
 .row>.col{display:flex;flex-wrap: wrap;}

@@ -34,3 +34,5 @@ select::-ms-expand {display:none;}
 .wp100{width:100% !important;}
 .mt0{margin-top:0 !important;}
 a[href^=tel] {color: inherit;text-decoration: none;}
+input::-ms-reveal,
+input::-ms-clear {display: none;}
