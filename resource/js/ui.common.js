@@ -11,6 +11,7 @@ $(function(){
     searchLnbMenu();
     bookBoxClose();
     headerGnb();
+    locationMenu();
 })
 
 $(window).load(function(){
@@ -219,6 +220,13 @@ function headerGnb(){
         $("header").addClass("on");
     }, function() {
         $("header").removeClass("on");
+    });
+}
+
+function locationMenu(){
+    $('.location_list>li>.location').on('click',function(){
+        $(this).toggleClass('on');
+        $(this).next('ul').toggleClass('on');
     });
 }
 
