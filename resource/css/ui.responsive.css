@@ -65,11 +65,13 @@
     .col-lg-2{ width:16.66666667% }
     .col-lg-1{ width:8.33333333% }
 
-    #header_wrap .inner{height:60rem;}
-    #header_wrap .logo a{width:120rem;height: 34rem;}
+    #header_wrap .inner{height:60rem;align-items:center;}
+    #header_wrap .logo{transform: translateY(0);}
+    #header_wrap .logo a{width:125rem;height: 35rem;}
     #header_wrap .header_mobile{display:block;}
     #header_wrap .header_gnb{display:none;}
     #header_wrap .header_etc{display:none;}
+    #header_wrap:before{bottom:-1px;top:auto;}
     #main_wrap{padding:60rem 0 100rem 0;}
 
     .location_area .inner{padding:0;}
