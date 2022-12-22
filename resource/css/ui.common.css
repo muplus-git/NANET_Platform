@@ -80,6 +80,11 @@ select.disabled, select[disabled] {background-color:#F6F6F6; border-color:#dfdfd
 .icons.i_file_upload:before{background-image: url('../images/icons/ico_file_upload.png');width:32rem;height: 32rem;}
 .icons.i_pw_visible:before{background-image: url('../images/icons/ico_pw_visible.png');width:20rem;height: 20rem;}
 .icons.i_pw_msg:before{background-image: url('../images/icons/ico_pw_msg.png');width:16rem;height: 16rem;}
+.icons.i_conf_req01:before{background-image: url('../images/icons/ico_conf_req01.png');width:32rem;height: 32rem;}
+.icons.i_conf_req02:before{background-image: url('../images/icons/ico_conf_req02.png');width:32rem;height: 32rem;}
+.icons.i_conf_req03:before{background-image: url('../images/icons/ico_conf_req03.png');width:32rem;height: 32rem;}
+.icons.i_plat_img01:before{background-image: url('../images/icons/ico_plat_img01.png');width:72rem;height: 72rem;}
+.icons.i_plat_img02:before{background-image: url('../images/icons/ico_plat_img02.png');width:72rem;height: 72rem;}
 /**********
     COMMON
 ***********/
@@ -254,8 +259,10 @@ select.disabled, select[disabled] {background-color:#F6F6F6; border-color:#dfdfd
 .row>.col{display:flex;flex-wrap: wrap;}
 .row>.col>li{box-sizing:border-box;}
 
+.row.gutter30>.col{margin:0 -15rem;}
 .row.gutter24>.col{margin:0 -12rem;}
 .row.gutter16>.col{margin:-8rem -8rem;}
+.row.gutter30>.col>li{padding:0 15rem;}
 .row.gutter24>.col>li{padding:0 12rem;}
 .row.gutter16>.col>li{padding:8rem 8rem;}
 

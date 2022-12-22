@@ -196,6 +196,7 @@
 /**********
     참여기관
 ***********/
+/* 참여기관리스트 */
 .organization_list{margin-top:15rem;}
 .organization_list .row.gutter24>.col{margin:-12rem -12rem;}
 .organization_list .row.gutter24>.col>li{padding:12rem 12rem;}
@@ -207,6 +208,24 @@
 .organization_list .link_box a+a{margin-left:10rem;}
 .organization_list .link_box a.c-type01{background-color:#F6F6F6;color:#666;}
 .organization_list .link_box a.c-type02{background-color:#FBF7F6;color:#F85C3A;}
+/* 학술정보협의회 */
+.conference_area .title{margin-top:40rem;color:#000;font-size:20rem;font-weight:800;}
+.conference_area .title.first{margin-top:0;}
+.conference_area .desc{margin-top:15rem;color:#444;font-size:16rem;line-height:1.8;}
+.conference_link{padding-top:30rem;}
+.conference_link a{display:flex;align-items:center;position:relative;border-radius: 10px;height:100rem;padding:0 40rem;}
+.conference_link a.bg01{background-color:#FF714E;}
+.conference_link a.bg02{background-color:#FFAA5B;}
+.conference_link a.bg03{background-color:#ADA49F;}
+.conference_link strong{display:inline-block;color:#fff;font-size:18rem;font-weight:800;margin-left:30rem;}
+.conference_link a:before{content:"";position:absolute;top:50%;right:40rem;width:10rem;height:10rem;border-top:2px solid #fff;border-right:2px solid #fff;transform:translateY(-50%) rotate(45deg);transition: all .2s;}
+.conference_intro{padding-top:60rem;}
+.conference_intro .title{margin-top:0;}
+.conference_intro .box{height:230rem;border: 1px solid #DFDFDF;border-radius: 10px;box-sizing: border-box;padding:40rem 40rem;}
+.conference_intro a{margin-top:13rem;}
+.conference_msg{margin-top:40rem;padding:20rem 0;background-color:#F6F6F6;border-radius:10px;text-align:center;}
+.conference_msg p{color:#000;font-size:16rem;}
+.conference_msg a{color: #F85C3A;text-decoration: underline;}
 
 /* 정보교류 커뮤니티 리스트 */
 .t_status { display:inline-block; height:34rem; line-height:32rem; font-size:14rem; background-color:#F6F6F6; padding:0 16rem; border-radius: 50rem; } 
@@ -337,6 +356,32 @@
 .book_detail .detail_book .sub_title{color:#000;font-size:20rem;font-weight:800;}
 .book_detail .msg{margin-top:10rem;margin-bottom:25rem;background: #FFFFFF;border-radius: 10px;padding:15rem;color:#000;font-size:14rem;}
 .book_detail .msg strong{font-weight:800;}
+
+/*****************
+    이용안내
+******************/
+.platform_area .title{margin-top:40rem;color:#000;font-size:20rem;font-weight:800;}
+.platform_area .title.first{margin-top:0;}
+.platform_area .title.mt60{margin-top:60rem;}
+.platform_area .desc{margin-top:15rem;color:#444;font-size:16rem;line-height:1.8;}
+.platform_vison_area{margin-top:15rem;background-color:#FBF7F6;border-radius: 10px;padding:43rem 0 43rem 0;}
+.platform_vison_area li{padding-left:60rem;}
+.platform_vison_area li+li{border-left:1px solid #DFDFDF}
+.platform_vison_area h4{color:#000;font-size:20rem;font-weight:800;}
+.platform_vison_area p{margin-top:13rem;color:#444;font-size:16rem;line-height:1.5;}
+.platform_img{margin-top:30rem;}
+.platform_info{padding-top:15rem;}
+.platform_info .box{position:relative;border: 1px solid #DFDFDF;border-radius: 10px;padding:35rem 40rem;padding-left:155rem;}
+.platform_info .box i{position:absolute;top:40rem;left:40rem;}
+.platform_info .box h4{color:#000;font-size:18rem;font-weight:800;}
+.platform_info .box ul{margin-top:15rem;}
+.platform_info .box li{position:relative;color:#444;font-size:14rem;padding-left:12rem;}
+.platform_info .box li+li{margin-top:10rem;}
+.platform_info .box li:before{content:"";position:absolute;top:9rem;left:0;width:3px;height:3px;border-radius:50%;background-color:#444;}
+.platform_cont{margin-top:30rem;}
+.platform_cont+.platform_cont{padding-top:30rem;margin-top:30rem;border-top:1px solid #DFDFDF;}
+.platform_cont h4{color:#000;font-size:18rem;}
+.platform_cont p{margin-top:10rem;color:#444;font-size:16rem;}
 
 /*****************
     마이페이지

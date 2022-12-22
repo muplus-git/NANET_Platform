@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>프로젝트</title>
+  <!-- css -->
+  <link rel="stylesheet" href="../../resource/css/lib/swiper/swiper.min.css">
+  <link rel="stylesheet" href="../../resource/css/lib/animate/animate.css">
+  <link rel="stylesheet" href="../../resource/css/lib/jqueryUI/jquery-ui.css">
+  <link rel="stylesheet" href="../../resource/css/ui.reset.css">
+  <link rel="stylesheet" href="../../resource/css/ui.common.css">
+  <link rel="stylesheet" href="../../resource/css/ui.main.css">
+  <link rel="stylesheet" href="../../resource/css/ui.sub.css">
+  <link rel="stylesheet" href="../../resource/css/ui.responsive.css">
+ </head>
+
+ <body>
+    
+    <div id="wrapper">
+
+        <header id="header_wrap">
+            <div class="inner">
+                <h1 class="logo"><a href="#none">국회도서관</a></h1>
+                <ul class="header_gnb">
+                    <li>
+                        <a href="#none">공유자료</a>
+                        <ul class="gnb_sub2">
+                            <li><a href="#none">최신자료</a></li>
+                            <li><a href="#none">유형별자료</a></li>
+                            <li><a href="#none">기관별자료</a></li>
+                            <li><a href="#none">국회발간물 모아보기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">참여기관</a>
+                        <ul class="gnb_sub2">
+                            <li><a href="#none">참여기관소개</a></li>
+                            <li>
+                                <a href="#none">학술정보협의회</a>
+                                <ul class="gnb_sub3">
+                                    <li><a href="#none">협의회소개</a></li>
+                                    <li><a href="#none">정보교류커뮤니티</a></li>
+                                    <li><a href="#none">도서관계소식</a></li>
+                                    <li><a href="#none">도서안내</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">이용안내</a>
+                        <ul class="gnb_sub2">
+                            <li><a href="#none">플랫폼소개</a></li>
+                            <li><a href="#none">이용안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="header_etc">
+                    <div class="header_search_box">
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <div class="option">
+                            <span class="search"><button><i class="icons i_gnb_search"></i></button></span>
+                            <span class="filter"><button onclick="popupFunc('popUp01')"><i class="icons i_gnb_filter"></i></button></span>
+                        </div>
+                    </div>
+                    <div class="header_user">
+                        <a href="#none" class="user login">
+                            <i class="icons i_user"></i>
+                            <span class="name"><strong>홍길동</strong> 님</span>
+                        </a>
+                        <ul class="user_menu">
+                            <li><a href="#none" class="mypage">마이페이지 <i class="icons i_mypage_arrow"></i></a></li>
+                            <li><a href="#none" class="logout">로그아웃 <i class="icons i_logout"></i></a></li>
+                        </ul>
+                    </div>
+                    <button class="btn_upload"><i class="icons i_upload"></i></button>
+                </div>
+                <div class="header_mobile">
+                    <button><i class="icons i_upload"></i></button>
+                    <button><i class="icons i_m_search"></i></button>
+                    <button><i class="icons i_m_gnb"></i></button>
+                </div>
+            </div>
+        </header>
+
+        <div id="main_wrap">
+            <div class="location_area">
+                <div class="inner">
+                    <ul class="location_list">
+                        <li><a href="#none" class="home"><i class="icons i_loaction_home"></i></a></li>
+                        <li>
+                            <a href="#none" class="location">이용안내</a>
+                            <ul class="location_menu">
+                                <li><a href="#none">공유자료</a></li>
+                                <li><a href="#none">참여기관</a></li>
+                                <li><a href="#none">이용안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none" class="location">플랫폼소개</a>
+                            <ul class="location_menu">
+                                <li><a href="#none">플랫폼소개</a></li>
+                                <li><a href="#none">이용안내</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="inner animate" data-animate="fadeInUp" data-delay=".1s">
+                <div class="title_area">
+                    <h2 class="title">플랫폼 소개</h2>
+                </div>
+
+                <div class="platform_area">
+                    <h3 class="title first">지식공유사업이란?</h3>
+                    <p class="desc">
+                        개인이나 단체의 가치있는 저작물을 국회도서관이 저작권 동의를 받아 디지털화하여 관리하고, <br>
+                        국민 누구나 손쉽게 이용할 수 있도록 함으로써 저작권자와 이용자 모두에게 <br>
+                        지식의 가치를 높이고자 하는 프로젝트
+                    </p>
+
+                    <h3 class="title">목표 & 비전</h3>
+                    <div class="platform_vison_area">
+                        <div class="row">
+                            <ul class="col">
+                                <li class="col-4 col-md-12">
+                                    <div class="box">
+                                        <h4>자유로운 이용환경</h4>
+                                        <p>
+                                            저작권자의 동의를 바탕으로 한 <br>
+                                            저작물의 자유로운  이용환경 활성화
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="col-4 col-md-12">
+                                    <div class="box">
+                                        <h4>시민참여 환경 조성</h4>
+                                        <p>
+                                            지식공유운동의 사회적 확산을 통한 <br>
+                                            자발적인 시민참여환경 조성
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="col-4 col-md-12">
+                                    <div class="box">
+                                        <h4>가치있는 지식정보</h4>
+                                        <p>
+                                            민간단체 및 지방 정부, 연구기관 자료 등 <br>
+                                            정책현안 자료의 고품질화를 통한 <br>
+                                            가치있는 지식정보 제공
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3 class="title">목표 & 비전</h3>
+                    <div class="platform_img">
+                        <img src="../../resource/images/img/img_platform_bus.png" alt="">
+                    </div>
+
+                    <h3 class="title mt60">왜 지식공유가 필요할까?</h3>
+                    <div class="platform_info">
+                        <div class="row gutter30">
+                            <ul class="col">
+                                <li class="col-6 col-sd-12">
+                                    <div class="box">
+                                        <i class="icons i_plat_img01"></i>
+                                        <h4>필요할 때 찾을 수 있는 자료의 저장소</h4>
+                                        <ul>
+                                            <li>내가 올린 자료는 언제든 필요할 때 다시 다운로드 가능</li>
+                                            <li>공유한 자료의 공개/비공개 여부도 나의 의사에 따라 결정</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="col-6 col-sd-12">
+                                    <div class="box">
+                                        <i class="icons i_plat_img02"></i>
+                                        <h4>누구나 할 수 있는 재능기부</h4>
+                                        <ul>
+                                            <li>나의 지식을 공유함으로써 나눔을 실천</li>
+                                            <li>나의 지식으로부터 새로운 지식을 만들어가는 지식 생태계 창조</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3 class="title mt60">어떤 자료들을 공유할 수 있을까?</h3>
+                    <div class="platform_cont">
+                        <h4>개인 및 단체가 저작권을 가지고 있는 저작물(위탁저작물 포함)</h4>
+                        <p>
+                            단행본, 연속간행물, 학술기사, 세미나자료, 지도, 고문서, 사진, 녹음자료(오디오), 시청각자료(비디오‧동영상)
+                        </p>
+                    </div>
+                    <div class="platform_cont">
+                        <h4>민간단체, 지방정부, 연구기관의 저작물</h4>
+                        <p>지식공유 홈페이지를 통해 민간단체, 지방정부, 연구기관의 자료를 수집·보존</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer_wrap">
+            <div class="inner">
+                <ul class="footer_top">
+                    <li><a href="#none">개인정보처리방침</a></li>
+                    <li><a href="#none">이메일수신거부</a></li>
+                    <li><a href="#none">문의하기</a></li>
+                </ul>
+                <div class="footer_info">
+                    <span class="footer_logo"><a href="#none">국회도서관</a></span>
+                    <div class="footer_inner">
+                        <div class="footer_address">
+                            <address class="address">서울특별시 중구 퇴계로27길 49 (저동2가, 센트럴에쓰 3층)</address>
+                            <p class="copy">COPYRIGHT ⓒ 지식공유 플랫폼. ALLRIGHT RESERVED.</p> 
+                        </div>
+                        <ul class="footer_tel">
+                            <li><span>대표번호</span> 02 3456 7890</li>
+                            <li><span>이메일</span> email@email.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- javascript -->
+    <script src="../../resource/js/lib/jquery/jquery-1.12.3.js"></script>
+    <script src="../../resource/js/lib/jquery/jquery.scrolla.js"></script>
+    <script src="../../resource/js/lib/jquery/jquery-ui.js"></script>
+    <script src="../../resource/js/lib/swiper/swiper.min.js"></script>
+    <script src="../../resource/js/lib/tweenmax/gsap.min.js"></script>
+    <script src="../../resource/js/ui.common.js"></script>
+    <script>
+        tabMenu('#tabList01','#tabCont01')
+    </script>
+ </body>
+</html>
