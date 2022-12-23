@@ -14,7 +14,7 @@
 /**********
     LAYOUT
 ***********/
-/* #wrapper{min-width:1240rem;} */
+#wrapper{position:relative;min-height:100%;box-sizing:border-box;padding-bottom:190rem;}
 .inner{max-width:1200px;margin:0 auto;padding:0 20rem;}
 .animate{visibility: hidden;}
 #main_wrap{padding:80rem 0 100rem 0;}
@@ -25,6 +25,7 @@ select {color:#444;}
 select.disabled, select[disabled] {background-color:#F6F6F6; border-color:#dfdfdf;}
 .dim{position: fixed;top:0;right:0;bottom:0;left:0;background-color:#000; z-index: 90;visibility: hidden;transition: all .3s;opacity:0;}
 .dim.on{visibility: visible;opacity:.5;}
+html,body{height: 100%;}
 
 /**********
     ICONS
@@ -88,6 +89,9 @@ select.disabled, select[disabled] {background-color:#F6F6F6; border-color:#dfdfd
 .icons.i_plat_img01:before{background-image: url('../images/icons/ico_plat_img01.png');width:72rem;height: 72rem;}
 .icons.i_plat_img02:before{background-image: url('../images/icons/ico_plat_img02.png');width:72rem;height: 72rem;}
 .icons.i_lnb_close_w:before{background-image: url('../images/icons/ico_i_lnb_close_w.png');width:24rem;height: 24rem;}
+.icons.i_like:before{background-image: url('../images/icons/ico_like.png');width:16rem;height: 16rem;}
+.icons.i_reply_modify:before{background-image: url('../images/icons/ico_reply_modify.png');width:12rem;height: 12rem;}
+.icons.i_reply_delete:before{background-image: url('../images/icons/ico_reply_delete.png');width:12rem;height: 12rem;}
 /**********
     COMMON
 ***********/
@@ -369,7 +373,7 @@ select.disabled, select[disabled] {background-color:#F6F6F6; border-color:#dfdfd
 /**********
     FOOTER
 ***********/
-#footer_wrap{padding:40rem 0;border-top:1px solid #EEEEEE;}
+#footer_wrap{position:absolute;bottom:0;left:0;right:0;width:100%;padding:40rem 0;border-top:1px solid #EEEEEE;}
 #footer_wrap .footer_top{display:flex;}
 #footer_wrap .footer_top>li{position:relative;}
 #footer_wrap .footer_top>li+li{padding-left:12rem;margin-left:12rem;}

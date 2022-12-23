@@ -114,6 +114,8 @@
 @media (max-width: 860px){
 
     html { font-size: 0.13020833333333335vw;}
+    #wrapper{padding-bottom:0;}
+    #footer_wrap{position: static;}
 
     .col-md-12{ width:100% }
     .col-md-11{ width:91.66666667% }

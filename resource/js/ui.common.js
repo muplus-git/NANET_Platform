@@ -14,6 +14,7 @@ $(function(){
     locationMenu();
     mobileLnbMenu();
     mobileSearchFunc();
+    likeBtn();
 })
 
 $(window).load(function(){
@@ -262,5 +263,11 @@ function mobileSearchFunc(){
         $('.header_mobile .btn_m_search').removeClass('on');
         $('.m_header_search').removeClass('on');
         $('.dim').removeClass('on');
+    });
+}
+
+function likeBtn(){
+    $('.bookmark').on('click',function(){
+        $(this).toggleClass('on');
     });
 }
