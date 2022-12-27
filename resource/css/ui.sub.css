@@ -207,6 +207,7 @@
 .organization_list .row.gutter24>.col{margin:-12rem -12rem;}
 .organization_list .row.gutter24>.col>li{padding:12rem 12rem;}
 .organization_list .box{border: 1px solid #DFDFDF;border-radius: 10px;padding:20rem 20rem;}
+.organization_list .img{text-align: center;}
 .organization_list .name{margin-top:20rem;color:#000;font-size:18rem;font-weight:800;}
 .organization_list .desc{height:60rem;margin-top:12rem;color:#444;font-size:14rem;line-height:1.5;word-break: normal;}
 .organization_list .link_box{display:flex;margin-top:25rem;}
@@ -232,6 +233,7 @@
 .conference_msg{margin-top:40rem;padding:20rem 0;background-color:#F6F6F6;border-radius:10px;text-align:center;}
 .conference_msg p{color:#000;font-size:16rem;}
 .conference_msg a{color: #F85C3A;text-decoration: underline;}
+.conference_msg br{display:none;}
 
 /* 정보교류 커뮤니티 리스트 */
 .t_status { display:inline-block; height:34rem; line-height:32rem; font-size:14rem; background-color:#F6F6F6; padding:0 16rem; border-radius: 50rem; } 
@@ -379,7 +381,7 @@
 .platform_area .title.mt60{margin-top:60rem;}
 .platform_area .desc{margin-top:15rem;color:#444;font-size:16rem;line-height:1.8;}
 .platform_vison_area{position:relative;margin-top:15rem;background-color:#FBF7F6;border-radius: 10px;padding:43rem 0 43rem 0;}
-.platform_vison_area:before{content:"";position:absolute;top:-232rem;right:0;width:560rem;height:232rem;background:url('../images/img/img_platform_intro.png') no-repeat 50%;background-size:cover;}
+.platform_vison_area:before{content:"";position:absolute;top:-232rem;right:0;width:560rem;height:232rem;background:url('../images/img/img_platform_intro.png') no-repeat 50%;background-size:100%;}
 .platform_vison_area li{padding-left:60rem;}
 .platform_vison_area li+li{border-left:1px solid #DFDFDF}
 .platform_vison_area h4{color:#000;font-size:20rem;font-weight:800;}
@@ -464,7 +466,7 @@
 .mypage_scrap_area .close{position:absolute;top:20rem;right:20rem;}
 .data_none{padding-top:110rem;background:url('../images/img/img_search_none.png') no-repeat top center;background-size:160rem auto;}
 .data_none p{color:#000;font-size:20rem;font-weight:800;text-align: center;}
-.mypage_info{width:680rem;margin:0 auto;padding-top:40rem;}
+.mypage_info{max-width:680rem;margin:0 auto;padding-top:40rem;}
 .mypage_info h2{color:#000;font-size:24rem;font-weight:800;text-align:center;}
 .mypage_info .tbl_style01{margin-top:40rem;}
 .mypage_info .tbl_style01 tbody th{text-align:left;padding:20rem 15rem;border-bottom:1px solid #dfdfdf;font-size:14rem;}
