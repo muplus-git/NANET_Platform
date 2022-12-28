@@ -92,6 +92,9 @@ html,body{height: 100%;}
 .icons.i_like:before{background-image: url('../images/icons/ico_like.png');width:16rem;height: 16rem;}
 .icons.i_reply_modify:before{background-image: url('../images/icons/ico_reply_modify.png');width:12rem;height: 12rem;}
 .icons.i_reply_delete:before{background-image: url('../images/icons/ico_reply_delete.png');width:12rem;height: 12rem;}
+.icons.i_down_01:before{background-image: url('../images/icons/ico_down_c_type01.png');width:20rem;height: 20rem;}
+.icons.i_down_02:before{background-image: url('../images/icons/ico_down_c_type02.png');width:20rem;height: 20rem;}
+.icons.i_share:before{background-image: url('../images/icons/ico_share.png');width:20rem;height: 20rem;}
 /**********
     COMMON
 ***********/
@@ -104,7 +107,8 @@ html,body{height: 100%;}
 .btn.c-type03{border:1px solid #F85C3A;color:#fff;background-color:#F85C3A;}
 .btn.c-type04{border:1px solid #DFDFDF;color:#666666;background-color:#FFFFFF;}
 .btn.c-type05{border:1px solid #686360;color:#fff;background-color:#686360;}
-.btn.c-type06{border:1px solid #403F3D; color:#fff; background-color:#403F3D; } 
+.btn.c-type06{border:1px solid #403F3D; color:#fff; background-color:#403F3D; }
+.btn.c-type06:hover{background-color:#5d5c5a;}
 .btn.c-type07{border:1px solid #DFDFDF; color:#444; background-color:#F6F6F6; } 
 
 /* FORM SEARCH */
