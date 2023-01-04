@@ -232,8 +232,8 @@ function locationMenu(){
 }
 
 function mobileLnbMenu(){
-    $('.lnb_nav_area li.active').addClass('open').children('ul').show();
-    $('.lnb_nav_area li.has-sub>a').on('click', function(){
+    $('.lnb_nav_area li.active,.lnb_list li.active').addClass('open').children('ul').show();
+    $('.lnb_nav_area li.has-sub>a,.lnb_list li.has-sub>a').on('click', function(){
         //$(this).removeAttr('href');
         var element = $(this).parent('li');
         if (element.hasClass('on')) {
