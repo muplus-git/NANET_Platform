@@ -344,7 +344,7 @@ html,body{height: 100%;}
 #header_wrap .header_lnb{position: fixed;top:0;bottom:0;right:-340px;background-color:#FFFFFF;z-index:100; transition: all 0.7s cubic-bezier(0.75, 0, 0.25, 1);max-width:100%;max-height:100%;transform: translateX(0);width:340px;}
 #header_wrap .header_lnb.on{width:100vw;right:0;}
 #header_wrap .lnb_top_area{background-color:#403F3D;padding:20rem 20rem;}
-#header_wrap .lnb_top_area .logo a{background-image:url('../images/icons/logo_mobile.png');}
+#header_wrap .logo_m a{display:block;width:125rem;height:35rem;background:url('../images/icons/logo_mobile.png') 50%;background-size:cover;text-indent:-9999px;}
 #header_wrap .lnb_top{display:flex;align-items:center;justify-content:space-between;}
 #header_wrap .lnb_box{margin-top:35rem;}
 #header_wrap .lnb_login_before{display:flex;align-items:center;justify-content:space-between;}
