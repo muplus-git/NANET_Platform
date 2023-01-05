@@ -74,10 +74,6 @@
     #header_wrap:before{bottom:-1px;top:auto;}
     #main_wrap{padding:60rem 0 100rem 0;}
 
-    .location_area .inner{padding:0;}
-    .location_list{display:flex;}
-    .location_list>li{min-width:auto;}
-    .location_list>li+li{flex: 1;}
 
     .main_sec_visual{height:700rem;}
     .main_inner.reverse .img{margin-left:-20rem;}
@@ -281,17 +277,11 @@
 
 
     html { font-size: 0.26666666666666665vw;}
-    .title_area{padding:20rem 0 15rem 0;}
+    .title_area{padding:0 0 15rem 0;}
     .paging_wrap .paging_total{display:none;}
     .paging_wrap .btn_area{position: static;margin-top:20rem;text-align: center;}
     .paging_wrap:before{content:"";position:absolute;top:0;left:-20rem;right:-20rem;height: 10rem;background-color:#F6F6F6;border-top:1px solid #EEEEEE;box-sizing:border-box;}
     .paging_wrap{margin-top:25rem;padding-top:25rem;}
-    .location_list>li:first-child{min-width:40rem;}
-    .location_list .home{width:40rem;height:40rem;}
-    .location_list>li>a{height:40rem;font-size:12rem;padding:10rem 10rem;}
-    .location_list>li>a:after{display:none;}
-    .location_menu{top:40rem;}
-    .location_menu>li>a{font-size:12rem;padding:10rem 10rem;}
 
     .col-sd-12{ width:100% }
     .col-sd-11{ width:91.66666667% }
@@ -359,7 +349,6 @@
     /**********
     통합검색
     ***********/
-    .total_search_top_area{padding:35rem 0;}
     .total_search_tags{margin:-4rem -4rem;}
     .total_search_tags a{padding:4rem;}
     .total_search_result{margin-top:20rem;}

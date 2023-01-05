@@ -30,7 +30,7 @@
 .search_menu_lnb .lnb_list>li>ul>li>a{display:block;position:relative;padding-left:10rem;color:#444;font-size:13rem;line-height:1.8;}
 .search_menu_lnb .lnb_list>li>ul>li>a:before{content:"-";position:absolute;top:0;left:0;color:#444;font-size:13rem;}
 
-.total_search_top_area{padding:40rem 0;background-color:#FBF7F6;}
+.total_search_top_area{padding:0 0 40rem 0;background-color:#FBF7F6;}
 .total_search_box{display:flex;align-items: center;}
 .total_search_box .detail{background: #686360;border-radius: 10px;background-color:#686360;font-size:18rem;font-weight:bold;color:#fff;padding:15rem 30rem;margin-left:20rem;}
 .total_search_box .detail i{margin-right:5rem;}
@@ -133,7 +133,7 @@
 .total_search_list.card .info>li>em{width:calc(100% - 36rem);white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
 
 /* 통합검색 상세 */
-.cont_header_area{border-bottom:2px solid #403F3D;margin:40rem 0 20rem 0;padding-bottom:20rem;}
+.cont_header_area{border-bottom:2px solid #403F3D;margin:0 0 20rem 0;padding-bottom:20rem;}
 .cont_header_area .title{margin-top:8rem;color:#000;font-size:24rem;font-weight:800;}
 .cont_header_info{display:flex;align-items:center;justify-content:space-between;margin-top:10rem;}
 .cont_header_area .info{display:flex;}
@@ -454,7 +454,7 @@
 /*****************
     마이페이지
 ******************/
-.mypage_top_area{padding:40rem 0;background-color:#FBF7F6;}
+.mypage_top_area{padding:0 0 40rem 0;background-color:#FBF7F6;}
 .mypage_top_area h2{color:#000;font-size:24rem;font-weight:800;}
 .mypage_top_box{display:flex;justify-content: space-between;align-items: center;margin-top:35rem;}
 .mypage_top_user{display:flex;}
@@ -517,7 +517,7 @@
 .mypage_scrap_area .close{position:absolute;top:20rem;right:20rem;}
 .data_none{padding-top:110rem;background:url('../images/img/img_search_none.png') no-repeat top center;background-size:160rem auto;}
 .data_none p{color:#000;font-size:20rem;font-weight:800;text-align: center;}
-.mypage_info{max-width:680rem;margin:0 auto;padding-top:40rem;}
+.mypage_info{max-width:680rem;margin:0 auto;/* padding-top:40rem; */}
 .mypage_info h2{color:#000;font-size:24rem;font-weight:800;text-align:center;}
 .mypage_info .tbl_style01{margin-top:40rem;}
 .mypage_info .tbl_style01 tbody th{text-align:left;padding:20rem 15rem;border-bottom:1px solid #dfdfdf;font-size:14rem;}
