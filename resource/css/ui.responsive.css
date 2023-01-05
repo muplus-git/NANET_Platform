@@ -189,8 +189,10 @@
 
     #footer_wrap{padding:20rem 0;}
     #footer_wrap .footer_inner{margin-top:15rem;justify-content: space-between;}
-    #footer_wrap .footer_logo{position: static;}
-    #footer_wrap .footer_info{padding-left:0;padding-top:15rem;margin-top:15rem;}
+    #footer_wrap .footer_top{margin-top:15rem;}
+    #footer_wrap .footer_logo{position: static;transform: translateY(0);}
+    #footer_wrap .footer_info{padding-left:0;}
+    #footer_wrap .footer_logo a{width:54rem;height:38rem;}
 
     .popup_area{width:auto !important;left:20rem;right:20rem;transform: translate(0,-50%);}
     .pop_detail_search table tbody th,
