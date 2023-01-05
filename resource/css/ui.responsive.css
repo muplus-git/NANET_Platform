@@ -67,7 +67,7 @@
 
     #header_wrap .inner{height:60rem;align-items:center;}
     #header_wrap .logo{transform: translateY(0);}
-    #header_wrap .logo a{width:125rem;height: 35rem;}
+    #header_wrap .logo a{width:60rem;height: 42rem;}
     #header_wrap .header_mobile{display:block;}
     #header_wrap .header_gnb{display:none;}
     #header_wrap .header_etc{display:none;}
