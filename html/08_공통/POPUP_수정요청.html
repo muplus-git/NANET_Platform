@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>프로젝트</title>
+  <!-- css -->
+  <link rel="stylesheet" href="../../resource/css/lib/swiper/swiper.min.css">
+  <link rel="stylesheet" href="../../resource/css/lib/animate/animate.css">
+  <link rel="stylesheet" href="../../resource/css/lib/jqueryUI/jquery-ui.css">
+  <link rel="stylesheet" href="../../resource/css/ui.reset.css">
+  <link rel="stylesheet" href="../../resource/css/ui.common.css">
+  <link rel="stylesheet" href="../../resource/css/ui.main.css">
+  <link rel="stylesheet" href="../../resource/css/ui.sub.css">
+  <link rel="stylesheet" href="../../resource/css/ui.responsive.css">
+ </head>
+
+ <body>
+    
+    <div id="wrapper">
+        <div id="popUp01" class="popup_wrap">
+            <div class="popup_bg"></div>
+            <div class="popup_area" style="width:700rem;">
+                <div class="pop_header">
+                    <h2>수정요청</h2>
+                    <button class="pop_close"><i class="icons i_pop_close"></i></button>
+                </div>
+                <div class="pop_cont">
+                    <div class="pop_detail_search">
+                        <table>
+                            <colgroup>
+                                <col style="width:100rem">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>아이디</th>
+                                    <td>
+                                        asd1234
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>연락처</th>
+                                    <td>
+                                        <input type="text" class="wp100">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>요청내용</th>
+                                    <td>
+                                        <textarea rows="5"></textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="pop_btn_area">
+                    <button class="btn c-type04">닫기</button>
+                    <button class="btn c-type03">요청하기</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn c-type03" onclick="popupFunc('popUp01')">수정요청</button>
+    </div>
+
+    <!-- javascript -->
+    <script src="../../resource/js/lib/jquery/jquery-1.12.3.js"></script>
+    <script src="../../resource/js/lib/jquery/jquery.scrolla.js"></script>
+    <script src="../../resource/js/lib/jquery/jquery-ui.js"></script>
+    <script src="../../resource/js/lib/swiper/swiper.min.js"></script>
+    <script src="../../resource/js/lib/tweenmax/gsap.min.js"></script>
+    <script src="../../resource/js/ui.common.js"></script>
+ </body>
+</html>
