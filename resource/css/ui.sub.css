@@ -162,8 +162,8 @@
 .cont_down_list .down_box span{display:inline-block;margin-left:8rem;color:#666;font-size:13rem;}
 .cont_down_list .down_box{display:inline-flex;align-items: center;}
 .cont_down_list .down_file_list{display:inline-block;}
-.cont_down_list .labels{margin-right:20rem;}
-.cont_down_list .labels .label{display:inline-block;color:#fff;font-size:13rem;background-color:#ADA49F;border-radius:30px;padding:3rem 10rem;}
+.labels{margin-right:20rem;}
+.labels .label{display:inline-block;color:#fff;font-size:13rem;background-color:#ADA49F;border-radius:30px;padding:3rem 10rem;}
 .cont_down_list .down_msg{margin-top:10rem;}
 .cont_down_list .down_msg strong{display:inline-block;margin-right:8rem;color:#F85C3A;font-size:14rem;}
 .cont_down_list .down_msg span{color:#666;font-size:13rem;}
@@ -542,6 +542,7 @@
 .form_list_area .form_top{margin-bottom:10rem;}
 .form_list_area .form_top .label{color:#666;font-size:13rem;} 
 .form_list_area .form_top .req{color: #FF0000;}
+.form_list_area .form_cont{color:#000;font-size:14rem;font-weight:bold;}
 .form_msg{margin-top:12rem;color:#666;font-size:14rem;line-height:1.5;}
 .form_attach_area input[type="file"]{display:none;}
 .form_attach_area label{display:flex;flex-direction: column;height: 100rem;background: #F6F6F6;border: 1px dashed #DFDFDF;border-radius: 4px;cursor:pointer;justify-content:center;align-items:center;}
@@ -564,6 +565,7 @@
 .form_year input[type="text"]{border:0;}
 .form_year span{position:absolute;top:10rem;right:15rem;color:#000;font-size:14rem;font-weight:800;}
 .form_tab_cont .form_list_area li{width:100%;}
+.form_list_area.border li+li{border-top:1px solid #DFDFDF}
 /*****************
     로그인회원가입
 ******************/

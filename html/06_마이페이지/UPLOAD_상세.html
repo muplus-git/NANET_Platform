@@ -1,0 +1,1606 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>프로젝트</title>
+  <!-- css -->
+  <link rel="stylesheet" href="../../resource/css/lib/swiper/swiper.min.css">
+  <link rel="stylesheet" href="../../resource/css/lib/animate/animate.css">
+  <link rel="stylesheet" href="../../resource/css/lib/jqueryUI/jquery-ui.css">
+  <link rel="stylesheet" href="../../resource/css/ui.reset.css">
+  <link rel="stylesheet" href="../../resource/css/ui.common.css">
+  <link rel="stylesheet" href="../../resource/css/ui.main.css">
+  <link rel="stylesheet" href="../../resource/css/ui.sub.css">
+  <link rel="stylesheet" href="../../resource/css/ui.responsive.css">
+ </head>
+
+ <body>
+    
+    <div id="wrapper">
+        <div class="dim"></div>
+        <header id="header_wrap">
+            <div class="inner">
+                <h1 class="logo"><a href="#none">국회도서관</a></h1>
+                <ul class="header_gnb">
+                    <li>
+                        <a href="#none">공유자료</a>
+                        <ul class="gnb_sub2">
+                            <li><a href="#none">최신자료</a></li>
+                            <li><a href="#none">유형별자료</a></li>
+                            <li><a href="#none">기관별자료</a></li>
+                            <li><a href="#none">국회발간물 모아보기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">참여기관</a>
+                        <ul class="gnb_sub2">
+                            <li><a href="#none">참여기관소개</a></li>
+                            <li>
+                                <a href="#none">학술정보협의회</a>
+                                <ul class="gnb_sub3">
+                                    <li><a href="#none">협의회소개</a></li>
+                                    <li><a href="#none">정보교류커뮤니티</a></li>
+                                    <li><a href="#none">도서관계소식</a></li>
+                                    <li><a href="#none">도서안내</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">이용안내</a>
+                        <ul class="gnb_sub2">
+                            <li><a href="#none">플랫폼소개</a></li>
+                            <li><a href="#none">이용안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="header_etc">
+                    <div class="header_search_box">
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <div class="option">
+                            <span class="search"><button><i class="icons i_gnb_search"></i></button></span>
+                            <span class="filter"><button onclick="popupFunc('popUp01')"><i class="icons i_gnb_filter"></i></button></span>
+                        </div>
+                    </div>
+                    <div class="header_user">
+                        <a href="#none" class="user login">
+                            <i class="icons i_user"></i>
+                            <span class="name"><strong>홍길동</strong> 님</span>
+                        </a>
+                        <ul class="user_menu">
+                            <li><a href="#none" class="mypage">마이페이지 <i class="icons i_mypage_arrow"></i></a></li>
+                            <li><a href="#none" class="logout">로그아웃 <i class="icons i_logout"></i></a></li>
+                        </ul>
+                    </div>
+                    <button class="btn_upload"><i class="icons i_upload"></i></button>
+                </div>
+                <div class="header_mobile">
+                    <button class="btn_m_upload"><i class="icons i_upload"></i></button>
+                    <button class="btn_m_search"><i class="icons i_m_search"></i></button>
+                    <button class="btn_m_menu"><i class="icons i_m_gnb"></i></button>
+                </div>
+            </div>
+            <aside class="header_lnb">
+                <div class="lnb_top_area">
+                    <div class="lnb_top">
+                        <h2 class="logo_m"><a href="#none">국회도서관</a></h2>
+                        <button class="lnb_close"><i class="icons i_lnb_close_w"></i></button>
+                    </div>
+                    <div class="lnb_box">
+                        <div class="lnb_login_before">
+                            <p class="msg">
+                                안녕하세요. <br>
+                                로그인을 해주세요.
+                            </p>
+                            <ul class="link">
+                                <li><a href="#none">로그인</a></li>
+                                <li><a href="#none">회원가입</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul class="lnb_nav_area">
+                    <li class="has-sub">
+                        <a href="#none">공유자료</a>
+                        <ul class="depth2">
+                            <li><a href="#none">최신자료</a></li>
+                            <li><a href="#none">유형별자료</a></li>
+                            <li><a href="#none">기관별자료</a></li>
+                            <li><a href="#none">국회발간물 모아보기</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-sub">
+                        <a href="#none">참여기관</a>
+                        <ul class="depth2">
+                            <li><a href="#none">참여기관소개</a></li>
+                            <li>
+                                <a href="#none">학술정보협의회</a>
+                                <ul class="depth3">
+                                    <li><a href="#none">협의회소개</a></li>
+                                    <li><a href="#none">정보교류커뮤니티</a></li>
+                                    <li><a href="#none">도서관계소식</a></li>
+                                    <li><a href="#none">도서안내</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-sub">
+                        <a href="#none">이용안내</a>
+                        <ul class="depth2">
+                            <li><a href="#none">플랫폼소개</a></li>
+                            <li><a href="#none">이용안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none" class="upload">지식공유 업로드 <i class="icons i_upload"></i></a></li>
+                </ul>
+            </aside>
+            <div class="m_header_search">
+                <div class="m_search">
+                    <input type="text" placeholder="검색어를 입력해주세요.">
+                    <button><i class="icons i_m_search"></i></button>
+                </div>
+                <div class="m_search_tag">
+                    <a href="#none" class="tag">#최근</a>
+                    <a href="#none" class="tag">#검색어</a>
+                    <a href="#none" class="tag">#지식</a>
+                    <a href="#none" class="tag">#플랫폼</a>
+                </div>
+            </div>
+        </header>
+
+        <div id="main_wrap">
+            <ul class="location_list">
+                <li><a href="#none" class="home"><i class="icons i_loaction_home"></i></a></li>
+                <li><strong>지식공유업로드</strong></li>
+            </ul>
+            <div class="inner animate" data-animate="fadeInUp" data-delay=".1s">
+                <div class="title_area">
+                    <h2 class="title">지식공유업로드</h2>
+                </div>
+                <div class="subtitle_area first">
+                    <h3 class="title">기본정보(필수)</h3>
+                </div>
+                <div class="form_list_area">
+                    <div class="row">
+                        <ul class="col">
+                            <li class="col-12">
+                                <div class="form_box">
+                                    <div class="form_top"><span class="label">제목</span></div>
+                                    <div class="form_cont">지식공유 업로드 제목</div>
+                                </div>
+                            </li>
+                            <li class="col-4">
+                                <div class="form_box">
+                                    <div class="form_top"><span class="label">저자</span></div>
+                                    <div class="form_cont">저자 입력</div>
+                                </div>
+                            </li>
+                            <li class="col-4">
+                                <div class="form_box">
+                                    <div class="form_top"><span class="label">발행처</span></div>
+                                    <div class="form_cont">내용입니다.</div>
+                                </div>
+                            </li>
+                            <li class="col-4">
+                                <div class="form_box">
+                                    <div class="form_top"><span class="label">발행년</span></div>
+                                    <div class="form_cont">
+                                        2023 년
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12">
+                                <div class="form_box">
+                                    <div class="form_top"><span class="label">서비스여부</span></div>
+                                    <div class="form_cont">
+                                        <em class="rdo2">
+                                            <input type="radio" id="rdo01" name="rdo01" checked="">
+                                            <label for="rdo01">공개</label>
+                                        </em>
+                                        <em class="rdo2">
+                                            <input type="radio" id="rdo02" name="rdo01">
+                                            <label for="rdo02">원문URL연결</label>
+                                        </em>
+                                        <em class="rdo2">
+                                            <input type="radio" id="rdo03" name="rdo01">
+                                            <label for="rdo03">비공개</label>
+                                        </em>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12">
+                                <div class="form_box">
+                                    <div class="form_top"><span class="label">이용허락</span></div>
+                                    <div class="form_cont">
+                                        <select>
+                                            <option>저작권표시-비영리-동일조건변경허락(BY-NC-SA)</option>
+                                        </select>
+                                        <p class="form_msg">
+                                            ※ 저작권자와 출처 등을 표시하면 저작물의 변경, 2차적 저작물의 작성을 포함한 자유이용을 허락합니다.<br>
+                                            단, 영리적 이용은 허용되지 않고 2차적 저작물에는 원저작물에 적용된 라이선스와 동일한 라이선스를 적용해야 합니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12">
+                                <div class="form_box">
+                                    <div class="form_top"><span class="label">원문파일 업로드</span></div>
+                                    <div class="form_cont">
+                                        <div class="form_attach_area">
+                                            <input type="file" id="file01">
+                                            <label for="file01">
+                                                <i class="icons i_file_upload"></i>
+                                                <span>첨부파일을 업로드 할 수 있습니다.</span>
+                                            </label>
+                                            <div class="form_attach_info">
+                                                <div>
+                                                    <span>최대 <strong>1</strong>개 용량 무제한</span>
+                                                </div>
+                                                <div>
+                                                    <span><strong>0</strong> 개, <strong>0 byte</strong>추가됨</span>
+                                                </div>
+                                            </div>
+                                            <div class="form_attach_file">
+                                                <div class="form_attach">
+                                                    <i class="icons i_form_file"></i>
+                                                    <span>파일명파일명.pdf</span>
+                                                    <button><i class="icons i_form_delete"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12">
+                                <div class="form_box">
+                                    <div class="form_top"><span class="label">원문 URL 연결</span></div>
+                                    <div class="form_cont"><input class="wp100" type="text" placeholder="제목을 입력하세요."></div>
+                                </div>
+                            </li>
+                            <li class="col-12">
+                                <div class="form_box">
+                                    <div class="form_top"><span class="label">자료유형</span></div>
+                                    <div class="form_cont">
+                                        <ul id="tabList01" class="tabs_design02">
+                                            <li rel="tab01-01" class="on"><a href="#none">단행본</a></li>
+                                            <li rel="tab01-02"><a href="#none">고문서</a></li>
+                                            <li rel="tab01-03"><a href="#none">비도서</a></li>
+                                            <li rel="tab01-04"><a href="#none">학술기사</a></li>
+                                            <li rel="tab01-05"><a href="#none">연속간행물</a></li>
+                                            <li rel="tab01-06"><a href="#none">지도</a></li>
+                                            <li rel="tab01-07"><a href="#none">사진</a></li>
+                                            <li rel="tab01-08"><a href="#none">녹음자료</a></li>
+                                            <li rel="tab01-09"><a href="#none">시청각자료</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div id="tabCont01" class="form_tab_cont">
+                            <div id="tab01-01" class="active">
+                                <div class="subtitle_area">
+                                    <h3 class="title">부가정보 <strong>[단행본]</strong></h3>
+                                </div>
+                                <div class="form_list_area border">
+                                    <div class="row">
+                                        <ul class="col">
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">URL</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">ISBN</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">권차</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">총서 서명</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">총서번호</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">언어</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">발행지</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">판사항</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">원제목</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제공기관</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제공기관 등록번호</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">수록잡지명</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">수록지권호</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">수록페이지</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form_notice">
+                                    <ul class="notice">
+                                        <li>공유저작물 등록된 공개 저작물의 경우 관리자의 승인 완료 후 공유저작물 검색을 통해 서비스 됩니다.</li>
+                                        <li>승인된 공개 저작물은 국회전자도서관 서비스 및 국회전자도서관 별도의 원문구축 서비스를 통해 서비스 될 수 있습니다.</li>
+                                    </ul>
+                                    <span class="chk">
+                                        <input type="checkbox" id="chk01">
+                                        <label for="chk01">
+                                            승인완료 후 국회도서관 서비스 범위를 확인하였으며 이에 동의합니다.
+                                        </label>
+                                    </span>
+                                </div>
+                                <div class="b_btn_wrap">
+                                    <a href="#none" class="b_btn">이전</a>
+                                    <a href="#none" class="b_btn type2">등록</a>
+                                </div>
+                            </div>
+
+                            <div id="tab01-02">
+                                <div class="subtitle_area">
+                                    <h3 class="title">부가정보 <strong>[고문서]</strong></h3>
+                                </div>
+                                <div class="form_list_area">
+                                    <div class="row">
+                                        <ul class="col">
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">URL</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">ISBN</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">권차</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">총서 서명</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">총서번호</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">언어</span></div>
+                                                    <div class="form_cont">
+                                                        <select class="wp100">
+                                                            <option>한국어</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">발행지</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">판사항</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">원제목</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제공기관</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제공기관 등록번호</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">수록잡지명</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">수록지권호</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">수록페이지</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form_notice">
+                                    <ul class="notice">
+                                        <li>공유저작물 등록된 공개 저작물의 경우 관리자의 승인 완료 후 공유저작물 검색을 통해 서비스 됩니다.</li>
+                                        <li>승인된 공개 저작물은 국회전자도서관 서비스 및 국회전자도서관 별도의 원문구축 서비스를 통해 서비스 될 수 있습니다.</li>
+                                    </ul>
+                                    <span class="chk">
+                                        <input type="checkbox" id="chk02">
+                                        <label for="chk02">
+                                            승인완료 후 국회도서관 서비스 범위를 확인하였으며 이에 동의합니다.
+                                        </label>
+                                    </span>
+                                </div>
+                                <div class="b_btn_wrap">
+                                    <a href="#none" class="b_btn">이전</a>
+                                    <a href="#none" class="b_btn type2">등록</a>
+                                </div>
+                            </div>
+                            <div id="tab01-03">
+                                <div class="subtitle_area">
+                                    <h3 class="title">부가정보 <strong>[비도서]</strong></h3>
+                                </div>
+                                <div class="form_list_area">
+                                    <div class="row">
+                                        <ul class="col">
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">URL</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">ISBN</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">권차</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">총서 서명</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">총서번호</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">언어</span></div>
+                                                    <div class="form_cont">
+                                                        <select class="wp100">
+                                                            <option>한국어</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">발행지</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">판사항</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">원제목</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제공기관</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제공기관 등록번호</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">수록잡지명</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">수록지권호</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">수록페이지</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form_notice">
+                                    <ul class="notice">
+                                        <li>공유저작물 등록된 공개 저작물의 경우 관리자의 승인 완료 후 공유저작물 검색을 통해 서비스 됩니다.</li>
+                                        <li>승인된 공개 저작물은 국회전자도서관 서비스 및 국회전자도서관 별도의 원문구축 서비스를 통해 서비스 될 수 있습니다.</li>
+                                    </ul>
+                                    <span class="chk">
+                                        <input type="checkbox" id="chk03">
+                                        <label for="chk03">
+                                            승인완료 후 국회도서관 서비스 범위를 확인하였으며 이에 동의합니다.
+                                        </label>
+                                    </span>
+                                </div>
+                                <div class="b_btn_wrap">
+                                    <a href="#none" class="b_btn">이전</a>
+                                    <a href="#none" class="b_btn type2">등록</a>
+                                </div>
+                            </div>
+                            <div id="tab01-04">
+                                <div class="subtitle_area">
+                                    <h3 class="title">부가정보 <strong>[학술기사]</strong></h3>
+                                </div>
+                                <div class="form_list_area">
+                                    <div class="row">
+                                        <ul class="col">
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">수록페이지</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">URL</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-3">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">저자의 영문명</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-3">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">저자의 생몰년</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-3">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">저자의 직위</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-3">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">저자의 소속</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-3">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">수록지의 ISSN/E-ISSN</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-3">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">언어</span></div>
+                                                    <div class="form_cont">
+                                                        <select class="wp100">
+                                                            <option>한국어(KOR)</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-3">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">발행지</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-3">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">판사항</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">원제목</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제공기관</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제공기관 등록번호</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form_notice">
+                                    <ul class="notice">
+                                        <li>공유저작물 등록된 공개 저작물의 경우 관리자의 승인 완료 후 공유저작물 검색을 통해 서비스 됩니다.</li>
+                                        <li>승인된 공개 저작물은 국회전자도서관 서비스 및 국회전자도서관 별도의 원문구축 서비스를 통해 서비스 될 수 있습니다.</li>
+                                    </ul>
+                                    <span class="chk">
+                                        <input type="checkbox" id="chk04">
+                                        <label for="chk04">
+                                            승인완료 후 국회도서관 서비스 범위를 확인하였으며 이에 동의합니다.
+                                        </label>
+                                    </span>
+                                </div>
+                                <div class="b_btn_wrap">
+                                    <a href="#none" class="b_btn">이전</a>
+                                    <a href="#none" class="b_btn type2">등록</a>
+                                </div>
+                            </div>
+                            <div id="tab01-05">
+                                <div class="subtitle_area">
+                                    <h3 class="title">부가정보 <strong>[연속간행물]</strong></h3>
+                                </div>
+                                <div class="form_list_area">
+                                    <div class="row">
+                                        <ul class="col">
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">URL</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-3">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">발행주기</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-3">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">가격</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-3">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">KIC등재여부</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-3">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">ISSN/E-ISSN</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-3">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">언어</span></div>
+                                                    <div class="form_cont">
+                                                        <select class="wp100">
+                                                            <option>한국어(KOR)</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-3">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">발행지</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-3">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">판사항</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">원제목</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제공기관</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제공기관 등록번호</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form_notice">
+                                    <ul class="notice">
+                                        <li>공유저작물 등록된 공개 저작물의 경우 관리자의 승인 완료 후 공유저작물 검색을 통해 서비스 됩니다.</li>
+                                        <li>승인된 공개 저작물은 국회전자도서관 서비스 및 국회전자도서관 별도의 원문구축 서비스를 통해 서비스 될 수 있습니다.</li>
+                                    </ul>
+                                    <span class="chk">
+                                        <input type="checkbox" id="chk05">
+                                        <label for="chk05">
+                                            승인완료 후 국회도서관 서비스 범위를 확인하였으며 이에 동의합니다.
+                                        </label>
+                                    </span>
+                                </div>
+                                <div class="b_btn_wrap">
+                                    <a href="#none" class="b_btn">이전</a>
+                                    <a href="#none" class="b_btn type2">등록</a>
+                                </div>
+                            </div>
+                            <div id="tab01-06">
+                                <div class="subtitle_area">
+                                    <h3 class="title">부가정보 <strong>[지도]</strong></h3>
+                                </div>
+                                <div class="form_list_area">
+                                    <div class="row">
+                                        <ul class="col">
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">URL</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">파일크기</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">해상도</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">목차</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">지도내용</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">언어</span></div>
+                                                    <div class="form_cont">
+                                                        <select class="wp100">
+                                                            <option>한국어(KOR)</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">발행지</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">판사항</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">원제목</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제공기관</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제공기관 등록번호</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form_notice">
+                                    <ul class="notice">
+                                        <li>공유저작물 등록된 공개 저작물의 경우 관리자의 승인 완료 후 공유저작물 검색을 통해 서비스 됩니다.</li>
+                                        <li>승인된 공개 저작물은 국회전자도서관 서비스 및 국회전자도서관 별도의 원문구축 서비스를 통해 서비스 될 수 있습니다.</li>
+                                    </ul>
+                                    <span class="chk">
+                                        <input type="checkbox" id="chk06">
+                                        <label for="chk06">
+                                            승인완료 후 국회도서관 서비스 범위를 확인하였으며 이에 동의합니다.
+                                        </label>
+                                    </span>
+                                </div>
+                                <div class="b_btn_wrap">
+                                    <a href="#none" class="b_btn">이전</a>
+                                    <a href="#none" class="b_btn type2">등록</a>
+                                </div>
+                            </div>
+                            <div id="tab01-07">
+                                <div class="subtitle_area">
+                                    <h3 class="title">부가정보 <strong>[사진]</strong></h3>
+                                </div>
+                                <div class="form_list_area">
+                                    <div class="row">
+                                        <ul class="col">
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">URL</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">촬영일시</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">이용대상자</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제작진</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">파일크기</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">해상도</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">목차</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">사진 내용</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">발행지</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">판사항</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">원제목</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제공기관</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제공기관 등록번호</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form_notice">
+                                    <ul class="notice">
+                                        <li>공유저작물 등록된 공개 저작물의 경우 관리자의 승인 완료 후 공유저작물 검색을 통해 서비스 됩니다.</li>
+                                        <li>승인된 공개 저작물은 국회전자도서관 서비스 및 국회전자도서관 별도의 원문구축 서비스를 통해 서비스 될 수 있습니다.</li>
+                                    </ul>
+                                    <span class="chk">
+                                        <input type="checkbox" id="chk07">
+                                        <label for="chk07">
+                                            승인완료 후 국회도서관 서비스 범위를 확인하였으며 이에 동의합니다.
+                                        </label>
+                                    </span>
+                                </div>
+                                <div class="b_btn_wrap">
+                                    <a href="#none" class="b_btn">이전</a>
+                                    <a href="#none" class="b_btn type2">등록</a>
+                                </div>
+                            </div>
+                            <div id="tab01-08">
+                                <div class="subtitle_area">
+                                    <h3 class="title">부가정보 <strong>[녹음자료]</strong></h3>
+                                </div>
+                                <div class="form_list_area">
+                                    <div class="row">
+                                        <ul class="col">
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">URL</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">이용대상자</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">국제표준녹음자료부호</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">발행처번호</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">발행처의정보원</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">시리즈명</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">녹음일시</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">재생/연주시간</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">연주자/배역진</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제작진</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">목차</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">자료 내용</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">언어</span></div>
+                                                    <div class="form_cont">
+                                                        <select class="wp100">
+                                                            <option>한국어(KOR)</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">발행지</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-4">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">판사항</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">원제목</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제공기관</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제공기관 등록번호</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form_notice">
+                                    <ul class="notice">
+                                        <li>공유저작물 등록된 공개 저작물의 경우 관리자의 승인 완료 후 공유저작물 검색을 통해 서비스 됩니다.</li>
+                                        <li>승인된 공개 저작물은 국회전자도서관 서비스 및 국회전자도서관 별도의 원문구축 서비스를 통해 서비스 될 수 있습니다.</li>
+                                    </ul>
+                                    <span class="chk">
+                                        <input type="checkbox" id="chk08">
+                                        <label for="chk08">
+                                            승인완료 후 국회도서관 서비스 범위를 확인하였으며 이에 동의합니다.
+                                        </label>
+                                    </span>
+                                </div>
+                                <div class="b_btn_wrap">
+                                    <a href="#none" class="b_btn">이전</a>
+                                    <a href="#none" class="b_btn type2">등록</a>
+                                </div>
+                            </div>
+                            <div id="tab01-09">
+                                <div class="subtitle_area">
+                                    <h3 class="title">부가정보 <strong>[시청각자료]</strong></h3>
+                                </div>
+                                <div class="form_list_area">
+                                    <div class="row">
+                                        <ul class="col">
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">URL</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">이용대상자</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">표준부호</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">발행처번호</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제작진</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">목차</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">시리즈명</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">촬영일시</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">재생/연주시간</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">연주자/배역진</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">수상</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">내용</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">자료내용</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-3">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">자막 언어</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-3">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">언어</span></div>
+                                                    <div class="form_cont">
+                                                        <select class="wp100">
+                                                            <option>한국어(KOR)</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-3">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">발행지</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-3">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">판사항</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-12">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">원제목</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제공기관</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-6">
+                                                <div class="form_box">
+                                                    <div class="form_top"><span class="label">제공기관 등록번호</span></div>
+                                                    <div class="form_cont">
+                                                        내용입니다.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form_notice">
+                                    <ul class="notice">
+                                        <li>공유저작물 등록된 공개 저작물의 경우 관리자의 승인 완료 후 공유저작물 검색을 통해 서비스 됩니다.</li>
+                                        <li>승인된 공개 저작물은 국회전자도서관 서비스 및 국회전자도서관 별도의 원문구축 서비스를 통해 서비스 될 수 있습니다.</li>
+                                    </ul>
+                                    <span class="chk">
+                                        <input type="checkbox" id="chk09">
+                                        <label for="chk09">
+                                            승인완료 후 국회도서관 서비스 범위를 확인하였으며 이에 동의합니다.
+                                        </label>
+                                    </span>
+                                </div>
+                                <div class="b_btn_wrap">
+                                    <a href="#none" class="b_btn">이전</a>
+                                    <a href="#none" class="b_btn type2">등록</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer_wrap">
+            <div class="inner">
+                <div class="footer_info">
+                    <span class="footer_logo"><a href="#none">국회도서관</a></span>
+                    <ul class="footer_top">
+                        <li><a href="#none">개인정보처리방침</a></li>
+                        <li><a href="#none">이메일수신거부</a></li>
+                        <li><a href="#none">문의하기</a></li>
+                    </ul>
+                    <div class="footer_inner">
+                        <div class="footer_address">
+                            <address class="address">서울특별시 중구 퇴계로27길 49 (저동2가, 센트럴에쓰 3층)</address>
+                            <p class="copy">COPYRIGHT ⓒ 지식공유 플랫폼. ALLRIGHT RESERVED.</p> 
+                        </div>
+                        <ul class="footer_tel">
+                            <li><span>대표번호</span> 02 3456 7890</li>
+                            <li><span>이메일</span> email@email.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- javascript -->
+    <script src="../../resource/js/lib/jquery/jquery-1.12.3.js"></script>
+    <script src="../../resource/js/lib/jquery/jquery.scrolla.js"></script>
+    <script src="../../resource/js/lib/jquery/jquery-ui.js"></script>
+    <script src="../../resource/js/lib/swiper/swiper.min.js"></script>
+    <script src="../../resource/js/lib/tweenmax/gsap.min.js"></script>
+    <script src="../../resource/js/ui.common.js"></script>
+    <script>
+        tabMenu('#tabList01','#tabCont01')
+    </script>
+ </body>
+</html>
