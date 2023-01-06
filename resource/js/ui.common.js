@@ -15,6 +15,7 @@ $(function(){
     mobileLnbMenu();
     mobileSearchFunc();
     likeBtn();
+    foldingCont();
 })
 
 $(window).load(function(){
@@ -269,5 +270,13 @@ function mobileSearchFunc(){
 function likeBtn(){
     $('.bookmark').on('click',function(){
         $(this).toggleClass('on');
+    });
+}
+
+function foldingCont(){
+    $('.btn_folding').on('click',function(){
+        $(this).toggleClass('on');
+        var activeCont = $(this).attr('rel');
+        $('#' + activeCont).toggleClass('on');
     });
 }

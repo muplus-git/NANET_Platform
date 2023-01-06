@@ -95,6 +95,15 @@ html,body{height: 100%;}
 .icons.i_down_01:before{background-image: url('../images/icons/ico_down_c_type01.png');width:20rem;height: 20rem;}
 .icons.i_down_02:before{background-image: url('../images/icons/ico_down_c_type02.png');width:20rem;height: 20rem;}
 .icons.i_share:before{background-image: url('../images/icons/ico_share.png');width:20rem;height: 20rem;}
+.icons.i_down_pdf:before{background-image: url('../images/icons/ico_down_pdf.png');width:24rem;height: 24rem;}
+.icons.i_down_hwp:before{background-image: url('../images/icons/ico_down_hwp.png');width:24rem;height: 24rem;}
+.icons.i_down_ppt:before{background-image: url('../images/icons/ico_down_ppt.png');width:24rem;height: 24rem;}
+.icons.i_down_img:before{background-image: url('../images/icons/ico_down_img.png');width:24rem;height: 24rem;}
+.icons.i_down_mov:before{background-image: url('../images/icons/ico_down_mov.png');width:24rem;height: 24rem;}
+.icons.i_down_mp3:before{background-image: url('../images/icons/ico_down_mp3.png');width:24rem;height: 24rem;}
+.icons.i_down_down:before{background-image: url('../images/icons/ico_down_down.png');width:24rem;height: 24rem;}
+.icons.i_down_view:before{background-image: url('../images/icons/ico_down_view.png');width:24rem;height: 24rem;}
+.icons.i_folding_arrow:before{background-image: url('../images/icons/ico_folding_arrow.png');width:20rem;height: 20rem;}
 /**********
     COMMON
 ***********/

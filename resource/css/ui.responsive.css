@@ -147,6 +147,7 @@
     /* 업로드 */
     .form_list_area select{width:100%;}
     .form_attach_file .form_attach{width:100%;min-width:auto}
+    .form_tab_cont .form_cont input[type="text"]{width:100% !important;}
 
     /*****************
     로그인회원가입
@@ -231,6 +232,10 @@
     .multiselec_area{display:block;}
     .multiselec_area+.multiselec_area{margin:0;margin-top:10rem;}
     .multiselec_box{width:100%;}
+    .cont_down_list{margin-bottom:20rem;}
+    .cont_down_list .down_file_list{display:block;margin-top:10rem;}
+    .cont_down_list .btn_folding{position:relative;top:10rem;left:50%;right:auto;transform: translateX(-50%);}
+    .cont_down_list .btn_folding.on{transform: rotate(-180deg) translateY(0%) translateX(50%);}
 
     /**********
     참여기관
@@ -362,11 +367,11 @@
     .total_search_list .search_box .etc{margin-left:0;margin-top:8px;}
     .down_copy_area{top:auto;bottom:0;transform: translateY(0);}
     /* 통합검색 상세 */
-    .cont_down_list{padding:15rem 15rem;}
-    .cont_down_list>li{display:block;position:relative;overflow:hidden;padding:0 40rem 0 25rem;}
-    .cont_down_list>li>i{position:absolute;top:3rem;left:0;}
-    .cont_down_list span{position:absolute;top:0;right:0;}
-    .cont_down_list a{max-width:100%;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;margin-left:0;}
+    .cont_down_list>li{padding:15rem 15rem;}
+    .cont_down_list .down_box{display:block;position:relative;overflow:hidden;padding:0 40rem 0 25rem;}
+    .cont_down_list .down_box i{position:absolute;top:3rem;left:0;}
+    .cont_down_list .down_box span{position:absolute;top:0;right:0;}
+    .cont_down_list .down_box a{max-width:100%;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;margin-left:0;}
     .cont_preview_list .row.gutter24>.col{margin:-4rem -4rem;}
     .cont_preview_list .row.gutter24>.col>li{padding:4rem 4rem;}
     .cont_preview_list .data_cont .img{position:relative;width:100%;height:200rem;overflow:hidden;}
