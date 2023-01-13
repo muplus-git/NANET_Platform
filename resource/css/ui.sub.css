@@ -410,13 +410,15 @@
 .book_list .swiper-button-next:after, .swiper-button-prev:after{color:#999;font-size:25px;z-index:5;}
 .book_list li.on .book_info .img:before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;border:5px solid #F85C3A;}
 .book_info{display:block;}
-.book_info .img{position:relative;display:inline-block;}
-.book_info .title{margin-top:10rem;color:#000;font-size:16rem;line-height:1.5;}
+.book_info .img{position:relative;display:inline-block;width:180rem;height: 260rem;}
+.book_info .img img{position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);width:100%;height:100%;object-fit: cover;}
+.book_info .title{display:-webkit-box;text-overflow:ellipsis;-webkit-line-clamp: 2;-webkit-box-orient:vertical;overflow:hidden;height:48px;margin-top:10rem;color:#000;font-size:16rem;line-height:1.5;}
 .book_detail_area{padding:0 55rem;}
 .book_detail{position:relative;background: #F6F6F6;border: 1px solid #DFDFDF;border-radius: 10px;padding:30rem 30rem;margin-top:35rem;}
 .book_detail .close{position:absolute;top:30rem;right:30rem;}
 .book_detail .detail_info{display:flex;}
-.book_detail .detail_info .img{width:240rem;}
+.book_detail .detail_info .img{position:relative;width:240rem;height:360rem;}
+.book_detail .detail_info .img img{position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);width:100%;height:100%;object-fit: cover;}
 .book_detail .detail_info .info_box{width:calc(100% - 270rem);margin-left:30rem;position:relative;}
 .book_detail .detail_info .title{color:#000;font-size:20rem;font-weight:800;padding-right:30rem;}
 .book_detail .detail_info .info{margin-top:20rem;}

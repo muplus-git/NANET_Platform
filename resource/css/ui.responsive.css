@@ -80,6 +80,8 @@
     .main_intro_tab .intro_list{width:100%;}
     .main_intro_tab .intro_img{display:none;}
     .main_intro_tab .intro_list>li.on>a .img{display:block;width:420rem;height:330rem;margin:25rem auto 0;}
+    .main_newdata_list .row>.col{margin:-55rem -10rem;}
+    .main_newdata_list .row>.col>li{padding:55rem 10rem;}
 
      /**********
     통합검색
@@ -111,7 +113,8 @@
     /* 도서안내 */
     .slide_prev, .slide_next{display:none;}
     .book_list{padding:0;}
-    .book_info .img{display:block;text-align:center;}
+    .book_info .img{display:block;text-align:center;margin:0 auto;}
+    .book_list li.on .book_info .img:before{display:none;}
     .book_detail_area{padding:0;margin:0 -20rem;}
     .book_detail{border-radius:0;}
     .tabs_design li + li{margin-left:15rem;}
@@ -409,6 +412,10 @@
     .tbl_style01 tbody td{text-align:left;border-bottom:0;}
     .tbl_style01 tbody td.subject a{white-space:normal;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;height: 27rem;}
     .tbl_style01 tbody td .link{padding-bottom:15rem;margin:0 -5rem}
+    .tbl_style01.rwd_none thead{display:table-header-group;}
+    .tbl_style01.rwd_none col{width:auto !important;}
+    .tbl_style01.rwd_none tbody td{display:table-cell;width:auto;padding:20rem 0;text-align:center;}
+    
 
     /**********
     참여기관
@@ -458,6 +465,7 @@
     .book_detail .info_tbl{flex-wrap:wrap;}
     .book_detail .info_tbl>li{width:50%;}
     .book_detail .close{top:10rem;right:10rem;}
+    .book_info .img{width:100%;height:240rem;}
 
     /**********
     이용안내

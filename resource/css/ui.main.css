@@ -5,6 +5,7 @@
 
  * DIRECTORY:
  * - COMMON
+ * - SEC_VISUAL
  * - SEC_CONT01
  * - SEC_CONT02
  * - SEC_CONT03
@@ -24,7 +25,7 @@
 .m_br{display:none;}
 
 /*************
-    SEC_CONT01
+    SEC_VISUAL
 **************/
 .main_sec_visual{height: 780rem;}
 .main_visual_area{position:relative;height:100%;overflow:hidden;}
@@ -41,6 +42,20 @@
 .main_visual_inner .visual_search button{position:absolute;top:-3rem;right:-3rem;width:72rem;height:72rem;border-radius: 50%;background-color:#F85C3A;}
 .main_visual_inner .hashtag{margin-top:20rem;}
 .main_visual_inner .hashtag a{display:inline-block;color:#F85C3A;font-size:18rem;font-weight:bold;padding:0 8rem;}
+
+/*************
+    SEC_CONT01
+**************/
+.main_newdata_list{padding-top:50rem;}
+.main_newdata_list .row>.col{margin:0 -20rem;}
+.main_newdata_list .row>.col>li{padding:0 20rem;}
+.main_newdata_list .newdata_inner{height:310rem;background-color:#F9F5F3;border-radius: 10px;}
+.main_newdata_list .newdata_box{text-align:center;transform: translateY(-70rem);}
+.main_newdata_list .img{position:relative;border:1px solid #DFDFDF;max-width:180rem;height:240rem;margin:0 auto;}
+.main_newdata_list .img img{position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);object-fit: cover;width:100%;height: 100%;}
+.main_newdata_list .title{display:-webkit-box;text-overflow:ellipsis;-webkit-line-clamp: 2;-webkit-box-orient:vertical;overflow:hidden;height:50rem;line-height:1.3;margin-top:20rem;padding:0 25rem;font-weight:800;font-size:18rem;}
+.main_newdata_list .title:hover{text-decoration:underline;}
+.main_newdata_list .copy{padding-top:15rem;width:60rem;margin:0 auto}
 
 /*************
     SEC_CONT02
